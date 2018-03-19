@@ -1,0 +1,1274 @@
+<html>
+<head>
+
+<!--
+
+　　　          ___   .--.
+　　　    .--.-"   "-' .- |
+　　　   / .-,`          .'   
+　　　   \   `           \ 　　　　　　。・゜ 　♡   。　　・　゜ 　　　♡  
+　　　    '.            ・ \　　　　　　　　　　　　　　　　　　　　　　　　♡　　　　♡ ゜・。。♡  
+　　　      |  ・     ᴥ    。|　　　　・゜♡ ゜・。　　. * ・ ♡ °  . 。
+　　　      \ 。            /.____　　　　　　　　　　　　　　　　　　♡.  
+　　　     /`-.          ,'.'    `\　　　　　　　　　　　　　　　　　　。・゜　　　 ♡ ・ 。　　。・゜ ♡  
+　　　  __/   \`-.____.-' `\      /　　　　　♡　。・゜      
+　　　  | `---`'-'._/-`     \----'    _ 　　　　　　　　　　　♡　　　.　　　.♡ 
+　　　  |,-'`  /             |    _.-' `\　　　　. * ・        
+　　　 .'     /              |--'`     / |　　　　　　　　　　 ♡
+　　　/      /\              `         | |
+　　　|   .\/  \      .--. __          \ |　　　　　　　　　　　*.。middlepot.com 
+　　　 '-'      '._       /  `\         /　　　　　　　　　　　　　　　　　　　　　　　ଘ(*´ ˘ `*)ഒ 。.*
+　　　             `\    '     |------'`
+　　　               \  |      |
+　　　                \        /
+ 　　　                '._  _.'
+
+-->
+
+<title>middlepot ഒ</title>
+
+<link rel="shortcut icon" href="http://i.imgur.com/C7cSCvF.gif">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style>
+body{ 
+  cursor: url(http://i.imgur.com/xrySzI4.png), progress;}
+a:hover {cursor: url(http://i.imgur.com/LY1tJ6u.png), progress;
+  
+  }
+ ::selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
+ ::-moz-selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
+}
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<style type="text/css">
+::-webkit-scrollbar {
+width: 4px;
+height: 4px;
+background: #FFF9F9;
+}
+::-webkit-scrollbar-thumb {
+background-color: #FCE4E4;
+-webkit-border-radius: 0ex;
+border: 1px solid #C1A3A3;
+}
+#linkbjinho { color: #ffacac; border-bottom:1px solid #897B7B; }
+#linkkkkkkkk { color: #ffacac; }
+#linkzinho { color: #938373; text-decoration: none;}
+#linkzinhoo { color: #6E6156; text-decoration: none;}
+</style>
+
+<!--
+tooooooooltip
+-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+
+(function($){
+
+$(document).ready(function(){
+
+$("a[title]").style_my_tooltips({
+
+tip_follows_cursor:true,
+
+tip_delay_time:90,
+
+tip_fade_speed:600,
+
+attribute:"title"
+
+});
+
+});
+
+})(jQuery);
+
+</script>
+<!--tooltip!-->
+<style>
+.tooltip{
+    display: inline;
+    position: relative;
+}
+#s-m-t-tooltip {
+max-width:300px; /*how big the tooltip can be at most*/
+border-radius: 0px; /*change your border radius*/
+padding:3px 4px 5px 4px; /*padding inside tooltip*/
+margin:10px 7px -2px 10px; /*distance from word*/
+background-color:#FFF5F5; /*background color*/ 
+  border:1px dashed #CEB6B6; /*border info*/
+  font-family:tahoma; /*tooltip font*/
+font-size:7px; /*tooltip font size*/
+letter-spacing:2px; /*tooltip letter spacing*/
+color:#CEB6B6; /*tooltip font color*/
+z-index:9999;
+}
+</style>
+
+<!--
+menuuuuuuuuuuuuuuu
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: Verdana;
+			}
+			
+			ul {
+				list-style: none
+			}
+			
+			#context_menu {
+				background: #fff9f9;
+				-moz-border-radius: 2px 2px;
+				border: 1px solid #baada3;
+				letter-spacing:1px; 
+				width: 85px;
+				font-size: 8px;
+				position: absolute;
+				display: none;
+				z-index:999;
+			}
+			
+			#context_menu ul li {
+				padding: 4px 3px;
+				-moz-border-radius: 10px 10px;
+				cursor: url(http://i.imgur.com/xrySzI4.png), progress;
+			}
+			
+			#context_menu ul li:hover {
+				background: #fff9f9;
+				color: #baada3;
+			}
+		</style>
+		<script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+			
+		</script>
+	</head>
+		<div id="teste"></div>
+		<div id="context_menu">
+			<ul>
+				<li>　<font color="#baada3">© middlepot</font></li>
+			</ul>
+		</div>
+<!--
+menuuuuuuuuuuuuuuu
+-->
+
+
+<script>
+function popcbox(tid, tkey) {
+	var baseurl = "http://www5.cbox.ws/box/?boxid=884320&boxtag=v1q22y",
+		baseid = '5-884320',
+		fontop = 0;
+		turl = '',
+		tid = tid || 0,
+		tkey = tkey || "",
+		html = [],
+		width = 220,
+		height = 380,
+		fheight = 107;
+
+	if (tid && tkey) {
+		turl = '&tid='+tid+'&tkey='+tkey;
+	}
+		
+	var htmlform = '<frame src="'+baseurl+turl+'&sec=form" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxform'+baseid+'-'+tid+'">';
+	var htmlmain = '<frame src="'+baseurl+turl+'&sec=main" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxmain'+baseid+'-'+tid+'">';
+	var prows = (fontop) ? (fheight+',*') : ('*,'+fheight);
+	
+	html.push('<!DOCTYPE html><html><head><title>*.。ଘ(*´ ˘ `*)ഒ 。.*</title><meta name="viewport" content="width=device-width, user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=edge"></head><frameset rows="'+prows+'" frameborder="0" framespacing="0">');
+	html.push(fontop ? htmlform : htmlmain);
+	html.push(fontop ? htmlmain : htmlform);
+	html.push('</frameset><noframes>Frames required</noframes></html>');
+	
+	var cboxwin = window.open("","Cbox-"+baseid+"-"+tid,"width="+width+",height="+height+",toolbar=no,scrollbars=no,status=no,resizable=yes");
+	cboxwin.document.open();
+	cboxwin.document.write(html.join(''));
+	try {
+		x = screen.width;
+		y = screen.height;
+		cboxwin.moveTo(Math.max((x - width)/2, 0), Math.max((y - height)/2, 0));
+		cboxwin.focus();
+	} catch (e) {};
+}
+</script>
+
+</head>
+
+
+<body ondragstart="return false" style="background-image:url(https://i.imgur.com/y6B6r2v.png); background-color:#FFF9F9; font-family: Verdana; font-size: 10px;">
+<style>
+#base {
+position: absolute;
+	left: 20%;
+	top: 15%;
+overflow-y:hidden;
+overflow-x:hidden;
+ }
+#menu1 {
+position: absolute;
+	left: 2%;
+	top: 4%;
+max-width: 130px;
+max-height: 490px;
+overflow-y:hidden;
+overflow-x:hidden;
+z-index: 2;
+ }
+#menu2 {
+position: absolute;
+	left: 28%;
+	top: 4%;
+max-width: 560px;
+max-height: 35px;
+overflow-y:hidden;
+overflow-x:hidden;
+z-index: 4;
+ }
+#stuff {
+position: absolute;
+	left: 23%;
+	top: 14%;
+width: 594px;
+height: 433px;
+overflow-x:hidden;
+z-index: 6;
+ }
+#aaa {
+position: relative;
+	left: 8%;
+ }
+</style>
+<div id="base">
+<img src="https://i.imgur.com/pfTi48h.png"/>
+
+<div onselectstart="return false" id="menu1">
+
+　　&nbsp;<a href="http://middlepot.com"><img width="100px" height="auto" src="https://i.imgur.com/4XdG5rK.png"/></a><br><center><font color="#A08D7E">　© middlepot.com</font></center>
+<p style="font-size:10px;line-height:50%;">
+<br><br><br></p>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/about">about</a></font><br>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/links">links</a></font><br>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/contact">contact</a></font><br>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/credits">credits</a></font>
+<p style="font-size:10px;line-height:50%;">
+<br><br><br></p>
+
+<center>　　<img src="https://i.imgur.com/HA2l4dB.gif"/>
+ <font color="#6E6156"><font size="2"><sup><a id="linkzinhoo" href="http://middlepot.com/blog">news blog</a></sup></font></font> <img src="https://i.imgur.com/VV0vQHD.gif"/></center>
+
+<p style="font-size:10px;line-height:50%;">
+<br></p>
+<center>　　<a href="JavaScript:popcbox('', '');"><img src="https://i.imgur.com/ysc4y4D.gif"/></a></center>
+<p style="font-size:10px;line-height:70%;">
+<br></p>
+
+<center><div id="aaa"><img src="https://i.imgur.com/93DE8B0.png"/><br>
+<a href="http://middlepot.com/milky-woods"><img src="https://i.imgur.com/43guVp5.png"/></a><br>
+<a href="http://middlepot.com/not-bad"><img src="https://i.imgur.com/OlFt7cw.png"/></a><br>
+<a href="http://middlepot.com/puporipot"><img src="https://i.imgur.com/m7ehqeT.png"/></a><br>
+<a href="http://middlepot.com/crwel-friends"><img src="https://i.imgur.com/czEnR0y.png"/></a><br>
+<a href="http://middlepot.com/fairy-loli"><img src="https://i.imgur.com/aJzy5nD.png"/></a><br>
+<a href="http://middlepot.com/potetomid"><img src="https://i.imgur.com/yE0iyO0.png"/></a><br>
+<a href="http://middlepot.com/soft-collection"><img src="https://i.imgur.com/k4KPMRn.png"/></a><br>
+<a href="http://middlepot.com/moep"><img src="https://i.imgur.com/MkgULzx.png"/></a><br>
+<img src="https://i.imgur.com/op6oXma.png"/></div></center>
+
+<p style="font-size:10px;line-height:70%;">
+<br><br></p>
+<center>
+　　<a href="https://www.elo7.com.br/shybunny" target="_blank"><img src="https://i.imgur.com/gtevTSn.gif"/></a></center>
+
+</div>
+
+<div id="menu2">
+
+<img src="https://i.imgur.com/PTzpVdh.png"/><a href="http://middlepot.com/status"><img src="https://i.imgur.com/gtWd2tI.png"/></a><a href="http://middlepot.com/look-book"><img src="https://i.imgur.com/21R6rOA.png"/></a><a href="http://middlepot.com/portfolio"><img src="https://i.imgur.com/5UlJkeC.png"/><a href=""></a><a href="http://middlepot.com/help"><img src="https://i.imgur.com/f6GSYqr.png"/></a><a href="http://middlepot.com/gaming"><img src="https://i.imgur.com/5dSoAlZ.png"/></a><a href="http://middlepot.com/cemetery"><img src="https://i.imgur.com/FctiXzO.png"/></a><a href="http://middlepot.com/recommended"><img src="https://i.imgur.com/myWm2B5.png"/></a><img src="https://i.imgur.com/W6coopC.png"/>
+
+
+</div>
+
+<div id="stuff">
+
+<div style="position:absolute; left:20%; right:20%; line-height: 12px;">
+<br><br>
+<center><img src="https://i.imgur.com/Undv34W.gif"/>
+<br><br>
+<font color="#d8b2a6">♡ </font><font color="#91816b">faq </font><font color="#d8b2a6">♡</font>
+<br><br>
+<font color="#bfa8a8">subjects answered in q&a posts :</font>
+</center>
+<br><br><br>
+
+<a href="#tumblr"><font color="#d8b6b6">info about my tumblr</font></a><font color="#aa8f8f"> | </font><a href="#rules"><font color="#d8b6b6">chat rules</font></a><font color="#aa8f8f"> | </font><a href="#dx"><font color="#d8b6b6">about self dx</font></a><font color="#aa8f8f"> | </font><a href="#agere"><font color="#d8b6b6">about agere &
+ communities</font></a><font color="#aa8f8f"> | </font><a href="#words"><font color="#d8b6b6">about controversial words</font></a><font color="#aa8f8f"> | </font><a href="#internet"><font color="#d8b6b6">my internet past</font></a><font color="#aa8f8f"> | </font><a href="#pics"><font color="#d8b6b6">about disliking pics</font></a><font color="#aa8f8f"> | </font><a href="#cc"><font color="#d8b6b6">ccs, ids & kins</font></a><font color="#aa8f8f"> | </font><a href="#gxb"><font color="#d8b6b6">about girls x boys</font></a><font color="#aa8f8f"> | </font><a href="#ywot"><font color="#d8b6b6">ywot advice</font></a><font color="#aa8f8f"> | </font><a href="#astro"><font color="#d8b6b6">about astrology & similar</font></a><font color="#aa8f8f"> | </font><a href="#beauty"><font color="#d8b6b6">some beauty talk</font></a><font color="#aa8f8f"> | </font><a href="#fashion"><font color="#d8b6b6">some fashion talk</font></a>
+<br>
+<br><br>
+<font color="#d1b9b1"><font size="2">※</font> there will be updates and new topics from time to time</font>
+<br><br><br><br>
+<br>
+
+<a name="tumblr" id="tumblr"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　what is my "about" on tumblr ?</font><br><br><br>
+<font color="#d8b9af">　( august . 31 . 2017 + january . 04 . 2018 )</font>
+<br><br>
+<font color="#B1A69E">
+it's very common to see specifications of what kind of aesthetics and content you post and what kind of people you accept interaction with. some of you are curious about my specifications and ask in my tumblr, which is related to my main facebook page too, since the aesthetics are similar.<br>
+so here i am to clarify some things about the aesthetics that i post on my main tumblr, and what kind of blogs i usually follow and interact :<br>
+<br>
+♡　i usually reblog babycore, angelcore, teddycore, webcore, lovecore, cleancore + all kind of nostalgia & vintage stuff ( anything that is comfy and cute for me, because i make my blog a safe space ). i don't tag aesthetics, but everything is really organized and matching so i think tagging is unnecessary.<br>
+<br>
+♡　my tumblr is not a kin blog nor an age regression blog and i am not part of any community, but i interact with age regression blogs from sfw communities. i don't usually interact or accept interactions with kink blogs, because these people can be dangerous.<br>
+<br>
+♡　sometimes, i follow trauma blogs. they have negative content from time to time and even nsfw content, but i don't usually interact with that kind of content, just the posts i consider related to what i'm feeling at the moment. trauma blogs sometimes make me feel comfortable and helps me deal with bad memories.<br>
+<br>
+♡　i interact and follow blogs with nudity, usually renaissance paintings, which i love so much ! i don't interact with porn blogs, and i usually block the ones i consider wrong.<br>
+<br>
+♡　i consider my blog really sfw, unless you consider renaissance paintings and some small bruises nsfw. in this case, i'm really really sorry, but i don't use tags, because it would be so stressful and time-consuming for me. so please be careful about body image, gifs, bruises, religious images, medicine, bugs, dolls and other triggers. everything i've quoted is posted cautiously and infrequently + my blog is drama-free !<br>
+<br>
+♡　i can't do personal posts because it would be extremely uncomfy for me, i just post personal stuff here on my website !!<br>
+<br>
+♡　i'm sorry, but i really can't reblog promos or do ask / tag games ( i just don't want my blog to be very personal, sorry /// you all are so lovely ; ; ) but it really warms my heart when people tag me in all kind of cute stuff, please feel free to send me everything you think i would like.<br>
+<br>
+♡　i can't pay attention to every single interaction, but i try my best to make sure i never reblog from bad people. if i interact with someone who is really toxic please tell me quickly, this is very important to me.<br>
+<br>
+♡　you are free to unfollow me, softblock to break mutuals or just hardblock me ! i just want you to be comfortable.<br>
+<br>
+♡　i always always read links and i interact with most personal posts i see, sometimes i can't because i'm too shy, i'm sorry ; ;<br>
+<br>
+♡　i absolutely love all my mutuals !!!!<br>
+<br>
+<br>
+i think this is enough to clarify your doubts !
+<br><br><br><br><br><br>
+</font>
+
+<a name="rules" id="rules"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　what are the rules for using the chats ?</font><br><br><br>
+<font color="#d8b9af">　( august . 18 . 2017 )</font>
+<br><br>
+<font color="#B1A69E">
+i have two chats currently on this site, which are hosted by cbox. i have some rules of use for them :<br>
+・ i use a tiny image as avatar for quick identification. you shouldn't use an avatar, because it would be confusing for everyone. if you want to link images please post in imgur.com and put the link properly, according to the "help" ;<br>
+・ it is preferable not to use personal links because you may be blocked by spam. in fact, avoid anything that can be identified as spam, be as clean as possible ;<br>
+・ please use clear language and do not speak in languages ​​other than english for a long conversation. i will answer, but predictably use english ;<br>
+・ you can ask questions about what you want, and i will select every week an interesting and complex topic to answer in a q&a, because i like to discuss interesting subjects with you, and mainly clarify any doubts ;<br>
+・ i'll block who pretend to be someone else ( i can see your ip ), who post nsfw content without warning and who say extremely rude and uncomfortable things ;<br>
+・ this chat doesn't have the capacity to receive messages in large quantity, which is good, because i like to read everything and respond appropriately. if your message is not sent, you can try again at another time or send me an email ( letters@middlepot.com )<br>
+・ i disable the chat normally because i feel anxious to leave it open when i'm not observing, so if you receive a "closed chat" message, that's why, just try later ! thank you for the patience ♡<br>
+<br><br><br><br><br><br>
+</font>
+
+<a name="dx" id="dx"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　do i support self dx ?</font><br><br><br>
+<font color="#d8b9af">　( september . 15 . 2017 )</font>
+<br><br>
+<font color="#B1A69E">
+self diagnosis, deductions based on internet searches are safe ?<br>
+i am not against this kind of research, for it's necessary that we know ourselves to seek appropriate help. it is not safe to be silent about our problems.<br>
+consulting a professional without being aware of what we feel may result in an uncertain diagnosis. professional help will only be complete with our help, too !<br>
+but, it is very important to know that it's completely unsafe to get conclusions about our health without consulting professional help, especially at the time of medication. self medication is something extremely dangerous that can make our problems worse.<br>
+<br>
+talking about our mental health can be a good thing when it comes to interacting with people because they can hurt us unintentionally. we need to talk about it with people we interact with.<br>
+on the internet it has become common for people to make dx lists, to try to stay safe.<br>
+there is a serious controversy about this as lots of people use self dx to have the freedom to treat people rudely.<br>
+mental illnesses are not justification for doing evil. mental illnesses that affect the personality and make a person have bad attitudes are very serious and should be treated, you know ?<br>
+people who use the name of illness to feel more special than others are extremely disrespectful, you should be careful when writing this kind of thing as a way of protection.<br>
+<br>
+personally, i think dx lists can be dangerous because people are bad and can use it against you.<br>people may think that you are pretending, or try to affect your weaknesses. i think this type of exposure requires caution.<br>
+<br>
+about me, i can't say i am not neurotypical, because i never had a dx, and i'd rather not do a self dx...
+i am searching for it, because i think it's important.<br>
+this is what i can say for now :<br>
+<br>
+ഒ　i am very very sensitive. i don't trust people easily and i don't have many friends, i never had. but i do have some people that i know i can trust, and they make me happy and safe around them. this makes me happy because i consider myself pretty much an introvert.<br>
+<br>
+ഒ　i do have problems with socializing, and i feel very anxious and i can't breath properly when i'm around lots of unknown people, specially if they are looking at me and if i'm alone. i feel better when i have someone i can really trust with me, but i usually don't put myself in unconfortable situations.<br>
+<br>
+ഒ　i had some bad experiences at home, i never had a good relationship with my father, he's not a good person. but my mom always made me feel better, she's a good person and i love her.<br>
+<br>
+ഒ　about some bad experiences i do not have clear memories. sometimes in bad situations, i lost consciousness. from time to time i have bad dreams about uncomfortable experiences. even though they happened many years ago, they always seem to be in my memory, and i hate it.<br>
+<br>
+i deal with these problems avoiding situations that make me uncomfortable.<br>
+since i work and study at home and i have no contact with my father, i don't have much problems anymore.<br>
+still, the fear is sometimes very strong because i feel i can by accident find him out there, or that people can force me to stay in uncomfortable situations, just by myself.<br>
+i try to take care of myself the best i can. i hope to get a dx soon, because i feel it can help me to cope.
+<br><br><br><br><br><br>
+</font>
+
+<a name="agere" id="agere"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　do i age regress ?</font><br><br><br>
+<font color="#d8b9af">　( september . 27 . 2017 )</font>
+<br><br>
+<font color="#B1A69E">
+age play, ddlg / cgl, there is a fine line between pedophilia and those kinks. how to identify dangerous situations, dangerous people, what's the limit ?<br>
+i think the sex life between two adults, responsible for themselves, with consent, is something that allows things like kinks or lifestyles such as bdsm. any sub/dom relationship, have no relation whatsoever to incest or pedophilia. is something consented between two adults. anyway, it's a kink. in my opinion, kinks should in no way be publicly exposed, on the streets or on the internet, where children can see and be influenced. children can't have contact with these kind of things because it wouldn't be healthy.<br>
+this unfortunately is something that has happened very often, and even worse, added to age play : ddlg / cgl has reached many minors and many adult pedophiles have had contact with these children through kink communities.<br>
+these communities have become increasingly dangerous for minors, through the romanticization of pedophilia, child abuse and contact with kinks linked to childhood. even people who claim to be in a sfw ddlg / cgl community are not safe and are exposed to dangerous people as they use kink tags.<br>
+communities of age regression that work hard to be a truly safe environment for people who don't use the agere as something sexual, are  anti ddlg. many people have gone against this kink, because of exposure to minors. it has become something horrible and manipulative.<br>
+<br>
+i agree that it is really very dangerous to associate childhood with sexuality, even if those involved are adults, and i firmly believe that kinks shouldn't be publicly exposed for children to see. neither of them.<br>
+the only way to keep a kink safe and not harmful to anyone is without public exposure.<br>
+<br>
+　do i age regress ? am i part of a community ? am i in a relationship with a "caregiver" ?<br>
+<br>
+　❣ well, i don't think i really age regress, but i like doing some activities like coloring and making pillowforts... because it's just fun ♡<br>
+　❣ as i don't age regress, i am not part of any community. but i really like kidcore and age regression blogs, because they always make me feel so comfortable !<br>
+　❣ and, my bf, who i always call bubu ( boo boo, in case you don't know how to pronounce ) is not my caregiver, not in the agere way at least. but he takes good care of me, since i'm very sensitive and i get anxious about complicated "adult stuff", he always helps me a lot, he always makes me feel safe and i love him so much !!! ♡<br>
+<br>
+<br>
+before i finish here, i'd like to say something quick about melanie martinez. everyone knows that there is a direct connection with her and the children's exposure to the famous "daddy kink".<br>
+first of all, i would like to say that i particularly really like her instrumentals. but, i think her videos and lyrics a bit... dangerous. some of them are ok, but her most famous songs deal with trauma issues in a not very respectful way, and that really bothers me. i feel uncomfortable about it.<br>
+i don't know if she's personally into a kink, and i've never seen her directly exposing kinks to children, so i'm not "against her".<br>
+however, i know she's friend of <a title="
+[ yungelita
+ ]" id="linkbjinho">a person</a> who is completely disrespectful to children, who sexualises child abuse, necrophilia, suicide and many other things. i have nothing against melanie in particular, at least for today, but i think she shouldn't have contact with such toxic people.<br>
+<br>
+<br>
+i hope i have made things clear, since this subject is so controversial, it's difficult to write about it<br>
+if i said something wrong, please let me know !
+<br><br><br><br><br><br>
+</font>
+
+<a name="words" id="words"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　why do i use the word "loli" ?</font><br><br><br>
+<font color="#d8b9af">　( august . 24 . 2017 )</font>
+<br><br>
+<font color="#B1A69E">
+i feel it's very important to talk about the meanings of that word, and also of "nymph". it has become a taboo to use these words, and since ever, the lolita (ロリータ) fashion has been bothered by the other meanings of that word.<br>
+recently, things like "nymphet aesthetic" are popping up. where do these words come from ?<br>
+are these things connected ?<br>
+<br>
+so, beginning with loli, which is the abbreviation for lolita :<br>
+it is impossible to know where the word lolita really came from. well before Nabokov, even Lewis Carrol already used that word.<br>
+some people say it's just a nickname for lola, and that's it. it's a name, indeed.<br>
+but not just a name, it has become a word full of meanings.<br>
+i was able to gather 3 main meanings for this word, which can clarify some things for you all :<br>
+<br>
+　Ⅰ.　loli/ta : a cute little girl, pure and innocent. this meaning has absolutely no sexual connotation. it's the meaning i use to describe adorable little girls. it's very probably the meaning that was the basis for lolita (ロリータ) fashion, although it is not intended for little girls, the silhouette is based on the clothes of little girls of the Victorian and Rococo eras, especially in some sub-styles, like the sweet loli.<br>
+　Ⅱ.　loli/ta : a girl who looks younger than she really is, like a little girl, in appearance, or personality. this meaning was sometimes used in age regression and gave rise to a type of fashion related to age regression. however, despite being an adjective without sexual connotation, it is often used sexually in the pornographic industry and among kinksters. because of this, became a dangerous term and stopped being used in safe communities.<br>
+related to this meaning, there is also :<br>
+　　　　　lolicon / lolita complex : a person who is attracted to girls who look like little girls. obviously this is very questionable, but not necessarily linked to pedophilia. not yet.<br>
+　Ⅲ.　loli/ta : a little girl, prepubescent or adolescent girl who is attractive and sexually responsive, sexually precocious. now, that meaning, is what really makes it all so dark. and related :<br>
+　　　　　lolicon / lolita complex : a person who is attracted to little girls. basically, a pedophile.<br>
+<br>
+<b>important :</b> i don't know the origins of the word "shota", but it's the equivalent for boys, in all cases above.<br>
+<br><br>
+now, the word nymph, which is the abbreviation for nymphet :<br>
+<br>
+　Ⅰ.　nymph/et : mythological creatures, close to the fairies. conceived of as beautiful maidens inhabiting the sea, rivers, woods, trees, mountains, meadows, and frequently mentioned as attending a superior deity. this meaning has no sexual connotation.<br>
+　Ⅱ.　nymph/et : a beautiful or graceful young woman, a maiden, or a marriageable young woman.<br>
+　Ⅲ.　nymph/et : an attractive and sexually mature young girl. due to the depiction of the mythological nymphs as females who mate with men or women freely and without care, the term is often related to women who are perceived as behaving similarly. related, there's the term nymphomania that was created by modern psychology as referring to a "desire to engage in human sexual behavior at a level high enough to be considered clinically significant", nymphomaniac being the person suffering from such a disorder. in this case, the term "faunlet" is the equivalent for boys.<br>
+<br><br>
+so, as you can see, those words can be used without sexual connotation, but because of the other meanings, they become rather dangerous words. it is not safe to use them as tags for example, as they may attract bad people. you must be careful when using these terms, but it is possible, and it is not wrong. please, be careful !
+<br><br><br><br><br><br>
+</font>
+
+<a name="internet" id="internet"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　how was my past on the internet ?</font><br><br><br>
+<font color="#d8b9af">　( october . 21 . 2017 )</font>
+<br><br>
+<font color="#B1A69E">
+what did i do on the internet before starting the projects and this website ?<br>
+some of you have known me for quite some time because i played many online games, especially dress up games and ragnarok. i'm not going to get into this because i already have the gaming session, where you can check it out !<br>
+i started with the internet very early, i was only 7 years old ( 2004 ). my mom always saw everything i did, so it was safe, don't worry LOL<br>
+i used to play flash games, and i had msn, and a blog. everyone had blogs or personal websites on the internet, where they customized and posted all sorts of things. i was a kid so i was not good with those things, but i liked to post gifs with cute animals, lots of glitter and beautiful images that i found on other blogs and google.<br>
+i didn't have social media at the time because i was very young and my mom wouldn't let me. i enjoyed visiting lots of websites with graphics and materials, beautiful blogs, and playing online games. my first online game was ragnarok, and my second, club penguin, if you wanna know.<br>
+i only used the internet for 2 hours a day in the morning and i used this time to decorate my blog and play with my friends. it was so much fun and i have great memories of that time !<br>
+i could have a social media ( orkut ) with 9 y/o, and i continued just posting cute graphics with lots of glitter, because it's just so adorable !<br>
+i also knew several forums at that time, and began to communicate with people all over the world. my english was obviously horrible, but i used the google translator to help me. i never posted any real information or photo because i was taught that this is dangerous.<br>
+i did several blogs, which were improving the quality of content and the layouts were becoming cuter. in 2006, i did the <a id="linkbjinho" data-target="spoiler1" class="btn-spoiler">first layout</a> that i really was very proud of !<br>
+<center>
+
+<div id="spoiler1" class="spoiler-area is-closed">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<img width="300" height="auto" src="https://i.imgur.com/U1R9cm5.png"/>
+<br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area {
+
+}
+.spoiler-area.is-closed { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "first layout" ){
+                this.innerHTML = "first layout ˣ";
+                $spoiler.classList.remove("is-closed");
+            } else {
+                this.innerHTML = "first layout";
+                $spoiler.classList.add("is-closed");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+
+</center>
+<br>
+over time, the internet has been changing ... the blogs became unpopular, forums too, msn died, orkut died ... very sad, right ? ;-;<br>
+i then looked for substitutes for the things i liked : i tried using facebook to replace orkut, but no one else cared about the glittery cute things and i was disappointed.<br>
+i started using tumblr, which was well customizable and could fill the void that blogs left behind. it worked, even if it took a long time to find an aesthetic that would make me really happy, so i did several blogs until i got to my recent one ( it was during this time that i created the name middlepot ).<br>
+my recent one, was done together with a friend of mine, who also made with me the not bad fb page, which should have the same aesthetics. but she and i had very different opinions of what we wanted to do and she'd post things that i didn't like, both on the tumblr and on the page ... it became a mess, and we ended up giving up doing it together. i'd like to talk more about it in another post, because it's a tricky subject ; ;<br>
+anyway, i deleted her posts from tumblr and facebook, and then i got to what it is today : a safe and comfy place !<br>
+the fb pages have similar content, which i get on tumblr. in this way, fb pages are extensions of my main tumblr, a way to bring content to people who don't know it.<br>
+fb itself, i did not like to use as a social media. i also tried using instagram, but bad things happened and i gave up on it too. i'm used to the more open and customizable format the old internet had, so the tumblr was the place where i most adapted.<br>
+to replace the forums, i found other places on the internet where i could communicate with various types of people, where i always remain anonymous as usual.<br>
+to replace msn, which was the platform i always used to talk to my family and close friends, i decided to use line. line in my opinion resembles quite a lot of things, besides having super cute stickers and themes !!<br>
+<br>
+but in spite of having tumblr ( and fb pages ), other nice places on the internet & the cute line... i was still missing something, my little corner on internet, to be able to make layouts exactly as i imaginate & post every kind of things i want : a personal website !!<br>
+so i did it, and here i am ♡ . * ･ ｡<br>
+the 7 y/o me would be really proud of everything i'm doing right now. this website is really my favorite place on internet !<br>
+it's all i wanted, here i can put together all the projects i do and all the content i like.<br>
+<br>
+<br>
+i hope this answers a few things about how i got here ! <br>
+and i wrote a lot, i hope it's not tiring to read ; ;
+<br><br><br><br><br><br>
+</font>
+
+<a name="pics" id="pics"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　why can't i post lots of selfies ?</font><br><br><br>
+<font color="#d8b9af">　( september . 08 . 2017 )</font>
+<br><br>
+<font color="#B1A69E">
+if you've been with me for some time on the internet, you must have realized that i rarely post selfies and even more rarely take pictures with other people.<br>
+people who know me in person know the reasons, but i'd like to say here today because i think it might be interesting for some people who feel the same way !<br>
+<br>
+i don't like taking pictures, and i would not say insecurity it's my case, since i do not usually have problems with my appearance, i actually like it most of the time.<br>
+it's kind of irrational, to be honest. i really don't like taking photos. i feel extremely uncomfortable with cameras, even with people looking at me, but with cameras it's especially uncomfortable, in a way that i can't explain ; ;<br>
+when other people have a camera, i feel really bad and refuse to take pictures. people don't always respect that and keep insisting, but i flee from the situation whenever i can.<br>
+the only person i don't feel so uncomfortable taking pictures of me is my mom, even because she always asks if she can, and doesn't show the pictures around without my permission.<br>
+it doesn't mean that i don't like being with people, that i don't have friends, that i don't leave home, or anything like that. i just don't like taking pictures, and i wish people would respect that !!<br>
+<br>
+when i'm taking a picture myself, i don't feel so bad, and sometimes i feel in the mood. it's rare, but it happens. usually these moments happen the night before bed, or after waking up. i don't know why, i think i just feel comfy in my pajamas at home, and i pick up my phone at the moment ...<br>
+yes, that's why i take pictures on pajamas.<br>
+i actually have 2 or 3 of each pajama, and since idk, 2015, i took some pictures using the same ones LOL<br>
+i'm always posting the pictures in different dates but some of them was taked on the same day. anyway, it was like, 5 different days of pictures i took with the SAME PAJAMAS<br>
+it was not on purpose, of course. actually i have lots of pajamas, because i love pajamas. i change pajamas almost everyday... the thing is, i usualy have 2 or 3 of each because my mom is a semstress and buy fabric in big amont, and it's cute fabric, so i like to have identical pajamas because who cares ? i'm at home, i can use my favorites for longer this way, you know ? that's why my pajamas stay good even before years.<br>
+<br>
+i feel a little childish about these things, like, i don't prepare myself to take pictures and i have identical pajamas and i took lots of pictures with the same ones and don't even notice ;///;<br>
+i hope it's not so weird, i have a theory : i think i take pictures with the same pajamas because i feel i look better with these, and when i'm with other ones i don't feel so ok to take pictures. it makes sense for me because i really like these, they are some of my favorites. unconsciously i feel super comfy with these and, take pictures.<br>
+i think that's okay, it's hard for me to feel comfortable with cameras, if i was thinking so much about my clothes, hairstyle, makeup and everything, i would be so nervous ; ;<br>
+<br>
+hmnfg, maybe it's a little annoying to see similar photos all the time, and if it's really annoying, you can tell me !<br>
+because about hairstyle, makeup, angles.. i'm not changing things. i don't work with my appearance or anything... i don't see why i would change my way to take pictures, you know ? it's just a little little thing for me, i don't take this serious, so please don't take this serious too. that's why i don't post selfies on the blog, or on social media, i would be really annoying to see the same face with same everything all the time, right ? i'm just still doing it because sooometimes i feel in the mood. i like to wear different clothes, to do hairstyles, using accessories, i'm indeed not really a fan of makeup, but none of that makes me want to take selfies, anyway. i do not like to show my face in photos, i feel shy, even when i feel cute.<br>
+i want to take some pictures of my looks, clothes that i wear, but selfies, still rarely. i just don't feel like it.
+so i'm still going to take selfies with pajamas, and sometimes the same ones, yep, the same hair too, and no makeup, because at least for now i feel good this way ! it's my way of feeling comfortable enough to take pictures from time to time ; ;<br>
+<br>
+i hope you understand !!
+<br><br><br><br><br><br>
+</font>
+
+<a name="cc" id="cc"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　do i have ids ?</font><br><br><br>
+<font color="#d8b9af">　( november . 23 . 2017 + february . 15 . 2018 )</font>
+<br><br>
+<font color="#B1A69E">
+although i quite like kins and ids, i am sincerely afraid to get involved in dramas since the community is often toxic, so i don't usually expose this kind of thing. but since you were interested to know, i'll show you some of my lovely comfort characters !<br>
+<br>
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler1c" class="btn-spoiler1c">marron cream</a><br>
+
+<div id="spoiler1c" class="spoiler-area1c is-closed1c">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img src="https://i.imgur.com/3IKULgH.jpg"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area1c {
+
+}
+.spoiler-area1c.is-closed1c { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler1c');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "marron cream" ){
+                this.innerHTML = "marron cream ˣ";
+                $spoiler.classList.remove("is-closed1c");
+            } else {
+                this.innerHTML = "marron cream";
+                $spoiler.classList.add("is-closed1c");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler2c" class="btn-spoiler2c">bubbles</a><br>
+
+<div id="spoiler2c" class="spoiler-area2c is-closed2c">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img src="https://i.imgur.com/UCJ0Bg4.gif"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area2c {
+
+}
+.spoiler-area2c.is-closed2c { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler2c');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "bubbles" ){
+                this.innerHTML = "bubbles ˣ";
+                $spoiler.classList.remove("is-closed2c");
+            } else {
+                this.innerHTML = "bubbles";
+                $spoiler.classList.add("is-closed2c");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler3c" class="btn-spoiler3c">chii</a><br>
+
+<div id="spoiler3c" class="spoiler-area3c is-closed3c">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img src="https://i.imgur.com/nqgkGPm.jpg"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area3c {
+
+}
+.spoiler-area3c.is-closed3c { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler3c');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "chii" ){
+                this.innerHTML = "chii ˣ";
+                $spoiler.classList.remove("is-closed3c");
+            } else {
+                this.innerHTML = "chii";
+                $spoiler.classList.add("is-closed3c");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler4c" class="btn-spoiler4c">ayu</a><br>
+
+<div id="spoiler4c" class="spoiler-area4c is-closed4c">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img width="300" height="auto" src="https://i.imgur.com/WQwHWMx.gif"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area4c {
+
+}
+.spoiler-area4c.is-closed4c { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler4c');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "ayu" ){
+                this.innerHTML = "ayu ˣ";
+                $spoiler.classList.remove("is-closed4c");
+            } else {
+                this.innerHTML = "ayu";
+                $spoiler.classList.add("is-closed4c");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler5c" class="btn-spoiler5c">fluttershy</a><br>
+
+<div id="spoiler5c" class="spoiler-area5c is-closed5c">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img width="250" height="auto" src="https://i.imgur.com/TY4TxXZ.png"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area5c {
+
+}
+.spoiler-area5c.is-closed5c { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler5c');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "fluttershy" ){
+                this.innerHTML = "fluttershy ˣ";
+                $spoiler.classList.remove("is-closed5c");
+            } else {
+                this.innerHTML = "fluttershy";
+                $spoiler.classList.add("is-closed5c");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler6c" class="btn-spoiler6c">hanyuu</a><br>
+
+<div id="spoiler6c" class="spoiler-area6c is-closed6c">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img width="300" height="auto" src="https://i.imgur.com/ApXVNCV.gif"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area6c {
+
+}
+.spoiler-area6c.is-closed6c { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler6c');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "hanyuu" ){
+                this.innerHTML = "hanyuu ˣ";
+                $spoiler.classList.remove("is-closed6c");
+            } else {
+                this.innerHTML = "hanyuu";
+                $spoiler.classList.add("is-closed6c");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler7c" class="btn-spoiler7c">ribbonsanka</a><br>
+
+<div id="spoiler7c" class="spoiler-area7c is-closed7c">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img width="250" height="auto" src="https://i.imgur.com/e4KFcdi.png"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area7c {
+
+}
+.spoiler-area7c.is-closed7c { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler7c');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "ribbonsanka" ){
+                this.innerHTML = "ribbonsanka ˣ";
+                $spoiler.classList.remove("is-closed7c");
+            } else {
+                this.innerHTML = "ribbonsanka";
+                $spoiler.classList.add("is-closed7c");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler8c" class="btn-spoiler8c">solace</a><br>
+
+<div id="spoiler8c" class="spoiler-area8c is-closed8c">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img src="https://i.imgur.com/hwXCOT2.gif"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area8c {
+
+}
+.spoiler-area8c.is-closed8c { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler8c');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "solace" ){
+                this.innerHTML = "solace ˣ";
+                $spoiler.classList.remove("is-closed8c");
+            } else {
+                this.innerHTML = "solace";
+                $spoiler.classList.add("is-closed8c");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+<br>
+　　　　　( there's more, you can ask )<br>
+<br>
+i really don't define them as ids because it's a little complicated to do that, but i can say i identify with them a lot & they are really heartwarming for me !<br>
+that being said, i don't care at all if you like them too.<br>
+actually, i don't feel that doubles ever make people invalid, but i think it's always okay to seek comfort, right ? i just can't agree with people being mean with each other ; ;
+<br><br><br>
+<b>edit //</b> umm, today i'm feeling it's safe to share my main ids with you ! since they are pretty much me, i think it couldn't be a problem :<br>
+<br>
+
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler1id" class="btn-spoiler1id">an angel of a girl</a><br>
+
+<div id="spoiler1id" class="spoiler-area1id is-closed1id">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img src="https://i.imgur.com/CyG4AeH.png"/></center><br><br>
+<center><img src="https://i.imgur.com/6JcKimH.png"/></center><br><br>
+<center><img src="https://i.imgur.com/9CeVRTC.png"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area1id {
+
+}
+.spoiler-area1id.is-closed1id { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler1id');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "an angel of a girl" ){
+                this.innerHTML = "an angel of a girl ˣ";
+                $spoiler.classList.remove("is-closed1id");
+            } else {
+                this.innerHTML = "an angel of a girl";
+                $spoiler.classList.add("is-closed1id");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler2id" class="btn-spoiler2id">kagome</a><br>
+
+<div id="spoiler2id" class="spoiler-area2id is-closed2id">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img src="https://i.imgur.com/YF37K3o.png"/></center><br><br>
+<center><img width="250" height="auto" src="https://i.imgur.com/akXFqmx.png"/></center><br><br>
+<center><img width="250" height="auto" src="https://i.imgur.com/tZPsNdV.png"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area2id {
+
+}
+.spoiler-area2id.is-closed2id { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler2id');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "kagome" ){
+                this.innerHTML = "kagome ˣ";
+                $spoiler.classList.remove("is-closed2id");
+            } else {
+                this.innerHTML = "kagome";
+                $spoiler.classList.add("is-closed2id");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+　　　　　　　　♡ <a id="linkbjinho" data-target="spoiler3id" class="btn-spoiler3id">lime</a><br>
+
+<div id="spoiler3id" class="spoiler-area3id is-closed3id">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<br>
+<center><img width="250" height="auto" src="https://i.imgur.com/TSgqFRc.png"/></center><br><br>
+<center><img width="250" height="auto" src="https://i.imgur.com/iKSNYTH.png"/></center><br><br>
+<center><img width="250" height="auto" src="https://i.imgur.com/1JgOqbt.png"/></center>
+<br><br>
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area3id {
+
+}
+.spoiler-area3id.is-closed3id { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler3id');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "lime" ){
+                this.innerHTML = "lime ˣ";
+                $spoiler.classList.remove("is-closed3id");
+            } else {
+                this.innerHTML = "lime";
+                $spoiler.classList.add("is-closed3id");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+<br>
+i don't mind if you identify with them too ! i don't take it that seriously.<br>
+( please don't call me by their names, because i don't like it ; ; )<br>
+<br><br><br><br><br><br>
+</font>
+
+<a name="gxb" id="gxb"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　why one is not better than the other ?</font><br><br><br>
+<font color="#d8b9af">　( december . 20 . 2017 )</font>
+<br><br>
+<font color="#B1A69E">
+i would like to talk about this subject that has bothered me a lot on the internet because people are saying very rude things about each other just like a chain of hate ; ;<br>
+this makes me very sad, and i feel that it's important spread positivity about it, although it is complicated to write about, i hope you understand my point.<br>
+<br>
+( before starting, i would like to point out that in referring to boys and girls i mean the natural female and male sides of people, such as the sexes ! )<br>
+<br>
+humans are animals, above all else. and animals are born boys or girls, to procreate and fulfill their roles in nature.<br>
+human beings are rational animals, so sometimes we are not satisfied with what we're born from. our heart is pure and knows what is best for us, and we must be happy to make others happy.<br>
+therefore, we can choose our role in nature ( and society, of course )<br>
+but there is something very bad that affects our choices of heart that would make us happy and good : people choose what they are, what they like, their way of living and their roles in society, based on what others think is cool !<br>
+this is an impure thought, for we should not change who we truly are only because "it's cool", we must be pure, be ourselves above all else.<br>
+there is some kind of odious fashion where it says girls should live with the goal of being better than boys, and vice versa.<br>
+and there is also another one that boys have built up today's society alone, and that girls have never helped at all.<br>
+this is a very toxic thought that affects our lives and society, we should not be against each other !!<br>
+<br>
+boys and girls are no better than others, just different. biologically, we have some advantages and disadvantages over the other, but this is natural and there is nothing wrong.<br>
+we are like cake and pudding, there is no better or worse, just personal preference !<br>
+therefore, we can be who we really want, because our heart knows the right way.<br>
+a society works well and happy when everyone is pure, are themselves, and so can fulfill their roles in society, happy and comfortable with their lives !<br>
+the role of all people in society is to do good, to spread love and kindness, to bring education and health to others and to be happy. this can be done by all people when they are living stable and comfortable lives!<br>
+you don't have to have children or form a family for it, if you don't want to, even if nature has made your body for it. what matters is meeting and knowing who you really are. if you feel confused, you are not happy and you do not make others happy.<br>
+if you feel that getting married, having children and caring for the house would make you happy, there is absolutely nothing wrong with that, of course !<br>
+even if your friends tell you that it would make you dependent and unhappy, does not mean it's true. economic independence is not really independence in life.<br>
+people seek a happy society for all through toxic thoughts of superiority. we must work together as a family ! when we are together, the advantages and disadvantages of being a boy or girl does not matter, as they can complement each other in solving problems !<br>
+we all have special abilities and unique talents. it may be difficult to find what we want to be and do in our lives, but it's very important that we do not follow the instincts or opinions of others, but the heart, which is who we certainly are.<br>
+<br>
+<br>
+i'm sorry if i wrote many things repeated, i hope you can understand !<br>
+i hope this has some good feeling for you, because the internet is full of people fighting over being better than the other and this makes me very upset ...<br>
+<br><br><br><br><br><br>
+</font>
+
+<a name="ywot" id="ywot"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　do i have some advice about ywot ?</font><br><br><br>
+<font color="#d8b9af">　( january . 04 . 2018 )</font>
+<br><br>
+<font color="#B1A69E">
+i have just a little note about this site for you, but i think it's important :<br>
+in my little world there is a little free space to talk, but if you already know this site, you know there is a huge amount of people who spam random text and ascii art in any free space you see.<br>
+my space is blocked for pasting, which relieves spam a little bit, but there is still a simple script line that allows you to paste in any free space !<br>
+i really like this site because i've met some really nice people in it, but the point is : there are lots of immature and dumb people who like to spam random offensive stuff or cursing. i don't really care about that, and i can easily erase that sort of thing ( and i always do it when i have the opportunity ) but if you're sensitive to that sort of thing i suggest you be careful ! take care ♡<br>
+<br><br><br><br><br><br>
+</font>
+
+<a name="astro" id="astro"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　why can't i show you my astrology chart ?</font><br><br><br>
+<font color="#d8b9af">　( january . 18 . 2018 )</font>
+<br><br>
+<font color="#B1A69E">
+i am very interested in astrology and any other "pseudoscience", as well as personality tests, i usually read a lot about it.<br>
+but i honestly don't like to talk about that kind of thing, not a little bit. the reason is that most of the time people think they can know everything about others from small information. this is obviously not true and makes me feel very uncomfortable and dissociated seeing people trying to know things about me without knowing me ! it's almost disrespectful, to be honest.<br>
+i will not go into other subjects, i will just talk about astrology here, which is a very good example :<br>
+astrology is something very complex. people have birth charts, there are signs for each planet, alignments, houses, many details to study.<br>
+astrologers study a lot to learn to correctly interpret and evaluate a birth chart, a very relevant example of how a chart can have diverse interpretations is that twins have identical birth charts, but may have completely different personalities.<br>
+each person manifests parts of the chart differently, there is no standard for this. people, even so, make very heavy conclusions about others from just a few details of a person's birth chart. i think this is just so wrong, indeed annoying !<br>
+for this reason, i do not like to talk about astrology or other similar subjects with almost anyone, i will not show you my birth chart here ever and i kindly ask you that please don't share stereotyped information about my solar sign with me, this makes me very sad.<br>
+<br>
+i hope you understand my point !<br>
+i don't judge people who identify 100% with their solar signs and like this kind of stereotyped information, it just is not my case and i think it's bad that people don't respect it ..<br>
+please be kind to others !!<br>
+<br><br><br><br><br><br>
+</font>
+
+<a name="beauty" id="beauty"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　what is beauty ?</font><br><br><br>
+<font color="#d8b9af">　( february . 15 . 2018 )</font>
+<br><br>
+<font color="#B1A69E">
+there's always a beauty competition between different people, races, species and even non-existencial things, and this is honestly so unhealthy !!<br>
+there's even a thing called 2.5D wich is "almost non-real pretty" people. i think the desire of being perfect is normal, but it's also dangerous.<br>
+people who know how to be beautiful in their best capacity, as healthy and captivating human beings, are really the ones who manage to be almost non-real, so you don't have to be artificial for it. if you try to be perfect you will fail because it's not possible. don't push the limits, just be yourself ! be the best version of yourself, the best you can be, always.<br>
+you can't compare yourself with things you'll never be, it's very unhealthy. everything has totally diferent kind of beauties. 2D characters for example are usually made to be pretty besides they usually are not realistic enough to have the details that normal people have, so it's natural that you wanna be like that too. but we are made by nature itself. everything in nature is different and beautiful in its own way, and so are you. we are part of the nature. you don't have to worry about it, at all, because you don't have to be the perfect pretty to be happy.<br>
+i think it's also very important to say that your body don't need to be pretty to keep you healthy and alive, and that's the more important thing ! beauty does not make you a good person, you have to work on it.<br>
+beauty exist in many ways, i know it may sound cliché, but the inner beauty will really make you more and more beautiful to everyone, including to yourself.<br>
+it's okay if you want to look at the mirror and be pleased, we like beautiful things. but it's not that hard. everyone have beauty parts to look at and feel happy. what people say it's pretty, it's not necessarily true for everyone. a good example is fashion, design and aesthetics : everyone have a different taste, even if it's more common to like some kind of clothes and aesthetics, maybe you like some things that are uncommon. it's the same thing, and that's why everything can be beautiful in some way ! you are beautiful in lots of ways, and if you don't believe it, just try to find things that make you happy about yourself and focus on that things !<br>
+there's a special beauty in everyone. you are unique, and the cute features you have are purely luck, that's super special ! also, you can be even prettier if you work on being a better person every day, a perfect version of what it's possible for you to be. for example, there are small things that automatically make us feel more beautiful sometimes ( as fashion and makeup ). the most important thing is to feel comfortable and keep healthy. be proud of your race, your species and your existence. be proud of being you !<br>
+<br>
+please, think about it, because we usually forget some important points that would make us truly happier !!<br>
+be kind to yourself ♡<br>
+<br><br><br><br><br><br>
+</font>
+
+<a name="fashion" id="fashion"></a>
+<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　how do i dress usually ?</font><br><br><br>
+<font color="#d8b9af">　( march . 15 . 2018 )</font>
+<br><br>
+<font color="#B1A69E">
+since i was free to choose my clothes, i always tried to wear something otome kei, because it was my favorite accessible style, but at the end of the day i was just wearing oversized shirts and sweaters with skirts / shorts and high socks ;///;<br>
+( + bell choker + tiny bows at my hair )<br>
+pretty much boring, but i wasn't very good with fashion until my 16 at least. i did a lot of research to find a style that really fits me !<br>
+<br>
+at the moment, i take inspirations from :<br>
+<br>
+✄ <b>larme kei</b> ( lots of handmade clothes, but i love rose marie seoir and axes femme )<br>
+✄ <b>mori girl</b> ( on fall and winter i do wear it a loooooot, so cozy and comfy, lots of handmade clothes too )<br>
+✄ <b>cult party</b> ( i have a few coords that I LOVE but i don't wear it a lot, the fabric is just so delicate ; ; )<br>
+✄ <b>lolita</b> ( i don't have any coord yet so it's basically à la mode. my dream is to wear classical-sweet, it's hard to wear on non-special occasions, but i think i can adapt to casual. i'm studying this style for YEARS i love it )<br>
+✄ <b>himekaji</b> ( basicaly because of liz lisa, cliché, i know )<br>
+<br>
+✁ & in everyday situations i'm inspired by that soft and clean aesthetic clothes ( not very creative but it's cute ) ✃<br>
+<br>
+so, i know lolita since i was 13 and i study lolita since i was 16. but why i don't use it YET ?<br>
+i sincerely think that at this point i know how to coordinate, i don't think lolita is too hard, it just have many rules and you need a lot of study, help and research. as i said, i have been studying for many years, so i think i'm okay with lolita to make a good first outfit now.<br>
+um, i don't have many items that i can use with lolita right now, and i also know that i don't need lots of money to buy good lolita clothes. i have no problem with handmade and non-brand outfits, because i know it's very possible to have a super cute and high quality lolita outfit, full handmade. as you may know, i love handmade outfits and most of my clothes are handmade.<br>
+but about lolita, specificly .. i know it's dumb, but i have a big wish :<br>
+i need a full angelic pretty outfit.<br>
+and that's not because i'm insecure about non-brand clothes, i just love angelic pretty too much and i need my first outfit to be super special for me. i don't care if it's expensive or anything, i just think it would be perfect to have a classical-sweet outfit, super high quality and from my favorite brand.<br>
+because it's expensive, i'm waiting for money. it can be silly, but it's really really special to me to have my first outfit from angelic pretty.<br>
+also, i really want outfits from innocent world and baby, i really love those brands and i will feel complete when i start with lolita supporting them.<br>
+after that, i'll probably coordinate brand clothes with handmade clothes, i think i can do that, and i think it will be magical ! i can't wait ...<br>
+<br><br><br><br>
+</font>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+<!--
+
+　　　          ___   .--.
+　　　    .--.-"   "-' .- |
+　　　   / .-,`          .'   
+　　　   \   `           \ 　　　　　　。・゜ 　♡   。　　・　゜ 　　　♡  
+　　　    '.            ・ \　　　　　　　　　　　　　　　　　　　　　　　　♡　　　　♡ ゜・。。♡  
+　　　      |  ・     ᴥ    。|　　　　・゜♡ ゜・。　　. * ・ ♡ °  . 。
+　　　      \ 。            /.____　　　　　　　　　　　　　　　　　　♡.  
+　　　     /`-.          ,'.'    `\　　　　　　　　　　　　　　　　　　。・゜　　　 ♡ ・ 。　　。・゜ ♡  
+　　　  __/   \`-.____.-' `\      /　　　　　♡　。・゜      
+　　　  | `---`'-'._/-`     \----'    _ 　　　　　　　　　　　♡　　　.　　　.♡ 
+　　　  |,-'`  /             |    _.-' `\　　　　. * ・        
+　　　 .'     /              |--'`     / |　　　　　　　　　　 ♡
+　　　/      /\              `         | |
+　　　|   .\/  \      .--. __          \ |　　　　　　　　　　　*.。middlepot.com 
+　　　 '-'      '._       /  `\         /　　　　　　　　　　　　　　　　　　　　　　　ଘ(*´ ˘ `*)ഒ 。.*
+　　　             `\    '     |------'`
+　　　               \  |      |
+　　　                \        /
+ 　　　                '._  _.'
+
+-->
+
+</html>

@@ -1,0 +1,1389 @@
+<html>
+<head>
+
+<!--
+
+　　　          ___   .--.
+　　　    .--.-"   "-' .- |
+　　　   / .-,`          .'   
+　　　   \   `           \ 　　　　　　。・゜ 　♡   。　　・　゜ 　　　♡  
+　　　    '.            ・ \　　　　　　　　　　　　　　　　　　　　　　　　♡　　　　♡ ゜・。。♡  
+　　　      |  ・     ᴥ    。|　　　　・゜♡ ゜・。　　. * ・ ♡ °  . 。
+　　　      \ 。            /.____　　　　　　　　　　　　　　　　　　♡.  
+　　　     /`-.          ,'.'    `\　　　　　　　　　　　　　　　　　　。・゜　　　 ♡ ・ 。　　。・゜ ♡  
+　　　  __/   \`-.____.-' `\      /　　　　　♡　。・゜      
+　　　  | `---`'-'._/-`     \----'    _ 　　　　　　　　　　　♡　　　.　　　.♡ 
+　　　  |,-'`  /             |    _.-' `\　　　　. * ・        
+　　　 .'     /              |--'`     / |　　　　　　　　　　 ♡
+　　　/      /\              `         | |
+　　　|   .\/  \      .--. __          \ |　　　　　　　　　　　*.。middlepot.com 
+　　　 '-'      '._       /  `\         /　　　　　　　　　　　　　　　　　　　　　　　ଘ(*´ ˘ `*)ഒ 。.*
+　　　             `\    '     |------'`
+　　　               \  |      |
+　　　                \        /
+ 　　　                '._  _.'
+
+-->
+
+<title>middlepot ഒ</title>
+
+<link rel="shortcut icon" href="http://i.imgur.com/C7cSCvF.gif">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style>
+body{ 
+  cursor: url(http://i.imgur.com/xrySzI4.png), progress;}
+a:hover {cursor: url(http://i.imgur.com/LY1tJ6u.png), progress;
+  
+  }
+ ::selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
+ ::-moz-selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
+}
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<style type="text/css">
+::-webkit-scrollbar {
+width: 4px;
+height: 4px;
+background: #FFF9F9;
+}
+::-webkit-scrollbar-thumb {
+background-color: #FCE4E4;
+-webkit-border-radius: 0ex;
+border: 1px solid #C1A3A3;
+}
+#linkbjinho { color: #ffacac; border-bottom:1px solid #897B7B; }
+#linkkkkkkkk { color: #ffacac; }
+#linkzinho { color: #938373; text-decoration: none;}
+#linkzinhoo { color: #6E6156; text-decoration: none;}
+</style>
+
+<!--
+tooooooooltip
+-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+
+(function($){
+
+$(document).ready(function(){
+
+$("a[title]").style_my_tooltips({
+
+tip_follows_cursor:true,
+
+tip_delay_time:90,
+
+tip_fade_speed:600,
+
+attribute:"title"
+
+});
+
+});
+
+})(jQuery);
+
+</script>
+<!--tooltip!-->
+<style>
+.tooltip{
+    display: inline;
+    position: relative;
+}
+#s-m-t-tooltip {
+max-width:300px; /*how big the tooltip can be at most*/
+border-radius: 0px; /*change your border radius*/
+padding:3px 4px 5px 4px; /*padding inside tooltip*/
+margin:10px 7px -2px 10px; /*distance from word*/
+background-color:#FFF5F5; /*background color*/ 
+  border:1px dashed #CEB6B6; /*border info*/
+  font-family:tahoma; /*tooltip font*/
+font-size:7px; /*tooltip font size*/
+letter-spacing:2px; /*tooltip letter spacing*/
+color:#CEB6B6; /*tooltip font color*/
+z-index:9999;
+}
+</style>
+
+<!--
+menuuuuuuuuuuuuuuu
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: Verdana;
+			}
+			
+			ul {
+				list-style: none
+			}
+			
+			#context_menu {
+				background: #fff9f9;
+				-moz-border-radius: 2px 2px;
+				border: 1px solid #baada3;
+				letter-spacing:1px; 
+				width: 85px;
+				font-size: 8px;
+				position: absolute;
+				display: none;
+				z-index:999;
+			}
+			
+			#context_menu ul li {
+				padding: 4px 3px;
+				-moz-border-radius: 10px 10px;
+				cursor: url(http://i.imgur.com/xrySzI4.png), progress;
+			}
+			
+			#context_menu ul li:hover {
+				background: #fff9f9;
+				color: #baada3;
+			}
+		</style>
+		<script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+			
+		</script>
+	</head>
+		<div id="teste"></div>
+		<div id="context_menu">
+			<ul>
+				<li>　<font color="#baada3">© middlepot</font></li>
+			</ul>
+		</div>
+<!--
+menuuuuuuuuuuuuuuu
+-->
+
+
+<script>
+function popcbox(tid, tkey) {
+	var baseurl = "http://www5.cbox.ws/box/?boxid=884320&boxtag=v1q22y",
+		baseid = '5-884320',
+		fontop = 0;
+		turl = '',
+		tid = tid || 0,
+		tkey = tkey || "",
+		html = [],
+		width = 220,
+		height = 380,
+		fheight = 107;
+
+	if (tid && tkey) {
+		turl = '&tid='+tid+'&tkey='+tkey;
+	}
+		
+	var htmlform = '<frame src="'+baseurl+turl+'&sec=form" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxform'+baseid+'-'+tid+'">';
+	var htmlmain = '<frame src="'+baseurl+turl+'&sec=main" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxmain'+baseid+'-'+tid+'">';
+	var prows = (fontop) ? (fheight+',*') : ('*,'+fheight);
+	
+	html.push('<!DOCTYPE html><html><head><title>*.。ଘ(*´ ˘ `*)ഒ 。.*</title><meta name="viewport" content="width=device-width, user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=edge"></head><frameset rows="'+prows+'" frameborder="0" framespacing="0">');
+	html.push(fontop ? htmlform : htmlmain);
+	html.push(fontop ? htmlmain : htmlform);
+	html.push('</frameset><noframes>Frames required</noframes></html>');
+	
+	var cboxwin = window.open("","Cbox-"+baseid+"-"+tid,"width="+width+",height="+height+",toolbar=no,scrollbars=no,status=no,resizable=yes");
+	cboxwin.document.open();
+	cboxwin.document.write(html.join(''));
+	try {
+		x = screen.width;
+		y = screen.height;
+		cboxwin.moveTo(Math.max((x - width)/2, 0), Math.max((y - height)/2, 0));
+		cboxwin.focus();
+	} catch (e) {};
+}
+</script>
+
+</head>
+
+
+<body ondragstart="return false" style="background-image:url(https://i.imgur.com/y6B6r2v.png); background-color:#FFF9F9; font-family: Verdana; font-size: 10px;">
+<style>
+#base {
+position: absolute;
+	left: 20%;
+	top: 15%;
+overflow-y:hidden;
+overflow-x:hidden;
+ }
+#menu1 {
+position: absolute;
+	left: 2%;
+	top: 4%;
+max-width: 130px;
+max-height: 490px;
+overflow-y:hidden;
+overflow-x:hidden;
+z-index: 2;
+ }
+#menu2 {
+position: absolute;
+	left: 28%;
+	top: 4%;
+max-width: 560px;
+max-height: 35px;
+overflow-y:hidden;
+overflow-x:hidden;
+z-index: 4;
+ }
+#stuff {
+position: absolute;
+	left: 23%;
+	top: 14%;
+width: 594px;
+height: 433px;
+overflow-x:hidden;
+z-index: 6;
+ }
+#aaa {
+position: relative;
+	left: 8%;
+ }
+</style>
+<div id="base">
+<img src="https://i.imgur.com/pfTi48h.png"/>
+
+<div onselectstart="return false" id="menu1">
+
+　　&nbsp;<a href="http://middlepot.com"><img width="100px" height="auto" src="https://i.imgur.com/4XdG5rK.png"/></a><br><center><font color="#A08D7E">　© middlepot.com</font></center>
+<p style="font-size:10px;line-height:50%;">
+<br><br><br></p>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/about">about</a></font><br>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/links">links</a></font><br>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/contact">contact</a></font><br>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/credits">credits</a></font>
+<p style="font-size:10px;line-height:50%;">
+<br><br><br></p>
+
+<center>　　<img src="https://i.imgur.com/HA2l4dB.gif"/>
+ <font color="#6E6156"><font size="2"><sup><a id="linkzinhoo" href="http://middlepot.com/blog">news blog</a></sup></font></font> <img src="https://i.imgur.com/VV0vQHD.gif"/></center>
+
+<p style="font-size:10px;line-height:50%;">
+<br></p>
+<center>　　<a href="JavaScript:popcbox('', '');"><img src="https://i.imgur.com/ysc4y4D.gif"/></a></center>
+<p style="font-size:10px;line-height:70%;">
+<br></p>
+
+<center><div id="aaa"><img src="https://i.imgur.com/93DE8B0.png"/><br>
+<a href="http://middlepot.com/milky-woods"><img src="https://i.imgur.com/43guVp5.png"/></a><br>
+<a href="http://middlepot.com/not-bad"><img src="https://i.imgur.com/OlFt7cw.png"/></a><br>
+<a href="http://middlepot.com/puporipot"><img src="https://i.imgur.com/m7ehqeT.png"/></a><br>
+<a href="http://middlepot.com/crwel-friends"><img src="https://i.imgur.com/czEnR0y.png"/></a><br>
+<a href="http://middlepot.com/fairy-loli"><img src="https://i.imgur.com/aJzy5nD.png"/></a><br>
+<a href="http://middlepot.com/potetomid"><img src="https://i.imgur.com/yE0iyO0.png"/></a><br>
+<a href="http://middlepot.com/soft-collection"><img src="https://i.imgur.com/k4KPMRn.png"/></a><br>
+<a href="http://middlepot.com/moep"><img src="https://i.imgur.com/MkgULzx.png"/></a><br>
+<img src="https://i.imgur.com/op6oXma.png"/></div></center>
+
+<p style="font-size:10px;line-height:70%;">
+<br><br></p>
+<center>
+　　<a href="https://www.elo7.com.br/shybunny" target="_blank"><img src="https://i.imgur.com/gtevTSn.gif"/></a></center>
+
+</div>
+
+<div id="menu2">
+
+<img src="https://i.imgur.com/PTzpVdh.png"/><a href="http://middlepot.com/status"><img src="https://i.imgur.com/gtWd2tI.png"/></a><a href="http://middlepot.com/look-book"><img src="https://i.imgur.com/21R6rOA.png"/></a><a href="http://middlepot.com/portfolio"><img src="https://i.imgur.com/5UlJkeC.png"/><a href=""></a><a href="http://middlepot.com/help"><img src="https://i.imgur.com/f6GSYqr.png"/></a><a href="http://middlepot.com/gaming"><img src="https://i.imgur.com/5dSoAlZ.png"/></a><a href="http://middlepot.com/cemetery"><img src="https://i.imgur.com/FctiXzO.png"/></a><a href="http://middlepot.com/recommended"><img src="https://i.imgur.com/myWm2B5.png"/></a><img src="https://i.imgur.com/W6coopC.png"/>
+
+
+</div>
+
+<div id="stuff">
+
+<audio id="musict" preload="true">
+  <source src="https://files.catbox.moe/n16e4g.mp3" type="audio/mpeg">
+</audio>
+<div id="audioplayer">
+ <button id="pButton" class="play"></button>
+  <div id="timeline">    
+      <div id="playhead"></div>
+  </div>
+</div>
+
+
+
+<style>
+#pButton{
+    height:20px; 
+    width: 20px;
+    border: none;
+    background-repeat: no-repeat;
+    outline:none;
+    cursor: url(https://i.imgur.com/LY1tJ6u.png), progress;
+}
+
+.play{background: url('https://i.imgur.com/aRUFUyE.gif') ;}
+.pause{background: url('https://i.imgur.com/aRUFUyE.gif') ;}
+</style>
+
+
+
+
+
+
+<script>
+var music = document.getElementById('musict');
+var duration = music.duration;
+var pButton = document.getElementById('pButton');
+var playhead = document.getElementById('playhead');
+var timeline = document.getElementById('timeline');
+
+var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+
+pButton.addEventListener("click", play);
+
+music.addEventListener("timeupdate", timeUpdate, false);
+
+timeline.addEventListener("click", function(event) {
+    moveplayhead(event);
+    music.currentTime = duration * clickPercent(event);
+}, false);
+
+function clickPercent(event) {
+    return (event.clientX - getPosition(timeline)) / timelineWidth;
+}
+
+playhead.addEventListener('mousedown', mouseDown, false);
+window.addEventListener('mouseup', mouseUp, false);
+
+
+var onplayhead = false;
+
+function mouseDown() {
+    onplayhead = true;
+    window.addEventListener('mousemove', moveplayhead, true);
+    music.removeEventListener('timeupdate', timeUpdate, false);
+}
+
+function mouseUp(event) {
+    if (onplayhead == true) {
+        moveplayhead(event);
+        window.removeEventListener('mousemove', moveplayhead, true);
+        music.currentTime = duration * clickPercent(event);
+        music.addEventListener('timeupdate', timeUpdate, false);
+    }
+    onplayhead = false;
+}
+function moveplayhead(event) {
+    var newMargLeft = event.clientX - getPosition(timeline);
+
+    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+        playhead.style.marginLeft = newMargLeft + "px";
+    }
+    if (newMargLeft < 0) {
+        playhead.style.marginLeft = "0px";
+    }
+    if (newMargLeft > timelineWidth) {
+        playhead.style.marginLeft = timelineWidth + "px";
+    }
+}
+
+function timeUpdate() {
+    var playPercent = timelineWidth * (music.currentTime / duration);
+    playhead.style.marginLeft = playPercent + "px";
+    if (music.currentTime == duration) {
+        pButton.className = "";
+        pButton.className = "play";
+    }
+}
+
+function play() {
+    if (music.paused) {
+        music.play();
+        pButton.className = "";
+        pButton.className = "pause";
+    } else { 
+        music.pause();
+        pButton.className = "";
+        pButton.className = "play";
+    }
+}
+
+music.addEventListener("canplaythrough", function() {
+    duration = music.duration;
+}, false);
+
+function getPosition(el) {
+    return el.getBoundingClientRect().left;
+}
+</script>
+
+<div style="position:absolute; left:10%; right:10%;">
+<font color="#a8998b"><center><sub><img src="https://i.imgur.com/xgghttq.gif"/></sub>　fairy loli　<sub><img src="https://i.imgur.com/xgghttq.gif"/></sub></center></font>
+<br><br>
+<font style="font-size:8px;" color="#b7aa9c">
+in the kingdom of liberfrólia, you can see cute magical creatures. some of them live forever. age is something mysterious. magic is something simple. small fairies who can't fly, strange-looking anatomy. evil elves, very clever demons. the savvy fairies dominate weapons and magic in a incredible way, they take care of the kingdom and its woods with his wisdom and a sweet tea time every day.<br>
+when humans discovered this world, they looked like friendly creatures. nevertheless, some bad humans tried to use magic for selfish ideals with frightening plans.<br>
+but the little creatures are very smart, they knew that children would be your allies forever as they have a good heart. several human children have been summoned by the queen and became magical creatures, as savvy as the fairies. with the help of the renewed humans, the magic can excel the evil.
+liberfrólia banned the entry of new humans in the kingdom, other than those who were kind people.<br>
+let's get to know a little bit of this magical world !
+</font>
+<br><br><br><br>
+　　　　<font color="#96a37c">gallery　<sub><img src="https://i.imgur.com/vFUyw5w.gif"/></sub></center></font>
+<br><br>
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop01{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 370px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar01{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop01(){
+    document.getElementById('pop01').style.display = 'none';
+}
+function abrirpop01(){
+    document.getElementById('pop01').style.display = 'block';
+    setTimeout ("fecharpop01()", 999999);
+}
+</script>
+
+<div id="pop01">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 370px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop01();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/n9s1YN3.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">pure</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop01();"><img src="https://i.imgur.com/BKtvKhO.png"></a>
+<br><br>
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop0{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 620px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar0{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop0(){
+    document.getElementById('pop0').style.display = 'none';
+}
+function abrirpop0(){
+    document.getElementById('pop0').style.display = 'block';
+    setTimeout ("fecharpop0()", 999999);
+}
+</script>
+
+<div id="pop0">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 620px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop0();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/ylp2lL2.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">hi</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop0();"><img src="https://i.imgur.com/aXUbSdz.png"></a>
+<br><br>
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop1{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 620px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop1(){
+    document.getElementById('pop1').style.display = 'none';
+}
+function abrirpop1(){
+    document.getElementById('pop1').style.display = 'block';
+    setTimeout ("fecharpop1()", 999999);
+}
+</script>
+
+<div id="pop1">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 620px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop1();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/lD4qiXw.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">ortus' new camisole</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop1();"><img src="https://i.imgur.com/3P1AMak.png"></a>
+<br><br>
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop2{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 420px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop2(){
+    document.getElementById('pop2').style.display = 'none';
+}
+function abrirpop2(){
+    document.getElementById('pop2').style.display = 'block';
+    setTimeout ("fecharpop2()", 999999);
+}
+</script>
+
+<div id="pop2">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 420px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop2();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/TUcJSMH.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">good night, sister</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop2();"><img src="https://i.imgur.com/dcLEdbU.png"></a>
+<br><br>
+
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop3{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 430px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop3(){
+    document.getElementById('pop3').style.display = 'none';
+}
+function abrirpop3(){
+    document.getElementById('pop3').style.display = 'block';
+    setTimeout ("fecharpop3()", 999999);
+}
+</script>
+
+<div id="pop3">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 430px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop3();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/KRc1t0p.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">comfy bed</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop3();"><img src="https://i.imgur.com/SM5B0ta.png"></a>
+<br><br>
+
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop6{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 620px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop6(){
+    document.getElementById('pop6').style.display = 'none';
+}
+function abrirpop6(){
+    document.getElementById('pop6').style.display = 'block';
+    setTimeout ("fecharpop6()", 999999);
+}
+</script>
+
+<div id="pop6">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 620px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop6();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/L9O6VGE.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">angelina</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop6();"><img src="https://i.imgur.com/CYSKCBt.png"></a>
+<br><br>
+
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop4{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 620px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop4(){
+    document.getElementById('pop4').style.display = 'none';
+}
+function abrirpop4(){
+    document.getElementById('pop4').style.display = 'block';
+    setTimeout ("fecharpop4()", 999999);
+}
+</script>
+
+<div id="pop4">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 620px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop4();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/pV50ty5.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">ice creamy day</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop4();"><img src="https://i.imgur.com/nzwxSKX.png"></a>
+<br><br>
+
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop5{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 620px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop5(){
+    document.getElementById('pop5').style.display = 'none';
+}
+function abrirpop5(){
+    document.getElementById('pop5').style.display = 'block';
+    setTimeout ("fecharpop5()", 999999);
+}
+</script>
+
+<div id="pop5">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 620px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop5();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/BC8M77y.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">kind heart</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop5();"><img src="https://i.imgur.com/mybireE.png"></a>
+<br><br>
+
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop7{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 620px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop7(){
+    document.getElementById('pop7').style.display = 'none';
+}
+function abrirpop7(){
+    document.getElementById('pop7').style.display = 'block';
+    setTimeout ("fecharpop7()", 999999);
+}
+</script>
+
+<div id="pop7">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 620px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop7();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/cRGXaj6.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">be aware, be afraid</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop7();"><img src="https://i.imgur.com/BAZDFVl.png"></a>
+<br><br>
+
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop9{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 340px; /*largura do coiso todo*/
+height: 620px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop9(){
+    document.getElementById('pop9').style.display = 'none';
+}
+function abrirpop9(){
+    document.getElementById('pop9').style.display = 'block';
+    setTimeout ("fecharpop9()", 999999);
+}
+</script>
+
+<div id="pop9">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 340px;height: 620px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop9();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/tlANigM.png" width="320" height="auto"></center>
+
+<br>
+<center><font color="#B49797">i don't think so</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop9();"><img src="https://i.imgur.com/etxbna4.png"></a>
+<br><br>
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop10{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 390px; /*largura do coiso todo*/
+height: 600px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop10(){
+    document.getElementById('pop10').style.display = 'none';
+}
+function abrirpop10(){
+    document.getElementById('pop10').style.display = 'block';
+    setTimeout ("fecharpop10()", 999999);
+}
+</script>
+
+<div id="pop10">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 390px;height: 600px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop10();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/yjNVH77.png" width="380" height="auto"></center>
+
+<br>
+<center><font color="#B49797">although i'm the queen</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop10();"><img src="https://i.imgur.com/iFyQkZ3.png"></a>
+<br><br>
+
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop8{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 620px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop8(){
+    document.getElementById('pop8').style.display = 'none';
+}
+function abrirpop8(){
+    document.getElementById('pop8').style.display = 'block';
+    setTimeout ("fecharpop8()", 999999);
+}
+</script>
+
+<div id="pop8">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 620px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop8();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/A5Zeua1.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">the time is coming</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop8();"><img src="https://i.imgur.com/KGxR6NW.png"></a>
+<br><br>
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop11{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 540px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop11(){
+    document.getElementById('pop11').style.display = 'none';
+}
+function abrirpop11(){
+    document.getElementById('pop11').style.display = 'block';
+    setTimeout ("fecharpop11()", 999999);
+}
+</script>
+
+<div id="pop11">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 540px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop11();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/l53vjii.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">moment of tranquility</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop11();"><img src="https://i.imgur.com/WfstWZD.png"></a>
+<br><br>
+
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop12{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 620px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop12(){
+    document.getElementById('pop12').style.display = 'none';
+}
+function abrirpop12(){
+    document.getElementById('pop12').style.display = 'block';
+    setTimeout ("fecharpop12()", 999999);
+}
+</script>
+
+<div id="pop12">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 620px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop12();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/xAjzPUe.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">are they gone ?</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop12();"><img src="https://i.imgur.com/9stI6fA.png"></a>
+<br><br>
+
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop13{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 540px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop13(){
+    document.getElementById('pop13').style.display = 'none';
+}
+function abrirpop13(){
+    document.getElementById('pop13').style.display = 'block';
+    setTimeout ("fecharpop13()", 999999);
+}
+</script>
+
+<div id="pop13">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 540px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop13();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/KtXCBx0.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">fever</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop13();"><img src="https://i.imgur.com/VtVYOYO.png"></a>
+<br><br>
+
+<center>
+<style type="text/css">
+/*estilo da pop-up*/
+#pop14{
+position: fixed;
+top: 15%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 410px; /*largura do coiso todo*/
+height: 620px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar1{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop14(){
+    document.getElementById('pop14').style.display = 'none';
+}
+function abrirpop14(){
+    document.getElementById('pop14').style.display = 'block';
+    setTimeout ("fecharpop14()", 999999);
+}
+</script>
+
+<div id="pop14">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 410px;height: 620px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop14();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+
+<br>
+<center><img src="https://i.imgur.com/s6S0Wrq.png" width="400" height="auto"></center>
+
+<br>
+<center><font color="#B49797">raeth</font></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+　　　　　　　　　　　　　　<a href="javascript: abrirpop14();"><img src="https://i.imgur.com/zHIgCuv.png"></a>
+<br><br>
+<br>
+
+<div style="float: right;">
+<img src="https://i.imgur.com/jltizzM.gif">　<a id="linkbjinho" href="http://middlepot.com/read-me">part ii ?</a>
+</div>
+
+
+
+<br><br><br>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+<!--
+
+　　　          ___   .--.
+　　　    .--.-"   "-' .- |
+　　　   / .-,`          .'   
+　　　   \   `           \ 　　　　　　。・゜ 　♡   。　　・　゜ 　　　♡  
+　　　    '.            ・ \　　　　　　　　　　　　　　　　　　　　　　　　♡　　　　♡ ゜・。。♡  
+　　　      |  ・     ᴥ    。|　　　　・゜♡ ゜・。　　. * ・ ♡ °  . 。
+　　　      \ 。            /.____　　　　　　　　　　　　　　　　　　♡.  
+　　　     /`-.          ,'.'    `\　　　　　　　　　　　　　　　　　　。・゜　　　 ♡ ・ 。　　。・゜ ♡  
+　　　  __/   \`-.____.-' `\      /　　　　　♡　。・゜      
+　　　  | `---`'-'._/-`     \----'    _ 　　　　　　　　　　　♡　　　.　　　.♡ 
+　　　  |,-'`  /             |    _.-' `\　　　　. * ・        
+　　　 .'     /              |--'`     / |　　　　　　　　　　 ♡
+　　　/      /\              `         | |
+　　　|   .\/  \      .--. __          \ |　　　　　　　　　　　*.。middlepot.com 
+　　　 '-'      '._       /  `\         /　　　　　　　　　　　　　　　　　　　　　　　ଘ(*´ ˘ `*)ഒ 。.*
+　　　             `\    '     |------'`
+　　　               \  |      |
+　　　                \        /
+ 　　　                '._  _.'
+
+-->
+
+</html>

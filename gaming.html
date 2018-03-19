@@ -1,0 +1,1350 @@
+<html>
+<head>
+
+<!--
+
+　　　          ___   .--.
+　　　    .--.-"   "-' .- |
+　　　   / .-,`          .'   
+　　　   \   `           \ 　　　　　　。・゜ 　♡   。　　・　゜ 　　　♡  
+　　　    '.            ・ \　　　　　　　　　　　　　　　　　　　　　　　　♡　　　　♡ ゜・。。♡  
+　　　      |  ・     ᴥ    。|　　　　・゜♡ ゜・。　　. * ・ ♡ °  . 。
+　　　      \ 。            /.____　　　　　　　　　　　　　　　　　　♡.  
+　　　     /`-.          ,'.'    `\　　　　　　　　　　　　　　　　　　。・゜　　　 ♡ ・ 。　　。・゜ ♡  
+　　　  __/   \`-.____.-' `\      /　　　　　♡　。・゜      
+　　　  | `---`'-'._/-`     \----'    _ 　　　　　　　　　　　♡　　　.　　　.♡ 
+　　　  |,-'`  /             |    _.-' `\　　　　. * ・        
+　　　 .'     /              |--'`     / |　　　　　　　　　　 ♡
+　　　/      /\              `         | |
+　　　|   .\/  \      .--. __          \ |　　　　　　　　　　　*.。middlepot.com 
+　　　 '-'      '._       /  `\         /　　　　　　　　　　　　　　　　　　　　　　　ଘ(*´ ˘ `*)ഒ 。.*
+　　　             `\    '     |------'`
+　　　               \  |      |
+　　　                \        /
+ 　　　                '._  _.'
+
+-->
+
+<title>middlepot ഒ</title>
+
+<link rel="shortcut icon" href="http://i.imgur.com/C7cSCvF.gif">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<style>
+body{ 
+  cursor: url(http://i.imgur.com/xrySzI4.png), progress;}
+a:hover {cursor: url(http://i.imgur.com/LY1tJ6u.png), progress;
+  
+  }
+ ::selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
+ ::-moz-selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
+}
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<style type="text/css">
+::-webkit-scrollbar {
+width: 4px;
+height: 4px;
+background: #FFF9F9;
+}
+::-webkit-scrollbar-thumb {
+background-color: #FCE4E4;
+-webkit-border-radius: 0ex;
+border: 1px solid #C1A3A3;
+}
+#linkbjinho { color: #ffacac; border-bottom:1px solid #897B7B; }
+#linkkkkkkkk { color: #ffacac; }
+#linkzinho { color: #938373; text-decoration: none;}
+#linkzinhoo { color: #6E6156; text-decoration: none;}
+</style>
+
+<!--
+tooooooooltip
+-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
+<script>
+
+(function($){
+
+$(document).ready(function(){
+
+$("a[title]").style_my_tooltips({
+
+tip_follows_cursor:true,
+
+tip_delay_time:90,
+
+tip_fade_speed:600,
+
+attribute:"title"
+
+});
+
+});
+
+})(jQuery);
+
+</script>
+<!--tooltip!-->
+<style>
+.tooltip{
+    display: inline;
+    position: relative;
+}
+#s-m-t-tooltip {
+max-width:300px; /*how big the tooltip can be at most*/
+border-radius: 0px; /*change your border radius*/
+padding:3px 4px 5px 4px; /*padding inside tooltip*/
+margin:10px 7px -2px 10px; /*distance from word*/
+background-color:#FFF5F5; /*background color*/ 
+  border:1px dashed #CEB6B6; /*border info*/
+  font-family:tahoma; /*tooltip font*/
+font-size:7px; /*tooltip font size*/
+letter-spacing:2px; /*tooltip letter spacing*/
+color:#CEB6B6; /*tooltip font color*/
+z-index:9999;
+}
+</style>
+
+<!--
+menuuuuuuuuuuuuuuu
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: Verdana;
+			}
+			
+			ul {
+				list-style: none
+			}
+			
+			#context_menu {
+				background: #fff9f9;
+				-moz-border-radius: 2px 2px;
+				border: 1px solid #baada3;
+				letter-spacing:1px; 
+				width: 85px;
+				font-size: 8px;
+				position: absolute;
+				display: none;
+				z-index:999;
+			}
+			
+			#context_menu ul li {
+				padding: 4px 3px;
+				-moz-border-radius: 10px 10px;
+				cursor: url(http://i.imgur.com/xrySzI4.png), progress;
+			}
+			
+			#context_menu ul li:hover {
+				background: #fff9f9;
+				color: #baada3;
+			}
+		</style>
+		<script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+			
+		</script>
+	</head>
+		<div id="teste"></div>
+		<div id="context_menu">
+			<ul>
+				<li>　<font color="#baada3">© middlepot</font></li>
+			</ul>
+		</div>
+<!--
+menuuuuuuuuuuuuuuu
+-->
+
+
+<script>
+function popcbox(tid, tkey) {
+	var baseurl = "http://www5.cbox.ws/box/?boxid=884320&boxtag=v1q22y",
+		baseid = '5-884320',
+		fontop = 0;
+		turl = '',
+		tid = tid || 0,
+		tkey = tkey || "",
+		html = [],
+		width = 220,
+		height = 380,
+		fheight = 107;
+
+	if (tid && tkey) {
+		turl = '&tid='+tid+'&tkey='+tkey;
+	}
+		
+	var htmlform = '<frame src="'+baseurl+turl+'&sec=form" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxform'+baseid+'-'+tid+'">';
+	var htmlmain = '<frame src="'+baseurl+turl+'&sec=main" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxmain'+baseid+'-'+tid+'">';
+	var prows = (fontop) ? (fheight+',*') : ('*,'+fheight);
+	
+	html.push('<!DOCTYPE html><html><head><title>*.。ଘ(*´ ˘ `*)ഒ 。.*</title><meta name="viewport" content="width=device-width, user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=edge"></head><frameset rows="'+prows+'" frameborder="0" framespacing="0">');
+	html.push(fontop ? htmlform : htmlmain);
+	html.push(fontop ? htmlmain : htmlform);
+	html.push('</frameset><noframes>Frames required</noframes></html>');
+	
+	var cboxwin = window.open("","Cbox-"+baseid+"-"+tid,"width="+width+",height="+height+",toolbar=no,scrollbars=no,status=no,resizable=yes");
+	cboxwin.document.open();
+	cboxwin.document.write(html.join(''));
+	try {
+		x = screen.width;
+		y = screen.height;
+		cboxwin.moveTo(Math.max((x - width)/2, 0), Math.max((y - height)/2, 0));
+		cboxwin.focus();
+	} catch (e) {};
+}
+</script>
+
+</head>
+
+
+<body ondragstart="return false" style="background-image:url(https://i.imgur.com/y6B6r2v.png); background-color:#FFF9F9; font-family: Verdana; font-size: 10px;">
+<style>
+#base {
+position: absolute;
+	left: 20%;
+	top: 15%;
+overflow-y:hidden;
+overflow-x:hidden;
+ }
+#menu1 {
+position: absolute;
+	left: 2%;
+	top: 4%;
+max-width: 130px;
+max-height: 490px;
+overflow-y:hidden;
+overflow-x:hidden;
+z-index: 2;
+ }
+#menu2 {
+position: absolute;
+	left: 28%;
+	top: 4%;
+max-width: 560px;
+max-height: 35px;
+overflow-y:hidden;
+overflow-x:hidden;
+z-index: 4;
+ }
+#stuff {
+position: absolute;
+	left: 23%;
+	top: 14%;
+width: 594px;
+height: 433px;
+overflow-x:hidden;
+z-index: 6;
+ }
+#aaa {
+position: relative;
+	left: 8%;
+ }
+</style>
+<div id="base">
+<img src="https://i.imgur.com/pfTi48h.png"/>
+
+<div onselectstart="return false" id="menu1">
+
+　　&nbsp;<a href="http://middlepot.com"><img width="100px" height="auto" src="https://i.imgur.com/4XdG5rK.png"/></a><br><center><font color="#A08D7E">　© middlepot.com</font></center>
+<p style="font-size:10px;line-height:50%;">
+<br><br><br></p>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/about">about</a></font><br>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/links">links</a></font><br>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/contact">contact</a></font><br>
+　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="http://middlepot.com/credits">credits</a></font>
+<p style="font-size:10px;line-height:50%;">
+<br><br><br></p>
+
+<center>　　<img src="https://i.imgur.com/HA2l4dB.gif"/>
+ <font color="#6E6156"><font size="2"><sup><a id="linkzinhoo" href="http://middlepot.com/blog">news blog</a></sup></font></font> <img src="https://i.imgur.com/VV0vQHD.gif"/></center>
+
+<p style="font-size:10px;line-height:50%;">
+<br></p>
+<center>　　<a href="JavaScript:popcbox('', '');"><img src="https://i.imgur.com/ysc4y4D.gif"/></a></center>
+<p style="font-size:10px;line-height:70%;">
+<br></p>
+
+<center><div id="aaa"><img src="https://i.imgur.com/93DE8B0.png"/><br>
+<a href="http://middlepot.com/milky-woods"><img src="https://i.imgur.com/43guVp5.png"/></a><br>
+<a href="http://middlepot.com/not-bad"><img src="https://i.imgur.com/OlFt7cw.png"/></a><br>
+<a href="http://middlepot.com/puporipot"><img src="https://i.imgur.com/m7ehqeT.png"/></a><br>
+<a href="http://middlepot.com/crwel-friends"><img src="https://i.imgur.com/czEnR0y.png"/></a><br>
+<a href="http://middlepot.com/fairy-loli"><img src="https://i.imgur.com/aJzy5nD.png"/></a><br>
+<a href="http://middlepot.com/potetomid"><img src="https://i.imgur.com/yE0iyO0.png"/></a><br>
+<a href="http://middlepot.com/soft-collection"><img src="https://i.imgur.com/k4KPMRn.png"/></a><br>
+<a href="http://middlepot.com/moep"><img src="https://i.imgur.com/MkgULzx.png"/></a><br>
+<img src="https://i.imgur.com/op6oXma.png"/></div></center>
+
+<p style="font-size:10px;line-height:70%;">
+<br><br></p>
+<center>
+　　<a href="https://www.elo7.com.br/shybunny" target="_blank"><img src="https://i.imgur.com/gtevTSn.gif"/></a></center>
+
+</div>
+
+<div id="menu2">
+
+<img src="https://i.imgur.com/PTzpVdh.png"/><a href="http://middlepot.com/status"><img src="https://i.imgur.com/gtWd2tI.png"/></a><a href="http://middlepot.com/look-book"><img src="https://i.imgur.com/21R6rOA.png"/></a><a href="http://middlepot.com/portfolio"><img src="https://i.imgur.com/5UlJkeC.png"/><a href=""></a><a href="http://middlepot.com/help"><img src="https://i.imgur.com/f6GSYqr.png"/></a><a href="http://middlepot.com/gaming"><img src="https://i.imgur.com/5dSoAlZ.png"/></a><a href="http://middlepot.com/cemetery"><img src="https://i.imgur.com/FctiXzO.png"/></a><a href="http://middlepot.com/recommended"><img src="https://i.imgur.com/myWm2B5.png"/></a><img src="https://i.imgur.com/W6coopC.png"/>
+
+
+</div>
+
+<div id="stuff">
+
+<div style="background-image:url(https://i.imgur.com/byz1FNS.png); background-attachment: fixed; width: 594px; height: 433px; overflow-x: hidden; text-align:justify; line-height: 100%">
+
+<div style="width: 650px;height: 32px;overflow-x: hidden; overflow-y: hidden;"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"><img src="https://i.imgur.com/zMHNSZu.gif"></div>
+
+<audio id="musict" preload="true">
+  <source src="https://files.catbox.moe/xz93w3.mp3" type="audio/mpeg">
+</audio>
+<div id="audioplayer">
+ <button id="pButton" class="play"></button>
+  <div id="timeline">    
+      <div id="playhead"></div>
+  </div>
+</div>
+
+
+
+<style>
+#pButton{
+    height:20px; 
+    width: 20px;
+    border: none;
+    background-repeat: no-repeat;
+    outline:none;
+    cursor: url(https://i.imgur.com/LY1tJ6u.png), progress;
+}
+
+.play{background: url('https://i.imgur.com/aRUFUyE.gif') ;}
+.pause{background: url('https://i.imgur.com/aRUFUyE.gif') ;}
+</style>
+
+
+
+
+
+
+<script>
+var music = document.getElementById('musict');
+var duration = music.duration;
+var pButton = document.getElementById('pButton');
+var playhead = document.getElementById('playhead');
+var timeline = document.getElementById('timeline');
+
+var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+
+pButton.addEventListener("click", play);
+
+music.addEventListener("timeupdate", timeUpdate, false);
+
+timeline.addEventListener("click", function(event) {
+    moveplayhead(event);
+    music.currentTime = duration * clickPercent(event);
+}, false);
+
+function clickPercent(event) {
+    return (event.clientX - getPosition(timeline)) / timelineWidth;
+}
+
+playhead.addEventListener('mousedown', mouseDown, false);
+window.addEventListener('mouseup', mouseUp, false);
+
+
+var onplayhead = false;
+
+function mouseDown() {
+    onplayhead = true;
+    window.addEventListener('mousemove', moveplayhead, true);
+    music.removeEventListener('timeupdate', timeUpdate, false);
+}
+
+function mouseUp(event) {
+    if (onplayhead == true) {
+        moveplayhead(event);
+        window.removeEventListener('mousemove', moveplayhead, true);
+        music.currentTime = duration * clickPercent(event);
+        music.addEventListener('timeupdate', timeUpdate, false);
+    }
+    onplayhead = false;
+}
+function moveplayhead(event) {
+    var newMargLeft = event.clientX - getPosition(timeline);
+
+    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+        playhead.style.marginLeft = newMargLeft + "px";
+    }
+    if (newMargLeft < 0) {
+        playhead.style.marginLeft = "0px";
+    }
+    if (newMargLeft > timelineWidth) {
+        playhead.style.marginLeft = timelineWidth + "px";
+    }
+}
+
+function timeUpdate() {
+    var playPercent = timelineWidth * (music.currentTime / duration);
+    playhead.style.marginLeft = playPercent + "px";
+    if (music.currentTime == duration) {
+        pButton.className = "";
+        pButton.className = "play";
+    }
+}
+
+function play() {
+    if (music.paused) {
+        music.play();
+        pButton.className = "";
+        pButton.className = "pause";
+    } else { 
+        music.pause();
+        pButton.className = "";
+        pButton.className = "play";
+    }
+}
+
+music.addEventListener("canplaythrough", function() {
+    duration = music.duration;
+}, false);
+
+function getPosition(el) {
+    return el.getBoundingClientRect().left;
+}
+</script>
+
+<div style= "padding-left: 10%; padding-right: 10%;">
+<center><img src="https://i.imgur.com/RDJRQn2.gif"></center>
+<br>
+<br>
+
+<center><font color="#B49797">{ gaming }</font></center>
+<br>
+<br>
+
+<style type="text/css">
+#linkhm { color: #F9DCDC; border-bottom:1px solid #FAC9C9; }
+</style>
+<font family = "Verdana"><font color="#7f6a6a"><font size="1">
+<center>here you can check the main games i've played or still play :</center>
+</font></font></font>
+</center>
+<br><br>
+
+
+
+<center>
+<style>
+.wrapper {
+	background-color:#FFF1F4;
+	width:400px;
+	height:40px;
+	  color:#9A8989;
+  font-family: Verdana;
+  font-size:10px;
+  font-weight:normal;
+	text-align:justify;
+	line-height:15px;
+  position: relative;
+	padding:10px 15px 10px 15px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+
+}
+
+
+
+.wrapper:hover {
+	height:auto;
+
+
+}
+
+
+.wrapper .tooltip {
+display:block;
+  pointer-events: none;
+opacity: 0;
+  position: relative;
+
+
+}
+  
+.wrapper:hover .tooltip {
+opacity: 1;
+  pointer-events: auto;
+  position: relative;
+	background-color:#FFFFFF;
+	display:block;
+	color:#A69999;
+	font-size:10px;
+	font-weight:normal;
+	font-family:verdana;
+	line-height:14px;
+	text-align:justify;
+ border-radius: 0 0 10px 10px;
+	border-radius:0 0 10px 10px;
+	-moz-border-radius:0 0 10px 10px;
+	-webkit-border-radius:0 0 10px 10px;
+	border-radius:0 0 10px 10px;
+	-moz-border-radius:0 0 10px 10px;
+	-webkit-border-radius:0 0 10px 10px;
+	padding:10px 15px 10px 15px;
+
+
+  -webkit-transition: all .2s ease-out;
+
+
+
+
+}
+
+
+.lte8 .wrapper .tooltip {
+  display: none;
+}
+
+.lte8 .wrapper:hover .tooltip {
+  display: block;
+}
+</style>
+
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>
+　c o c o p p a　p l a y
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden; text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+my journey in this game was a bit complicated. i started playing tinierme, then i discovered cocoppa play in july 2014. i started playing pocketland too, and then i chose to play only cocoppa play. my account didn't have so many items because i didn't put in enough effort in anything, so i sold my accounts from tinierme and pocketland to buy a fantastic account on cocoppa.<br>
+i started to put real effort on events and had an account that i was super proud !! however, in december 2016 i got tired of playing and needed money. i decided to sell this account and go back to using the old one, with few items. it's still up to today, and i don't know if i will return to play it.<br>
+anyway, this one was my second favorite dress-up game !
+</div>
+<br><br>
+
+<center><img width="170px" height="auto" src="http://i.imgur.com/srurFVo.png"/> <img width="170px" height="auto" src="http://i.imgur.com/VOztpDU.png"/></center>
+<br>
+<center>my super awesome old account !</center>
+<br><br>
+<center><img width="170px" height="auto" src="http://i.imgur.com/EgYSCdA.png"/></center>
+<br>
+<center>my highest rank, #1 !</center>
+<br><br>
+
+<center><img width="170px" height="auto" src="http://i.imgur.com/7baINO7.png"/> <img width="170px" height="auto" src="http://i.imgur.com/ATzbhFh.png"/></center>
+<br>
+<center>my current account.</center>
+<br><br>
+<center>let's see some of my favorite shows :</center>
+<br>
+
+<center>
+<img width="170px" height="auto" src="http://i.imgur.com/nU3taaP.png"/> <img width="170px" height="auto" src="http://i.imgur.com/b7zSeh2.png"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/8wmkOgS.jpg"/> <img width="170px" height="auto" src="http://i.imgur.com/WzDQErK.jpg"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/IkMBzGz.png"/> <img width="170px" height="auto" src="http://i.imgur.com/pjkXUFz.png"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/WLTE6u8.png"/> <img width="170px" height="auto" src="http://i.imgur.com/jl2CJRh.jpg"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/QxqGgcZ.jpg"/> <img width="170px" height="auto" src="http://i.imgur.com/xGIFjwU.jpg"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/ymMnUUF.png"/> <img width="170px" height="auto" src="http://i.imgur.com/pZENGPP.png"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/NMNA5m1.png"/> <img width="170px" height="auto" src="http://i.imgur.com/NUNQfhd.png"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/PHxEaB1.png"/> <img width="170px" height="auto" src="http://i.imgur.com/MtpBdmA.png"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/solIeen.png"/>
+
+</center>
+
+<br>
+<center>more shows <a href="https://goo.gl/photos/hEWKUiixZFTDVEjm9" id="linkhm" target="_blank">here</a> !</center>
+
+<br><br>
+<center>tinierme :</center>
+<br><br>
+<center>
+<img width="170px" height="auto" src="http://i.imgur.com/0QuGIkq.png"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/HZBVYMA.gif"/> <img width="170px" height="auto" src="http://i.imgur.com/clQc8uB.gif"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/cSDTeQJ.gif"/> <img width="170px" height="auto" src="http://i.imgur.com/C3DbPK6.gif"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/cszencN.gif"/> <img width="170px" height="auto" src="http://i.imgur.com/84JOuva.gif"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/adhZCqe.gif"/> <img width="170px" height="auto" src="http://i.imgur.com/hazMd4n.gif"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/cxLwflG.gif"/> <img width="170px" height="auto" src="http://i.imgur.com/vPURv6S.gif"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/fkDWBOF.gif"/> <img width="170px" height="auto" src="http://i.imgur.com/QmIctDP.gif"/>
+
+</center>
+
+<br><br>
+<center>pocketland :</center>
+<br><br>
+<img width="170px" height="auto" src="http://i.imgur.com/I5DOJXV.jpg"/> <img width="170px" height="auto" src="http://i.imgur.com/BJ8EUHx.jpg"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/1pZSqE9.jpg"/> <img width="170px" height="auto" src="http://i.imgur.com/qMNdhVA.png"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/7SJZ5Yd.png"/> <img width="170px" height="auto" src="http://i.imgur.com/Pto1dgB.png"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/gVQILME.png"/> <img width="170px" height="auto" src="http://i.imgur.com/L3IzShX.png"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/2lNxlip.png"/> <img width="170px" height="auto" src="http://i.imgur.com/MjiOu5I.jpg"/>
+<br>
+<img width="170px" height="auto" src="http://i.imgur.com/0duZxqN.png"/> <img width="170px" height="auto" src="http://i.imgur.com/zYqGZEy.jpg"/>
+
+
+<br><br>
+
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+r a g n a r ö k　o n l i n e
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden; text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+definitely the game that most marked my life. also the first online game i ever played !<br>
+i started playing it in 2004, at age 7 ( yes, seriously ) using my mom's account ( YES, my mom played it ).<br>
+i've been playing ragnarok since almost the beginning of it, just missed the first mini-expansion. i had two main accounts, which was my mom's and then i had one myself in ... 2006, i guess ?<br>
+i played with that account until 2014. i played on several private servers as well. i go back to playing every year and i play for a month because of the nostalgia, but the game is not having any more big expansions, it can be considered dead... this is VERY SAD TO ME, but i think i've had enough, right ?<br>
+my passion was to collect rare pets and hats, i spent most of my time dedicating myself to it.
+</div>
+<br><br>
+<center> my favorite characters :
+<br>
+<img src="http://i.imgur.com/9ePccLR.png"/>
+<br>
+milky lily [ arch bishop ]
+<br><br>
+<img src="http://i.imgur.com/C5vWFtN.png"/>
+<br>
+shy bun [ baby novice ]
+<br><br>
+<img src="http://i.imgur.com/tjaKm3u.png"/>
+<br>
+gardenia glass [ alchemist ]
+<br>
+<br>
+<img src="http://i.imgur.com/jt2wgLz.png"/>
+<br>
+soft floret [ dancer ]
+<br>
+<br>
+<img src="http://i.imgur.com/gy1ZBOI.png"/>
+<br>
+lucy lepore [ sorcerer ]
+<br>
+<br>
+<img src="http://i.imgur.com/zLwBkku.png"/>
+<br>
+lait lizzy [ wanderer ]
+<br><br><br>
+special clothes :
+<br>
+<img src="http://i.imgur.com/o9BL2bq.png"/>
+<br><br>
+<img src="http://i.imgur.com/UrwRR2o.png"/>
+<br>
+( i was gm on a private server, dreamerro, in 2010 )
+<br><br>
+<img src="http://i.imgur.com/jLrKhb2.png"/>
+<br><br>
+<br><br>
+my clan :
+<br><br>
+<i>emblems ?</i><br><img src="http://i.imgur.com/IQ7Jz2J.png"/> <img src="http://i.imgur.com/WPrC9AY.png"/> <img src="http://i.imgur.com/cfzKMb7.png"/>
+<br><br>
+<i>name ?</i><br>" no no no "<br><br>
+<i>broken emperiums ?</i><br>veeeery few, i don't like wars ///
+<br><br>
+</center>
+<br><br>
+<center>wanna check my pets ? i have <a href="https://goo.gl/photos/2QzjzJA7J6fzY3Zy6" id="linkhm" target="_blank">here</a> all my regular pets, captured with taming items, and <a href="https://goo.gl/photos/pGqQnTrCvG9m15Yi9" id="linkhm" target="_blank">here</a> you can see my hocus pocus pets, captured with the sorcerer's skill abracadabra only ( these are super rare )
+<br>
+<a href="https://goo.gl/photos/3XUgrebx7VHMXcFy9" id="linkhm" target="_blank">here<a> you can see the homunculus i've had, and <a href="https://goo.gl/photos/3BRzFQ2uEzR8q5Wu5" id="linkhm" target="_blank">here<a> the elemental spirits from my sorcerer !</center>
+<br><br>
+
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><img src="http://i.imgur.com/CARPAP1.gif"/>　
+p o u p é e　g i r l
+　<img src="http://i.imgur.com/CARPAP1.gif"/></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden; text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+now, THIS ONE was my favorite dress-up game ever ! unfortunately, died in 2015...<br>
+i started playing it in 2008, and it was because of this game that i started to be interested in fashion, photography and the japanese language. it was very important for me, because i played every day, it was really a routine... i took it super seriously. the game was so detailed and incredible, i have never seen such a wonderful dress-up game.<br>
+it started to have no more updates in 2013, but i still had hopes, i loved that game... i really miss it.
+</div>
+<br><br>
+<center><img src="http://i.imgur.com/TXnp8ah.png"/> <img src="http://i.imgur.com/cmQ2NRs.png"/>
+<br><br>my super cute pupe ; ;
+<br><br><br>
+<img width="280px" height="auto" src="http://i.imgur.com/ZGKx9IZ.jpg"/>
+<br>my room
+<br><br>
+<img width="300px" height="auto" src="http://i.imgur.com/rw3A1rs.png"/>
+<br>my first #1 on dress-up ranking !
+<br><br>
+<img width="300px" height="auto" src="http://i.imgur.com/KAZKES5.png"/>
+<br>this one was the photo ranking, and apparently people liked many of my photos this day LOL
+<br><br>
+<img width="300px" height="auto" src="http://i.imgur.com/ZFgc8SC.jpg"/>
+<br>super cute drawing that a friend made from my pupe. unforgettable !
+<br><br><br>
+some of my favorite lingerie :
+<br><br>
+<img src="http://i.imgur.com/6CDC2Or.png"/> <img src="http://i.imgur.com/elChPP9.png"/> <img src="http://i.imgur.com/CXV62Ph.png"/> <img src="http://i.imgur.com/9YsWsc8.png"/> <img src="http://i.imgur.com/2tEXD8T.png"/><br><img src="http://i.imgur.com/2LbQfGB.png"/> <img src="http://i.imgur.com/b33DOEy.png"/>
+<br><br><br><br>
+my favorite days :
+<br><br>
+<img width="300px" height="auto" src="http://i.imgur.com/mNMxLVh.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/F8LbHJM.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/B4JlSWY.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/gYvwDbw.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/qywhmCA.png"/>
+<br>
+<img src="http://i.imgur.com/j3lP2oA.png"/> <img src="http://i.imgur.com/NmgSZR1.png"/>
+<br>
+<img src="http://i.imgur.com/5VcPwb0.png"/> <img src="http://i.imgur.com/q2VBWGg.png"/>
+<br>
+<img src="http://i.imgur.com/p2hxgWW.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/HoLqRJs.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/dEaZ5b1.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/gjj0sYh.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/AzCpSUD.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/rz6F3D2.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/xiRSTo3.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/SjTK0yF.jpg"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/YRkEGNY.png"/>
+<br><br>
+more shots <a href="https://goo.gl/photos/wYNb5uykMBGrwuJm9" id="linkhm" target="_blank">here</a> !
+<br><br>
+</center>
+
+
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+ᗩ ᑎ I ᗰ ᗩ ᒪ　ᑕ ᖇ O ᔕ ᔕ I ᑎ G
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden; text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+i have a lot of feelings about this game... it's incredibly engaging and it brings so much peace.<br>
+then i lost my ds, and i cried so much ;-;<br>
+now that i have a 3ds, i'm thinking about going back to play. but i'm not sure, for now.
+</div>
+<br><br>
+<center>ᑎEᗯ ᒪEᗩᖴ
+<br>r i p
+<br>town : poofy arabesques
+<br>mayor : marjorin
+<br><br>
+<img width="300px" height="auto" src="http://i.imgur.com/QXgc668.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/VOBl1HD.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/AOqQY3l.jpg"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/GGNcq4y.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/RO8XnFj.jpg"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/r4bRmut.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/ZuKf9Ue.jpg"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/qWLV3K4.jpg"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/92XTEYM.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/4A6cEa5.jpg"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/oFAZBdp.png"/>
+<br>
+<img width="300px" height="auto" src="http://i.imgur.com/CkHAfSS.jpg"/>
+<br><br>
+see more <a href="https://goo.gl/photos/kmx3Lt541oZTuidQA" id="linkhm" target="_blank">here</a> !
+<br><br></center>
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+❝ animal crossing is so nice because it's like a tiny safe space that you can carry anywhere. no matter how scary or sad life gets you can always have quietly tucked away in your pocket a familiar and peaceful little town packed full of friendly neighbors, a place where gifts fall from the sky and your biggest responsibility is pulling up a weed or two or catching a fish for a friend. ❞<br><br>
+</div>
+　　　　　　　　　　　<i>— someone on tumblr</i> ( sorry i don't remember /// )
+
+<br><br>
+
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+p o k é m o n　t e a m
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden; text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+so, i think it would be nice to put my fav pkmn here that would make a perfect team for me. i know it's super pink & cliché, but they're seriously my babies !!<br>
+</div>
+<br><br>
+<center>
+<img src="https://i.imgur.com/tSsESKg.gif"/>　<img src="https://i.imgur.com/Qyq2Tp6.gif"/>　<img src="https://i.imgur.com/qNPvYgd.gif"/><br>
+<br>
+<img src="https://i.imgur.com/DiooAz0.gif"/>　<img src="https://i.imgur.com/19D1Z2Q.gif"/>　<img src="https://i.imgur.com/GhIOTO1.gif"/><br>
+<br><br>
+
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+o s u !
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden; text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+osu is my favorite rhythm game ! nice thing about osu is that the community posts incredible songs, i've already discovered many instrumental songs because of osu.<br>
+i started playing in 2012, i stopped in 2015 because i lost my account ... "what a messy girl" you must be thinking, but well... misfortunes that i couldn't avoid, i went through difficult times LOL<br>
+my favorite mode is "catch the beat", and i don't really like the "taiko" mode. i already played taiko in ds and it's really cool, but in osu it's kinda weird, i don't know ; ;
+<br><br>
+</div>
+<center>
+<video width="300" height="auto" controls>
+  <source src="https://files.catbox.moe/hg18ox.webm" type="video/webm">
+</video>
+</center>
+<br><br>
+<center>
+<video width="300" height="auto" controls>
+  <source src="https://files.catbox.moe/b4q2mc.webm" type="video/webm">
+</video>
+</center>
+<br><br>
+<center>
+<video width="300" height="auto" controls>
+  <source src="https://files.catbox.moe/e3m44z.webm" type="video/webm">
+</video>
+</center>
+<br>
+<br><br>
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+project diva was the first rhythm game i ever played ( for seriously ), but the pc version was the one i played the most. i won the #1 place on a tournament in 2009 that was organized in a portuguese forum, it was a small thing, 70 people, but I WAS SO HAPPY !!!!
+</div>
+<br><br>
+<center>
+<video width="300" height="auto" controls>
+  <source src="https://files.catbox.moe/14ea1d.webm" type="video/webm">
+</video>
+</center>
+<br>
+<br><br>
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+sound voltex is an AMAZING game. unfortunately i only had opportunity to play on the pc, and it was not even my pc, but it's the kind of game i would play every day !
+</div>
+<br><br>
+<center>
+<video width="300" height="auto" controls>
+  <source src="https://files.catbox.moe/9p0k6b.webm" type="video/webm">
+</video>
+</center>
+
+<br><br>
+
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+t h e　s i m s
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden; text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+i started playing the sims 2 in 2006, but at that time i was not that much interested in personalization ( there were not many options anyway ). it was with the sims 3 and 4 that things started to get cuter, so i started to fall in love with character creation !
+</div>
+<br><br><center>
+<img width="300" height="auto" src="http://i.imgur.com/UGd1TpH.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/cJHXhUS.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/hYyXsqm.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/pUvnvBT.jpg"/>
+<br>
+the sims 4
+<br><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/XdHYIKA.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/KJRo3PZ.jpg"/>
+<br>
+the sims 3
+<br><br><br></center>
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+in search of more freedom of personalization and greater possibilities of social interaction in game, i became interested in second life. really, the variety of things to do is much greater. it's a shame that this game has not been well enjoyed by most of the public, besides being poorly administered and now, it's pretty death.
+</div>
+<br><br>
+<center>
+<img width="300" height="auto" src="http://i.imgur.com/lz0wUR1.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/Og1SQOI.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/a9MhEu3.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/IROjuF6.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/uk7DRAv.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/F0wRQ4A.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/9TaVgVo.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/u61bjli.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/WOf2xXc.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/bEUE7ey.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/ZZzErJx.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/INLVMMJ.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/L324mfU.jpg"/>
+
+</center>
+<br><br><br>
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+recently i decided to try imvu, which has very nice possibilities of customization. it's kinda hard to get used to it ; ;
+</div>
+<br><br>
+<center>
+<img width="300" height="auto" src="https://i.imgur.com/loQmFQZ.png"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/E8KoGxx.png"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/eiacuxQ.jpg"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/QomsxeW.jpg"/><br><br>
+<img width="200" height="auto" src="https://i.imgur.com/E9o0Uak.png"/><br><br>
+<img width="200" height="auto" src="https://i.imgur.com/xdt2vbw.png"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/6uL6ShV.png"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/pabZGBP.png"/><br><br>
+<img src="https://i.imgur.com/pAsN9WU.png"/>
+
+</center>
+<br><br>
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+f i n a l　f a n t a s y　xiv
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden; text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+um i don't have much to say so far because this is new to me, but i'm completely in love !!!
+</div>
+<br><br><center>
+<img width="170" height="auto" src="https://i.imgur.com/GEnv6pe.png"/> <img width="170" height="auto" src="https://i.imgur.com/dOQAkEe.gif"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/znMUU1I.png"/><br><br>
+<img width="170" height="auto" src="https://i.imgur.com/z0ygPyq.gif"/> <img width="170" height="auto" src="https://i.imgur.com/W3Geu0X.gif"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/xBHgdA4.png"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/7pyKxxr.gif"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/vuMwiHH.gif"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/S61fAoW.gif"/><br><br>
+<img width="170" height="auto" src="https://i.imgur.com/Zu0nutU.gif"/> <img width="170" height="auto" src="https://i.imgur.com/oQYXi8q.gif"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/cOIMr2o.png"/>
+</center>
+<br><br>
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+k a w a i i　p e t　m e g u
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden;text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+aaaaaa this one ; ; i wanted to play this game for a long time but it was just for ios and the fanmade pc version is not exactly the same thing, so i got it with an ios emulator !<br>
+the megus are so adorable, this is such a relaxing game.
+</div>
+<br><br><center>
+<img width="300" height="auto" src="http://i.imgur.com/Ln1bzc1.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/gYLfM50.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/xgq2e8Z.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/Qzs9Cgy.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/UijvjGA.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/RDtn0j0.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/UsW5KXM.png"/><br><br>
+<img width="270" height="auto" src="http://i.imgur.com/HZWfRck.jpg"/>
+<br><br></center>
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+l i n e　p l a y
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden;text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+i started playing line play just to test, because i've never had much interest in these chibi customization games. in the end, i really liked the items and possibilities ! i played for about a year and it was great fun, even if i just used the diary to write random things with kaomojis LOL i just can't take these game statuses seriously ( same with pupe ).
+</div>
+<br><br><center>
+<img width="150" height="auto" src="http://i.imgur.com/bvLyBjH.png"/><br><br>
+<img width="270" height="auto" src="http://i.imgur.com/ADKVAam.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/FDgUAID.jpg"/><br><br>
+<img width="250" height="auto" src="http://i.imgur.com/bFI5Tkx.jpg"/><br><br>
+<img width="270" height="auto" src="http://i.imgur.com/CmNuCmk.jpg"/>
+
+<br><br><br></center>
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+i also tested ameba pigg, and this one i only played for a few months and it is certainly much less interesting than line play, it has few interesting items and updates.
+</div>
+<br><br><center>
+<img width="150" height="auto" src="http://i.imgur.com/UU015lB.png"/> <img width="150" height="auto" src="http://i.imgur.com/F6r8Ko9.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/FXTs0xR.png"/>
+<br><br></center>
+</div>
+</div>
+</div>
+
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+p e t e r　r a b b i t` s　g a r d e n
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden;text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+okay... i have no words to describe, this game is SO beautiful, has so many details, is fun and very complete ! a wonderful game to play on the tablet, i'm always impressed by the amount of detail. i've been playing this for 2 years, it's a well-kept game with incredible updates all the time !<br>
+besides, i love everything that is related to beatrix potter, of course.
+</div>
+<br><br><center>
+<img src="http://i.imgur.com/oqGLnpx.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/tAFHfAo.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/FrKQCx8.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/dHAOuRe.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/W6pQWgS.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/zECAWpX.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/xWSnm7I.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/gEzZe2l.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/uvy9tVu.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/vchgQeV.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/TBhTWeJ.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/oMmmVbD.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/VcQEAJZ.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/2b1LpT6.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/DdZvL5U.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/rvbyqvl.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/7aWMy7K.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/aVbo91f.png"/><br><br>
+
+<br><br></center>
+</div>
+</div>
+</div>
+
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+a l i c e` s　m a d　t e a　p a r t y
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden;text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+this game is really beautiful, from the same creators from the game above, but this one is all about alice !<br>
+i've been playing this for 2 years too, and i love this ! very detailed, always with new updates.
+</div>
+<br><br><center>
+<img src="http://i.imgur.com/KiVHycZ.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/1AB7kym.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/IZOnxpP.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/7Fi0mgr.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/cyeTE6W.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/yDaEOP6.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/e0ZVVEo.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/jAHCv4I.png"/><br><br>
+
+<br><br></center>
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+m i n e c r a f t
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden;text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+hmmfg, i have a love & hate relationship with this game... i hate the fanbase, like, i REALLY HATE IT. it's so toxic, gosh ! but this game has many possibilities for creative people and with a lot of patience ( it's not my case ). i love cute textures, objects and pets, character customization... it's so simple, but it's a lot of fun to create soft and cute worlds !<br>
+i just think it's hard to keep yourself entertained, since the game is too open, you know.
+</div>
+<br><br><center>
+<img width="300" height="auto" src="http://i.imgur.com/u3W8t5M.png"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/m2e5jhL.png"/><br><br>
+<img width="250" height="auto" src="https://i.imgur.com/wWRwf1b.png"/><br><br>
+<img width="250" height="auto" src="https://i.imgur.com/GGRT0CX.png"/><br><br><br>
+<img width="250" height="auto" src="https://i.imgur.com/MgsBaVg.png"/><br><br>
+<img width="250" height="auto" src="https://i.imgur.com/LqeXBfY.png"/><br><br>
+<img width="250" height="auto" src="https://i.imgur.com/J5JpwHa.jpg"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/csUK18S.png"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/dseQfCP.jpg"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/BCNPGvQ.png"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/gdoixA5.png"/>
+<br><br></center>
+</div>
+</div>
+</div>
+
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+h a m s t e r　l i f e
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden;text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+i love this gaaaaame ! i played this one for months, and it's so nice to buy new hamsters, they are adorable ////
+</div>
+<br><br><center>
+<img width="270" height="auto" src="http://i.imgur.com/dvoQ3on.jpg"/><br><br>
+<img width="270" height="auto" src="http://i.imgur.com/QGY3SF5.jpg"/><br><br>
+<img width="270" height="auto" src="http://i.imgur.com/OZ7CqdO.png"/><br><br>
+<br><br></center>
+<br>
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+so, i discovered this other hamster game that i found even more cute and complete ! it has a very cute little story, it's possible to even train your hamsters, besides having a wonderful art style !! 100% recommended
+</div>
+<br><br><center>
+<img width="270" height="auto" src="https://i.imgur.com/Cu0sUHT.png"/><br><br>
+<img width="270" height="auto" src="https://i.imgur.com/ZfYiY1S.png"/><br><br>
+<br><br></center>
+</div>
+</div>
+</div>
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+a l i c e　r o o m
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden;text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+very cute game, you can dress up alice and change her room ! the main game is really fun, and a little bit hard.
+</div>
+<br><br><center>
+<img width="300" height="auto" src="http://i.imgur.com/aGMMDRg.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/t2eYSWN.png"/>
+<br><br></center>
+</div>
+</div>
+</div>
+
+
+<br><br>
+<div class="wrapper">
+<br>
+<center><sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub>　
+mobile games i recommend
+　<sub><img src="http://i.imgur.com/CARPAP1.gif"/></sub></center>
+<br><br>
+<div class="tooltip">
+<div style ="width: 380px; height: 286px; overflow: auto; overflow-x: hidden; text-align: justify;">
+<div style ="width: 370; height: auto; overflow-y: hidden; overflow-x: hidden; text-align: justify;">
+well, i like to test random mobile games and sometimes i find very nice stuff ! these are for android, but i think you can find some of them on ios too.
+</div>
+<br><br><center>
+<img width="170" height="auto" src="https://i.imgur.com/3r0icQC.png"/> <img width="170" height="auto" src="https://i.imgur.com/rxtulPG.png"/><br><br>
+<img width="170" height="auto" src="https://i.imgur.com/1g24joL.png"/> <img width="170" height="auto" src="https://i.imgur.com/xBxsCuS.png"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/EAKWo5B.png"/><br><br>
+<img width="300" height="auto" src="https://i.imgur.com/6R8l7by.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/lt2zVIe.png"/> <img width="170" height="auto" src="http://i.imgur.com/NhFRz6Z.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/hw2emch.png"/> <img width="170" height="auto" src="http://i.imgur.com/K6oeSIY.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/phZYTxP.png"/> <img width="170" height="auto" src="http://i.imgur.com/AHSdotw.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/TmLGYpL.jpg"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/Yi0lVT6.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/S9YbJ7S.png"/> <img width="170" height="auto" src="http://i.imgur.com/gZxebsv.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/kgfbPlJ.png"/> <img width="170" height="auto" src="http://i.imgur.com/AJl1QXu.jpg"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/nRwoTUo.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/50Y9hBF.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/2t54VSj.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/mW2jySl.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/BMgnNKT.png"/> <img width="170" height="auto" src="http://i.imgur.com/7cdbY9r.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/vcPtPxk.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/4YbldG9.png"/> <img width="170" height="auto" src="http://i.imgur.com/qzDFlWD.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/11Ing5l.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/UrJqck3.png"/> <img width="170" height="auto" src="http://i.imgur.com/5658aiF.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/PGwlGY5.png"/><br><br>
+<img width="300" height="auto" src="http://i.imgur.com/tqKKcnu.png"/><br><br>
+<img width="170" height="auto" src="http://i.imgur.com/nYOTx8d.png"/>
+</center>
+<br><br>
+</div>
+</div>
+</div>
+
+
+
+</center>
+
+
+
+
+
+<br><br>
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+<!--
+
+　　　          ___   .--.
+　　　    .--.-"   "-' .- |
+　　　   / .-,`          .'   
+　　　   \   `           \ 　　　　　　。・゜ 　♡   。　　・　゜ 　　　♡  
+　　　    '.            ・ \　　　　　　　　　　　　　　　　　　　　　　　　♡　　　　♡ ゜・。。♡  
+　　　      |  ・     ᴥ    。|　　　　・゜♡ ゜・。　　. * ・ ♡ °  . 。
+　　　      \ 。            /.____　　　　　　　　　　　　　　　　　　♡.  
+　　　     /`-.          ,'.'    `\　　　　　　　　　　　　　　　　　　。・゜　　　 ♡ ・ 。　　。・゜ ♡  
+　　　  __/   \`-.____.-' `\      /　　　　　♡　。・゜      
+　　　  | `---`'-'._/-`     \----'    _ 　　　　　　　　　　　♡　　　.　　　.♡ 
+　　　  |,-'`  /             |    _.-' `\　　　　. * ・        
+　　　 .'     /              |--'`     / |　　　　　　　　　　 ♡
+　　　/      /\              `         | |
+　　　|   .\/  \      .--. __          \ |　　　　　　　　　　　*.。middlepot.com 
+　　　 '-'      '._       /  `\         /　　　　　　　　　　　　　　　　　　　　　　　ଘ(*´ ˘ `*)ഒ 。.*
+　　　             `\    '     |------'`
+　　　               \  |      |
+　　　                \        /
+ 　　　                '._  _.'
+
+-->
+
+</html>
