@@ -502,9 +502,55 @@ fun things and tragic things happen every day in this world. in that cruel, but 
 <center>
 <style type="text/css">
 /*estilo da pop-up*/
+#pop01{
+position: fixed;
+top: 20%;
+left: 40%;
+font: 11px;
+margin: -75px 0 0 -150px;
+width: 550px; /*largura do coiso todo*/
+height: 260px; /*altuuuuuuura*/
+padding: 5px;
+border:1px dashed #CEB6B6;
+background: #fffcfc; /*corzinha de fundo*/
+display: none;
+z-index: 999999999999999999999; /*0 "10" faz o banner se sobre-por aos demais*/
+}
+#link-fechar01{
+color: #CEB6B6;
+}
+</style>
+
+<script type="text/javascript">
+function fecharpop01(){
+    document.getElementById('pop01').style.display = 'none';
+}
+function abrirpop01(){
+    document.getElementById('pop01').style.display = 'block';
+    setTimeout ("fecharpop01()", 999999);
+}
+</script>
+
+<div id="pop01">
+<!--coisinhas-->
+<center><div style="background-image:url(); border: 1px; overflow: auto; color: #BC9F9F; width: 550px;height: 270px; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:10px; line-height: 10px">
+
+<div style= "padding-left: 3px;">
+　　　　　　<div style="text-align: right;"><a href="javascript: fecharpop01();" ><font color="#CEB6B6" size="1"> [ x ]</font></a>　</div>
+<br>
+<center><img src="https://i.imgur.com/ZRN030i.png"></center>
+</div>
+</div>
+</div>
+</center>
+<!--coisinhas-->
+</center>
+
+<style type="text/css">
+/*estilo da pop-up*/
 #pop0{
 position: fixed;
-top: 15%;
+top: 20%;
 left: 40%;
 font: 11px;
 margin: -75px 0 0 -150px;
@@ -553,7 +599,7 @@ function abrirpop0(){
 /*estilo da pop-up*/
 #pop1{
 position: fixed;
-top: 15%;
+top: 20%;
 left: 40%;
 font: 11px;
 margin: -75px 0 0 -150px;
@@ -597,7 +643,7 @@ function abrirpop1(){
 
 
 
-　　　　<a href="javascript: abrirpop0();"><img width="70" height="70" src="https://i.imgur.com/GJHwH9N.png"></a> <a href="javascript: abrirpop1();"><img width="70" height="70" src="https://i.imgur.com/Y0emjrX.png"></a>
+　　　　<a href="javascript: abrirpop01();"><img width="auto" height="70" src="https://i.imgur.com/ZRN030i.png"></a> <a href="javascript: abrirpop0();"><img width="70" height="70" src="https://i.imgur.com/GJHwH9N.png"></a> <a href="javascript: abrirpop1();"><img width="70" height="70" src="https://i.imgur.com/Y0emjrX.png"></a>
 
 
 
@@ -609,7 +655,7 @@ function abrirpop1(){
 /*estilo da pop-up*/
 #popp0{
 position: fixed;
-top: 15%;
+top: 20%;
 left: 40%;
 font: 11px;
 margin: -75px 0 0 -150px;
@@ -658,7 +704,7 @@ function abrirpopp0(){
 /*estilo da pop-up*/
 #popp1{
 position: fixed;
-top: 15%;
+top: 20%;
 left: 40%;
 font: 11px;
 margin: -75px 0 0 -150px;
