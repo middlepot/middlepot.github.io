@@ -25,19 +25,19 @@
 
 -->
 
-<title>middlepot ഒ</title>
+<title>ഒ</title>
 
-<link rel="shortcut icon" href="https://i.imgur.com/C7cSCvF.gif">
+<link rel="shortcut icon" href="https://i.imgur.com/c2cyx81.png">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta name="description" content="・゜ ♡   。・　゜ ♡   。・゜ ♡   ゜・。。 ♡　。・゜ ♡ ・  。・゜ ♡   ・゜ ♡ ゜・。 ・ ♡ °  . 。 ♡  .">
 <style>
 body{ 
-  cursor: url(https://i.imgur.com/xrySzI4.png), progress;}
-a:hover {cursor: url(https://i.imgur.com/LY1tJ6u.png), progress;
+  cursor: url(https://i.imgur.com/C9RGjYt.png), progress;}
+a:hover {cursor: url(https://i.imgur.com/EZZ5Vol.png), progress;
   
   }
- ::selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
- ::-moz-selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
+ ::selection {text-shadow: 0 0 2px #cec1bb;color:#cec1bb}
+ ::-moz-selection {text-shadow: 0 0 2px #cec1bb;color:#cec1bb}
 }
 }
 </style>
@@ -50,14 +50,13 @@ height: 4px;
 background: #FFF9F9;
 }
 ::-webkit-scrollbar-thumb {
-background-color: #FCE4E4;
+background-color: #f9f0ed;
 -webkit-border-radius: 0ex;
-border: 1px solid #C1A3A3;
+border: 1px dotted #e2d5d0;
 }
-#linkbjinho { color: #ffacac; border-bottom:1px solid #897B7B; }
-#linkkkkkkkk { color: #ffacac; }
-#linkzinho { color: #938373; text-decoration: none;}
-#linkzinhoo { color: #6E6156; text-decoration: none;}
+#linkbjinho { color: #bca7a7; padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
+#linkzinho { padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
+
 </style>
 
 <!--
@@ -102,8 +101,8 @@ max-width:300px; /*how big the tooltip can be at most*/
 border-radius: 0px; /*change your border radius*/
 padding:3px 4px 5px 4px; /*padding inside tooltip*/
 margin:10px 7px -2px 10px; /*distance from word*/
-background-color:#FFF5F5; /*background color*/ 
-  border:1px dashed #CEB6B6; /*border info*/
+background-color:#fcf6f2; /*background color*/ 
+  border:1px dotted #CEB6B6; /*border info*/
   font-family:tahoma; /*tooltip font*/
 font-size:7px; /*tooltip font size*/
 letter-spacing:2px; /*tooltip letter spacing*/
@@ -130,11 +129,11 @@ menuuuuuuuuuuuuuuu
 			}
 			
 			#context_menu {
-				background: #fff9f9;
-				-moz-border-radius: 2px 2px;
-				border: 1px solid #baada3;
+				background: #fcf6f2;
+				-moz-border-radius: 1px 1px;
+				border: 1px dotted #baada3;
 				letter-spacing:1px; 
-				width: 85px;
+				width: 70px;
 				font-size: 8px;
 				position: absolute;
 				display: none;
@@ -142,13 +141,13 @@ menuuuuuuuuuuuuuuu
 			}
 			
 			#context_menu ul li {
-				padding: 4px 3px;
+				padding: 4px 4px;
 				-moz-border-radius: 10px 10px;
-				cursor: url(https://i.imgur.com/xrySzI4.png), progress;
+				cursor: url(https://i.imgur.com/C9RGjYt.png), progress;
 			}
 			
 			#context_menu ul li:hover {
-				background: #fff9f9;
+				background: #fcf6f2;
 				color: #baada3;
 			}
 		</style>
@@ -195,194 +194,276 @@ menuuuuuuuuuuuuuuu
 		<div id="teste"></div>
 		<div id="context_menu">
 			<ul>
-				<li>　<font color="#baada3">© middlepot</font></li>
+				<li><font color="#baada3">stay safe.. !</font></li>
 			</ul>
 		</div>
 <!--
 menuuuuuuuuuuuuuuu
 -->
 
-
-<script>
-function popcbox(tid, tkey) {
-	var baseurl = "https://www5.cbox.ws/box/?boxid=884320&boxtag=v1q22y",
-		baseid = '5-884320',
-		fontop = 0;
-		turl = '',
-		tid = tid || 0,
-		tkey = tkey || "",
-		html = [],
-		width = 220,
-		height = 380,
-		fheight = 107;
-
-	if (tid && tkey) {
-		turl = '&tid='+tid+'&tkey='+tkey;
-	}
-		
-	var htmlform = '<frame src="'+baseurl+turl+'&sec=form" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxform'+baseid+'-'+tid+'">';
-	var htmlmain = '<frame src="'+baseurl+turl+'&sec=main" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxmain'+baseid+'-'+tid+'">';
-	var prows = (fontop) ? (fheight+',*') : ('*,'+fheight);
-	
-	html.push('<!DOCTYPE html><html><head><title>*.。ଘ(*´ ˘ `*)ഒ 。.*</title><meta name="viewport" content="width=device-width, user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=edge"></head><frameset rows="'+prows+'" frameborder="0" framespacing="0">');
-	html.push(fontop ? htmlform : htmlmain);
-	html.push(fontop ? htmlmain : htmlform);
-	html.push('</frameset><noframes>Frames required</noframes></html>');
-	
-	var cboxwin = window.open("","Cbox-"+baseid+"-"+tid,"width="+width+",height="+height+",toolbar=no,scrollbars=no,status=no,resizable=yes");
-	cboxwin.document.open();
-	cboxwin.document.write(html.join(''));
-	try {
-		x = screen.width;
-		y = screen.height;
-		cboxwin.moveTo(Math.max((x - width)/2, 0), Math.max((y - height)/2, 0));
-		cboxwin.focus();
-	} catch (e) {};
-}
-</script>
-
 </head>
 
 
-<body ondragstart="return false" style="background-image:url(https://i.imgur.com/y6B6r2v.png); background-color:#FFF9F9; font-family: Verdana; font-size: 10px;">
+<body ondragstart="return false" style="background-image:url(https://i.imgur.com/s0V8ydU.png); background-repeat: no-repeat; background-size: cover; background-color:#fefbfb; font-family: Verdana; font-size: 10px;">
 <style>
 #base {
 position: absolute;
-	left: 20%;
-	top: 15%;
+	left: 13%;
+	top: 10%;
 overflow-y:hidden;
 overflow-x:hidden;
  }
 #menu1 {
 position: absolute;
-	left: 2%;
-	top: 4%;
-max-width: 130px;
-max-height: 490px;
+	left: %;
+	top: 30%;
+width: 130px;
+height: 250px;
 overflow-y:hidden;
 overflow-x:hidden;
 z-index: 2;
  }
 #menu2 {
 position: absolute;
-	left: 28%;
-	top: 4%;
-max-width: 560px;
-max-height: 35px;
+	left: 23%;
+	top: 1%;
+width: 560px;
+height: 35px;
 overflow-y:hidden;
 overflow-x:hidden;
 z-index: 4;
  }
+#menu3 {
+position: absolute;
+	left: 85%;
+	top: 50%;
+width: 130px;
+height: 250px;
+overflow-y:hidden;
+overflow-x:hidden;
+z-index: 2;
+ }
 #stuff {
 position: absolute;
-	left: 23%;
-	top: 14%;
+	left: 18.5%;
+	top: 12%;
 width: 594px;
 height: 433px;
 overflow-x:hidden;
 z-index: 6;
  }
-#aaa {
-position: relative;
-	left: 8%;
- }
 </style>
 <div id="base">
-<img src="https://i.imgur.com/pfTi48h.png"/>
+<img src="https://i.imgur.com/fEKbdEW.png"/>
 
 <div onselectstart="return false" id="menu1">
+<p style="font-size:10px;line-height:50%;"><br><br>
 
-　　&nbsp;<a href="https://middlepot.com"><img width="100px" height="auto" src="https://i.imgur.com/4XdG5rK.png"/></a><br><center><font color="#A08D7E">　© middlepot.com</font></center>
-<p style="font-size:10px;line-height:50%;">
-<br><br><br></p>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/about">about</a></font><br>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/links">links</a></font><br>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/contact">contact</a></font><br>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/credits">credits</a></font>
-<p style="font-size:10px;line-height:50%;">
-<br><br><br></p>
-
-<center>　　<img src="https://i.imgur.com/HA2l4dB.gif"/>
- <font color="#6E6156"><font size="2"><sup><a id="linkzinhoo" href="https://middlepot.com/blog">news blog</a></sup></font></font> <img src="https://i.imgur.com/VV0vQHD.gif"/></center>
-
-<p style="font-size:10px;line-height:50%;">
-<br></p>
-<center>　　<a href="JavaScript:popcbox('', '');"><img src="https://i.imgur.com/ysc4y4D.gif"/></a></center>
-<p style="font-size:10px;line-height:70%;">
-<br></p>
-
-<center><div id="aaa"><img src="https://i.imgur.com/93DE8B0.png"/><br>
-<a href="https://middlepot.com/milky-woods"><img src="https://i.imgur.com/43guVp5.png"/></a><br>
-<a href="https://middlepot.com/not-bad"><img src="https://i.imgur.com/OlFt7cw.png"/></a><br>
-<a href="https://middlepot.com/puporipot"><img src="https://i.imgur.com/m7ehqeT.png"/></a><br>
-<a href="https://middlepot.com/crwel-friends"><img src="https://i.imgur.com/czEnR0y.png"/></a><br>
-<a href="https://middlepot.com/fairy-loli"><img src="https://i.imgur.com/aJzy5nD.png"/></a><br>
-<a href="https://middlepot.com/potetomid"><img src="https://i.imgur.com/yE0iyO0.png"/></a><br>
-<a href="https://middlepot.com/soft-collection"><img src="https://i.imgur.com/k4KPMRn.png"/></a><br>
-<a href="https://middlepot.com/moep"><img src="https://i.imgur.com/MkgULzx.png"/></a><br>
-<img src="https://i.imgur.com/op6oXma.png"/></div></center>
-
-<p style="font-size:10px;line-height:70%;">
-<br><br></p>
-<center>
-　　<a href="https://shybunny.middlepot.com" target="_blank"><img src="https://i.imgur.com/gtevTSn.gif"/></a></center>
-
+　　　　<font color="#c6a799">ణ</font>　<a href="/about" style="text-decoration: none; color:#a3948d;">about</a><br><br><br>
+　　　　<font color="#c6a799">ణ</font>　<a href="/links" style="text-decoration: none; color:#a3948d;">links</a><br><br><br>
+　　　　<font color="#c6a799">ణ</font>　<a href="/contact" style="text-decoration: none; color:#a3948d;">contact</a><br><br><br>
+　　　　<font color="#c6a799">ణ</font>　<a href="/credits" style="text-decoration: none; color:#a3948d;">credits</a><br><br><br>
+</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+　　　　　　<a href="/poofties" style="text-decoration: none; color:#8c7d75;">poofties</a>
 </div>
 
 <div id="menu2">
+<br>
+　　<a id="linkzinho" href="/status" style="text-decoration: none; color:#93847d;">status</a>　　　　　　　 <a id="linkzinho" href="/fashion" style="text-decoration: none; color:#93847d;">fashion</a>　　　　　　　<a id="linkzinho"href="/portfolio" style="text-decoration: none; color:#93847d;">portfolio</a>　　　　　　　<a id="linkzinho" href="/gaming" style="text-decoration: none; color:#93847d;">gaming</a>　　　　　　<a id="linkzinho" href="/recommended" style="text-decoration: none; color:#93847d;">recommended</a>
 
-<img src="https://i.imgur.com/PTzpVdh.png"/><a href="https://middlepot.com/status"><img src="https://i.imgur.com/gtWd2tI.png"/></a><a href="https://middlepot.com/look-book"><img src="https://i.imgur.com/21R6rOA.png"/></a><a href="https://middlepot.com/portfolio"><img src="https://i.imgur.com/5UlJkeC.png"/><a href=""></a><a href="https://middlepot.com/help"><img src="https://i.imgur.com/f6GSYqr.png"/></a><a href="https://middlepot.com/gaming"><img src="https://i.imgur.com/5dSoAlZ.png"/></a><a href="https://middlepot.com/cemetery"><img src="https://i.imgur.com/FctiXzO.png"/></a><a href="https://middlepot.com/recommended"><img src="https://i.imgur.com/myWm2B5.png"/></a><img src="https://i.imgur.com/W6coopC.png"/>
+</div>
 
-
+<div id="menu3">
+<br><br>
+　　　　　 <a href="/blog" style="text-decoration: none; color:#b29487;">my blog</a>
 </div>
 
 <div id="stuff">
 
 <center>
 
-
-<br><br><center><div id="update" style="background-image:url(https://i.imgur.com/HgFke6Y.png); border: 1px; padding: 10px; overflow: auto; color: #BC9F9F; width: 172px;height: 100px; text-align: justify; font-family: Verdana; font-size:7px; line-height: 100%">
-<center><img src="https://i.imgur.com/bwAaPW7.gif"></center>
-<br><br>
-　02/21 <img src="https://i.imgur.com/y9S1bJ8.gif"> edit on: <font color="#DFB7B7">about page</font><br>
-　02/19 <img src="https://i.imgur.com/y9S1bJ8.gif"> edit on: <font color="#DFB7B7">links page</font><br>
-　02/14 <img src="https://i.imgur.com/y9S1bJ8.gif"> status on: <font color="#DFB7B7">status page</font><br>
-　02/10 <img src="https://i.imgur.com/y9S1bJ8.gif"> text on: <font color="#DFB7B7">tiny journal</font><br>
-　02/10 <img src="https://i.imgur.com/y9S1bJ8.gif"> tips on: <font color="#DFB7B7">help page</font><br>
-　02/08 <img src="https://i.imgur.com/y9S1bJ8.gif"> post on: <font color="#DFB7B7">news blog</font><br>
-　02/08 <img src="https://i.imgur.com/y9S1bJ8.gif"> stuff on: <font color="#DFB7B7">portfolio</font><br>
-　02/08 <img src="https://i.imgur.com/y9S1bJ8.gif"> status on: <font color="#DFB7B7">status page</font><br>
-</div></center>
+<br><center>
+<div id="update" style="background:linear-gradient(to top, #fcf6f2 ,transparent 90%); border: 1px; padding: 10px; overflow: auto; color: #BC9F9F; width: 172px;height: 110px; text-align: justify; font-family: Verdana; font-size:8px; line-height: 100%">
+<center><sub><sub><img src="https://i.imgur.com/96xhX4a.gif"></sub></sub>　<font color="#d3a5a5" size=1>updates</font>　<sub><sub><img src="https://i.imgur.com/8rwotzX.gif"></sub></sub></center>
+<br>
+　　02.24 <sub><sub><img width="15px" height="auto" src="https://i.imgur.com/2VoIyIV.png"></sub></sub> edit on: <font color="#DFB7B7">everything !?</font><br>
+　　02.21 <sub><sub><img width="15px" height="auto" src="https://i.imgur.com/2VoIyIV.png"></sub></sub> edit on: <font color="#DFB7B7">about page</font><br>
+　　02.19 <sub><sub><img width="15px" height="auto"src="https://i.imgur.com/2VoIyIV.png"></sub></sub> edit on: <font color="#DFB7B7">links page</font><br>
+　　02.14 <sub><sub><img width="15px" height="auto" src="https://i.imgur.com/2VoIyIV.png"></sub></sub> status on: <font color="#DFB7B7">status page</font><br>
+　　02.10 <sub><sub><img width="15px" height="auto" src="https://i.imgur.com/2VoIyIV.png"></sub></sub> text on: <font color="#DFB7B7">tiny journal</font><br>
+</div>
+</center>
 
 <br>
-<img src="https://i.imgur.com/SS3uOVJ.png"/>
-<br><br>
-<textarea style="height:8px; width:50px;  border:1px dashed #8A2316; -moz-border-radius: 20px;
+<img src="https://i.imgur.com/9t37pSy.png"/>
+<br>
+<textarea style="height:9px; width:50px;  border:1px dotted #e2d5d0; -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     -khtml-border-radius: 20px;
-    border-radius: 20px; outline:none; padding:2px; padding-left:3px; padding-right:3px; background-image:url(https://i.imgur.com/4pQ4HlC.png); font-size:8px; font-family:Verdana; COLOR: #a58282"><a href="https://middlepot.com/"><img src="https://i.imgur.com/SS3uOVJ.png"></a></textarea>
-<br><br><br>
-
-<font family = "Verdana"><font style="font-size:8px;"><font color="#cea9a9">since</font><font color="#c18f8f"> *</font><font color="#9e8787"> 2017 . august . 16</font><br><font color="#cea9a9">last update</font><font color="#c18f8f"> *</font><font color="#9e8787"> 2019 . february . 21</font></font></font>
+    border-radius: 20px; outline:none; padding:2px; padding-left:3px; padding-right:3px; background-image:url(https://i.imgur.com/AgXOBtX.png); font-size:8px; font-family:Verdana; COLOR: #b29487"><a href="https://middlepot.com/"><img src="https://i.imgur.com/9t37pSy.png"></a></textarea>
 <br><br>
-<font family = "Verdana"><font style="font-size:8px;"><font color="#d8c0ad">( </font><font color="#efb8b8">♡</font><a href="https://shybunny.middlepot.com" target="_blank"><font color="#cc7a7a" style="padding-bottom: 2px; border-bottom:1px dashed #d8c0ad;"> visite minha lojinha </font></a><font color="#efb8b8">♡</font><font color="#d8c0ad"> )</font></font></font>
-<br><br><br><br>
-<img src="https://i.imgur.com/VUf1twI.png"/>
+
+<font family = "Verdana"><font style="font-size:8px;"><font color="#cea9a9">since</font><font color="#c18f8f"> *</font><font color="#b7a1a1"> 2017 . august . 16</font><br><font color="#cea9a9">last update</font><font color="#c18f8f"> *</font><font color="#b7a1a1"> 2019 . february . 24</font></font></font>
+<br><br>
+<font family = "Verdana"><font style="font-size:8px;"><font color="#d8c0ad">( </font><font color="#efb8b8">♡</font><a id="linkzinho" href="https://shybunny.middlepot.com" target="_blank"><font color="#c9a5a5"> visite minha lojinha </font></a><font color="#efb8b8">♡</font><font color="#d8c0ad"> )</font></font></font>
+<br><br><br>
+<font style="font-size:5px" color="#d8c0ad">.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.·.</font><br><br>
+<font color="#c4ae9d">welcome to my safe corner on the internet !<br>
+make yourself comfy and enjoy your stay <font style="font-size:11px">♡</font><br>
+important reminder :</font><br><br>
+
+
+
+
+<center>
+<!--eeee-->
+
+<html>
+<script language=JavaScript> 
+<!--
+ 
+// --> 
+</script>
+ 
+<style type="text/css"> 
+<!--BODY,TD,FONT{;
+} 
+-->
+<!--input,textarea{
+background:#fcf9f7;
+border:1PT dotted #dbcbbe;line-height:8pt
+outline:none;
+}  -->
+<style type="text/css">
+</style>
+<base>
+<body style="text-align: center">
+<html>
+ 
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+ 
+<body>
+<form name="scriptform"><b>
+ 
+</b><p>
+<input name="scriptinput" style="cursor: url(https://i.imgur.com/C9RGjYt.png), progress; outline:none;border-left-width:solid; border-right-width:solid; border-width:1px; border-bottom-width:black; color:#bcac9e; font-family: Verdana; font-size:8px; width: 220px; height:20px; text-align:center; padding-left: 4px; padding-right: 4px; background:#f9f4f4;" readonly><b><i>
+	</i></b>
+ 
+<br><br>
+ 
+<input size=14 value=" ・ click for more ・" onClick="randomdisplay()" style="cursor: url(https://i.imgur.com/EZZ5Vol.png), progress; outline:none;font-family: Verdana; font-size:8px; color:#dbbebe; -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;" readonly></p>
+ 
+ 
+</form>
+ 
+<script> 
+ 
+quotes = new Array();
+quotes[0]="say i love you ♡";
+quotes[1]="remember to rest ♡"
+quotes[2]="considerate your personal space ♡"
+quotes[3]="drink water ♡"
+quotes[4]="make a compliment to someone today ♡"
+quotes[5]="you are important ♡"
+quotes[6]="thank you for existing ♡" 
+quotes[7]="be kind ♡"
+quotes[8]="you are improving and i'm proud of you ♡"
+quotes[9]="everything will be okay ♡"
+quotes[10]="you are beautiful ♡"
+quotes[11]="you are loved ♡"
+quotes[12]="believe in magic ♡"
+quotes[13]="we are so lucky ♡"
+quotes[14]="you deserve happiness ♡"
+quotes[15]="make someone happy today ♡"
+quotes[16]="let whoever think whatever ♡"
+quotes[17]="you are safe ♡"
+quotes[18]="i'm so glad you are alive ♡"
+quotes[19]="you are smart ♡"
+quotes[20]="you can sleep early ♡"
+quotes[21]="hate no one, be happy ♡"
+quotes[22]="risking is better than regretting ♡"
+quotes[23]="every day is the best day ♡"
+quotes[24]="you are amazing ♡"
+quotes[25]="respect your feelings ♡"
+quotes[26]="you don't need approval from anyone but yourself ♡"
+quotes[27]="take care of yourself today ♡"
+quotes[28]="you are lovely ♡"
+quotes[29]="when no one is validating you, validate yourself ♡"
+quotes[30]="you have a lot of time to figure things out ♡"
+quotes[31]="don't worry, you'll get where you want to be ♡"
+quotes[32]="sleep is super important ♡"
+quotes[33]="take care of your mental and physical health ♡"
+quotes[34]="you are doing your best ♡"
+quotes[35]="there's nothing wrong with shyness ♡"
+quotes[36]="don't be afraid to fail ♡"
+quotes[37]="your emotions aren't stupid ♡"
+quotes[38]="hug people you love ♡"
+quotes[39]="your feelings are valid ♡"
+quotes[40]="you are not weak for asking for help ♡"
+quotes[41]="you are not dumb for not knowing things ♡"
+quotes[42]="you're not selfish for wanting better ♡"
+quotes[43]="seek comfort ♡"
+quotes[44]="don't worry, things will be okay in the end ♡"
+quotes[45]="you can achieve purity again ♡"
+quotes[46]="you have a bright future ♡"
+quotes[47]="you are smarter than you think ♡"
+quotes[48]="you are stronger than you think ♡"
+quotes[49]="you are capable of so much more than you think ♡"
+quotes[50]="life is tough, but so are you ♡"
+quotes[51]="you have a sweet personality ♡"
+quotes[52]="you have a beautiful smile ♡"
+quotes[53]="your life is important and meaningful ♡"
+quotes[54]="allow yourself to make little mistakes ♡"
+quotes[55]="no one said you can't be cute and powerful ♡"
+quotes[56]="it's actually okay to just relax sometimes ♡"
+quotes[57]="accept sadness, like we accept happiness ♡"
+quotes[58]="you are never too old to learn a new skill ♡"
+quotes[59]="make your mental health a priority ♡"
+quotes[60]="stop comparing yourself to others ♡"
+quotes[61]="considerate your personal space ♡"
+quotes[62]="make new plans, go for an adventure ♡"
+quotes[63]="drink tea ♡"
+quotes[64]="wear something that makes you feel good ♡"
+quotes[65]="listen to your favorite music ♡"
+quotes[66]="watch the sunrise or the sunset ♡"
+quotes[67]="take a good shower and wear perfume ♡"
+quotes[68]="write down your thoughts ♡"
+quotes[69]="cook or bake for someone else ♡"
+quotes[70]="wish others a lovely day ♡"
+quotes[71]="watch something you like ♡"
+
+ 
+function randomdisplay(){
+randomquote=quotes[Math.floor(Math.random()*quotes.length)]
+document.scriptform.scriptinput.value=randomquote
+}
+ 
+setTimeout("randomdisplay()",100)
+ 
+</script>
+</body>
+</html>
+</body>
+</html>
+
+<!--oooo-->
+</center>
 <br>
-<font family = "Verdana"><font color="#ad8080"><font style="font-size:8px;">res : 1280 x 720</font></font></font>
+<font color="#c4ae9d">if you're feeling sad, please let me try to </font><a id="linkzinho" href="/help" style="text-decoration: none;"><font color="#e8c2c2">help</font></a>
 
-<br><br><br><br>
-
-<img src="https://i.imgur.com/kEyzceo.png"/>
 
 <br><br>
 </center>
-
 </div>
-
-
 </div>
-
 
 
 
