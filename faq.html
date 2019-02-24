@@ -25,18 +25,19 @@
 
 -->
 
-<title>middlepot ഒ</title>
+<title>ഒ</title>
 
-<link rel="shortcut icon" href="https://i.imgur.com/C7cSCvF.gif">
+<link rel="shortcut icon" href="https://i.imgur.com/c2cyx81.png">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="・゜ ♡   。・　゜ ♡   。・゜ ♡   ゜・。。 ♡　。・゜ ♡ ・  。・゜ ♡   ・゜ ♡ ゜・。 ・ ♡ °  . 。 ♡  .">
 <style>
 body{ 
-  cursor: url(https://i.imgur.com/xrySzI4.png), progress;}
-a:hover {cursor: url(https://i.imgur.com/LY1tJ6u.png), progress;
+  cursor: url(https://i.imgur.com/C9RGjYt.png), progress;}
+a:hover {cursor: url(https://i.imgur.com/EZZ5Vol.png), progress;
   
   }
- ::selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
- ::-moz-selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
+ ::selection {text-shadow: 0 0 2px #cec1bb;color:#cec1bb}
+ ::-moz-selection {text-shadow: 0 0 2px #cec1bb;color:#cec1bb}
 }
 }
 </style>
@@ -49,14 +50,14 @@ height: 4px;
 background: #FFF9F9;
 }
 ::-webkit-scrollbar-thumb {
-background-color: #FCE4E4;
+background-color: #f9f0ed;
 -webkit-border-radius: 0ex;
-border: 1px solid #C1A3A3;
+border: 1px dotted #e2d5d0;
 }
-#linkbjinho { color: #ffacac; border-bottom:1px solid #897B7B; }
-#linkkkkkkkk { color: #ffacac; }
-#linkzinho { color: #938373; text-decoration: none;}
-#linkzinhoo { color: #6E6156; text-decoration: none;}
+#linkbjinho { color: #bca7a7; padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
+
+#linkzinho { padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
+
 </style>
 
 <!--
@@ -101,8 +102,8 @@ max-width:300px; /*how big the tooltip can be at most*/
 border-radius: 0px; /*change your border radius*/
 padding:3px 4px 5px 4px; /*padding inside tooltip*/
 margin:10px 7px -2px 10px; /*distance from word*/
-background-color:#FFF5F5; /*background color*/ 
-  border:1px dashed #CEB6B6; /*border info*/
+background-color:#fcf6f2; /*background color*/ 
+  border:1px dotted #CEB6B6; /*border info*/
   font-family:tahoma; /*tooltip font*/
 font-size:7px; /*tooltip font size*/
 letter-spacing:2px; /*tooltip letter spacing*/
@@ -129,11 +130,11 @@ menuuuuuuuuuuuuuuu
 			}
 			
 			#context_menu {
-				background: #fff9f9;
-				-moz-border-radius: 2px 2px;
-				border: 1px solid #baada3;
+				background: #fcf6f2;
+				-moz-border-radius: 1px 1px;
+				border: 1px dotted #baada3;
 				letter-spacing:1px; 
-				width: 85px;
+				width: 70px;
 				font-size: 8px;
 				position: absolute;
 				display: none;
@@ -141,13 +142,13 @@ menuuuuuuuuuuuuuuu
 			}
 			
 			#context_menu ul li {
-				padding: 4px 3px;
+				padding: 4px 4px;
 				-moz-border-radius: 10px 10px;
-				cursor: url(https://i.imgur.com/xrySzI4.png), progress;
+				cursor: url(https://i.imgur.com/C9RGjYt.png), progress;
 			}
 			
 			#context_menu ul li:hover {
-				background: #fff9f9;
+				background: #fcf6f2;
 				color: #baada3;
 			}
 		</style>
@@ -194,148 +195,93 @@ menuuuuuuuuuuuuuuu
 		<div id="teste"></div>
 		<div id="context_menu">
 			<ul>
-				<li>　<font color="#baada3">© middlepot</font></li>
+				<li><font color="#baada3">stay safe.. !</font></li>
 			</ul>
 		</div>
 <!--
 menuuuuuuuuuuuuuuu
 -->
 
-
-<script>
-function popcbox(tid, tkey) {
-	var baseurl = "https://www5.cbox.ws/box/?boxid=884320&boxtag=v1q22y",
-		baseid = '5-884320',
-		fontop = 0;
-		turl = '',
-		tid = tid || 0,
-		tkey = tkey || "",
-		html = [],
-		width = 220,
-		height = 380,
-		fheight = 107;
-
-	if (tid && tkey) {
-		turl = '&tid='+tid+'&tkey='+tkey;
-	}
-		
-	var htmlform = '<frame src="'+baseurl+turl+'&sec=form" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxform'+baseid+'-'+tid+'">';
-	var htmlmain = '<frame src="'+baseurl+turl+'&sec=main" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxmain'+baseid+'-'+tid+'">';
-	var prows = (fontop) ? (fheight+',*') : ('*,'+fheight);
-	
-	html.push('<!DOCTYPE html><html><head><title>*.。ଘ(*´ ˘ `*)ഒ 。.*</title><meta name="viewport" content="width=device-width, user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=edge"></head><frameset rows="'+prows+'" frameborder="0" framespacing="0">');
-	html.push(fontop ? htmlform : htmlmain);
-	html.push(fontop ? htmlmain : htmlform);
-	html.push('</frameset><noframes>Frames required</noframes></html>');
-	
-	var cboxwin = window.open("","Cbox-"+baseid+"-"+tid,"width="+width+",height="+height+",toolbar=no,scrollbars=no,status=no,resizable=yes");
-	cboxwin.document.open();
-	cboxwin.document.write(html.join(''));
-	try {
-		x = screen.width;
-		y = screen.height;
-		cboxwin.moveTo(Math.max((x - width)/2, 0), Math.max((y - height)/2, 0));
-		cboxwin.focus();
-	} catch (e) {};
-}
-</script>
-
 </head>
 
 
-<body ondragstart="return false" style="background-image:url(https://i.imgur.com/y6B6r2v.png); background-color:#FFF9F9; font-family: Verdana; font-size: 10px;">
+<body ondragstart="return false" style="background-image:url(https://i.imgur.com/s0V8ydU.png); background-repeat: no-repeat; background-size: cover; background-color:#fefbfb; font-family: Verdana; font-size: 10px;">
 <style>
 #base {
 position: absolute;
-	left: 20%;
-	top: 15%;
+	left: 13%;
+	top: 10%;
 overflow-y:hidden;
 overflow-x:hidden;
  }
 #menu1 {
 position: absolute;
-	left: 2%;
-	top: 4%;
-max-width: 130px;
-max-height: 490px;
+	left: %;
+	top: 30%;
+width: 130px;
+height: 250px;
 overflow-y:hidden;
 overflow-x:hidden;
 z-index: 2;
  }
 #menu2 {
 position: absolute;
-	left: 28%;
-	top: 4%;
-max-width: 560px;
-max-height: 35px;
+	left: 23%;
+	top: 1%;
+width: 560px;
+height: 35px;
 overflow-y:hidden;
 overflow-x:hidden;
 z-index: 4;
  }
+#menu3 {
+position: absolute;
+	left: 85%;
+	top: 50%;
+width: 130px;
+height: 250px;
+overflow-y:hidden;
+overflow-x:hidden;
+z-index: 2;
+ }
 #stuff {
 position: absolute;
-	left: 23%;
-	top: 14%;
+	left: 18.5%;
+	top: 12%;
 width: 594px;
 height: 433px;
 overflow-x:hidden;
 z-index: 6;
  }
-#aaa {
-position: relative;
-	left: 8%;
- }
 </style>
 <div id="base">
-<img src="https://i.imgur.com/pfTi48h.png"/>
+<img src="https://i.imgur.com/fEKbdEW.png"/>
 
 <div onselectstart="return false" id="menu1">
+<p style="font-size:10px;line-height:50%;"><br><br>
 
-　　&nbsp;<a href="https://middlepot.com"><img width="100px" height="auto" src="https://i.imgur.com/4XdG5rK.png"/></a><br><center><font color="#A08D7E">　© middlepot.com</font></center>
-<p style="font-size:10px;line-height:50%;">
-<br><br><br></p>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/about">about</a></font><br>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/links">links</a></font><br>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/contact">contact</a></font><br>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/credits">credits</a></font>
-<p style="font-size:10px;line-height:50%;">
-<br><br><br></p>
-
-<center>　　<img src="https://i.imgur.com/HA2l4dB.gif"/>
- <font color="#6E6156"><font size="2"><sup><a id="linkzinhoo" href="https://middlepot.com/blog">news blog</a></sup></font></font> <img src="https://i.imgur.com/VV0vQHD.gif"/></center>
-
-<p style="font-size:10px;line-height:50%;">
-<br></p>
-<center>　　<a href="JavaScript:popcbox('', '');"><img src="https://i.imgur.com/ysc4y4D.gif"/></a></center>
-<p style="font-size:10px;line-height:70%;">
-<br></p>
-
-<center><div id="aaa"><img src="https://i.imgur.com/93DE8B0.png"/><br>
-<a href="https://middlepot.com/milky-woods"><img src="https://i.imgur.com/43guVp5.png"/></a><br>
-<a href="https://middlepot.com/not-bad"><img src="https://i.imgur.com/OlFt7cw.png"/></a><br>
-<a href="https://middlepot.com/puporipot"><img src="https://i.imgur.com/m7ehqeT.png"/></a><br>
-<a href="https://middlepot.com/crwel-friends"><img src="https://i.imgur.com/czEnR0y.png"/></a><br>
-<a href="https://middlepot.com/fairy-loli"><img src="https://i.imgur.com/aJzy5nD.png"/></a><br>
-<a href="https://middlepot.com/potetomid"><img src="https://i.imgur.com/yE0iyO0.png"/></a><br>
-<a href="https://middlepot.com/soft-collection"><img src="https://i.imgur.com/k4KPMRn.png"/></a><br>
-<a href="https://middlepot.com/moep"><img src="https://i.imgur.com/MkgULzx.png"/></a><br>
-<img src="https://i.imgur.com/op6oXma.png"/></div></center>
-
-<p style="font-size:10px;line-height:70%;">
-<br><br></p>
-<center>
-　　<a href="https://shybunny.middlepot.com" target="_blank"><img src="https://i.imgur.com/gtevTSn.gif"/></a></center>
-
+　　　　<font color="#c6a799">ణ</font>　<a href="/about" style="text-decoration: none; color:#a3948d;">about</a><br><br><br>
+　　　　<font color="#c6a799">ణ</font>　<a href="/links" style="text-decoration: none; color:#a3948d;">links</a><br><br><br>
+　　　　<font color="#c6a799">ణ</font>　<a href="/contact" style="text-decoration: none; color:#a3948d;">contact</a><br><br><br>
+　　　　<font color="#c6a799">ణ</font>　<a href="/credits" style="text-decoration: none; color:#a3948d;">credits</a><br><br><br>
+</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+　　　　　　<a href="/poofties" style="text-decoration: none; color:#8c7d75;">poofties</a>
 </div>
 
 <div id="menu2">
-
-<img src="https://i.imgur.com/PTzpVdh.png"/><a href="https://middlepot.com/status"><img src="https://i.imgur.com/gtWd2tI.png"/></a><a href="https://middlepot.com/look-book"><img src="https://i.imgur.com/21R6rOA.png"/></a><a href="https://middlepot.com/portfolio"><img src="https://i.imgur.com/5UlJkeC.png"/><a href=""></a><a href="https://middlepot.com/help"><img src="https://i.imgur.com/f6GSYqr.png"/></a><a href="https://middlepot.com/gaming"><img src="https://i.imgur.com/5dSoAlZ.png"/></a><a href="https://middlepot.com/cemetery"><img src="https://i.imgur.com/FctiXzO.png"/></a><a href="https://middlepot.com/recommended"><img src="https://i.imgur.com/myWm2B5.png"/></a><img src="https://i.imgur.com/W6coopC.png"/>
-
+<br>
+　　<a id="linkzinho" href="/status" style="text-decoration: none; color:#93847d;">status</a>　　　　　　　 <a id="linkzinho" href="/fashion" style="text-decoration: none; color:#93847d;">fashion</a>　　　　　　　<a id="linkzinho"href="/portfolio" style="text-decoration: none; color:#93847d;">portfolio</a>　　　　　　　<a id="linkzinho" href="/gaming" style="text-decoration: none; color:#93847d;">gaming</a>　　　　　　<a id="linkzinho" href="/recommended" style="text-decoration: none; color:#93847d;">recommended</a>
 
 </div>
 
+<div id="menu3">
+<br><br>
+　　　　　 <a href="/blog" style="text-decoration: none; color:#b29487;">my blog</a>
+</div>
+
 <div id="stuff">
+
 
 <div style="position:absolute; left:20%; right:20%; line-height: 12px;">
 <br><br>
@@ -347,7 +293,7 @@ position: relative;
 </center>
 <br><br><br>
 
-<a href="#tumblr"><font color="#d8b6b6">info about my tumblr</font></a><font color="#aa8f8f"> | </font><a href="#rules"><font color="#d8b6b6">chat rules</font></a><font color="#aa8f8f"> | </font><a href="#name"><font color="#d8b6b6">about my name</font></a><font color="#aa8f8f"> | </font><a href="#myself"><font color="#d8b6b6">about myself</font></a><font color="#aa8f8f"> | </font><a href="#argumentation"><font color="#d8b6b6">about my argumentation</font></a><font color="#aa8f8f"> | </font><a href="#dx"><font color="#d8b6b6">about self dx</font></a><font color="#aa8f8f"> | </font><a href="#agere"><font color="#d8b6b6">about agere &
+<a href="#tumblr"><font color="#d8b6b6">info about my tumblr</font></a><font color="#aa8f8f"> | </font><a href="#name"><font color="#d8b6b6">about my name</font></a><font color="#aa8f8f"> | </font><a href="#myself"><font color="#d8b6b6">about myself</font></a><font color="#aa8f8f"> | </font><a href="#argumentation"><font color="#d8b6b6">about my argumentation</font></a><font color="#aa8f8f"> | </font><a href="#dx"><font color="#d8b6b6">about self dx</font></a><font color="#aa8f8f"> | </font><a href="#agere"><font color="#d8b6b6">about agere &
  communities</font></a><font color="#aa8f8f"> | </font><a href="#words"><font color="#d8b6b6">about controversial words</font></a><font color="#aa8f8f"> | </font><a href="#numbers"><font color="#d8b6b6">about numbers</font></a><font color="#aa8f8f"> | </font><a href="#politics"><font color="#d8b6b6">about politics</font></a><font color="#aa8f8f"> | </font><a href="#internet"><font color="#d8b6b6">my internet past</font></a><font color="#aa8f8f"> | </font><a href="#pics"><font color="#d8b6b6">about disliking pics</font></a><font color="#aa8f8f"> | </font><a href="#cc"><font color="#d8b6b6">ccs, ids & kins</font></a><font color="#aa8f8f"> | </font><a href="#gxb"><font color="#d8b6b6">about girls x boys</font></a><font color="#aa8f8f"> | </font><a href="#astro"><font color="#d8b6b6">about astrology & similar</font></a><font color="#aa8f8f"> | </font><a href="#beauty"><font color="#d8b6b6">some beauty talk</font></a><font color="#aa8f8f"> | </font><a href="#fashion"><font color="#d8b6b6">some fashion talk</font></a><font color="#aa8f8f"> | </font><a href="#sexuality"><font color="#d8b6b6">about sexuality</font></a><font color="#aa8f8f"> | </font><a href="#purity"><font color="#d8b6b6">purity & innocence</font></a><font color="#aa8f8f"> | </font><a href="#media"><font color="#d8b6b6">social media issues general</font></a><font color="#aa8f8f"> | </font><a href="#live"><font color="#d8b6b6">about disliking lives</font></a><font color="#aa8f8f"> | </font><a href="#honest"><font color="#d8b6b6">honest opinion</font></a><font color="#aa8f8f"> | </font><a href="#cruelty-free"><font color="#d8b6b6">cruelty-free lifestyle</font></a><font color="#aa8f8f"> | </font><a href="#money"><font color="#d8b6b6">about money</font></a><font color="#aa8f8f"> | </font><a href="#individuality"><font color="#d8b6b6">about individuality</font></a><font color="#aa8f8f"> | </font><a href="#presence"><font color="#d8b6b6">about presence</font></a><font color="#aa8f8f"> | </font><a href="#immigration"><font color="#d8b6b6">about ( my ) immigration</font></a><font color="#aa8f8f"> | </font><a href="#religion"><font color="#d8b6b6">my religion</font></a><font color="#aa8f8f"> | </font><a href="#ruules"><font color="#d8b6b6">about rules</font></a><font color="#aa8f8f"> | </font><a href="#femininity"><font color="#d8b6b6">cuteness & femininity</font></a><font color="#aa8f8f"> | </font><a href="#group"><font color="#d8b6b6">group behavior</font></a><font color="#aa8f8f"> | </font><a href="#html"><font color="#d8b6b6">about web design</font></a><font color="#aa8f8f"> | </font><a href="#mybeauty"><font color="#d8b6b6">my beauty care</font></a><font color="#aa8f8f"> | </font><a href="#world"><font color="#d8b6b6">about this beautiful world</font></a><font color="#aa8f8f"> | </font><a href="#selfcare"><font color="#d8b6b6">about self care</font></a><font color="#aa8f8f"> | </font><a href="#trauma"><font color="#d8b6b6">trauma coping issues</font></a><font color="#aa8f8f"> | </font><a href="#virtual"><font color="#d8b6b6">virtual world issues</font></a><font color="#aa8f8f"> | </font><a href="#rivalry"><font color="#d8b6b6">the girls' rivalry</font></a><font color="#aa8f8f"> | </font><a href="#role"><font color="#d8b6b6">role in life</font></a>
 <br>
 <br><br>
@@ -400,22 +346,6 @@ so here i am to clarify some things about the aesthetics that i post on my main 
 <br>
 <br>
 i think this is enough to clarify your doubts !
-<br><br><br><br><br><br>
-</font>
-
-<a name="rules" id="rules"></a>
-<sub><sub><img src="https://i.imgur.com/xuXKSIc.gif"></sub></sub><font color="#c4afa8">　what are the rules for using the chat ?</font><br><br><br>
-<font color="#d8b9af">　( august . 18 . 2017 )</font>
-<br><br>
-<font color="#B1A69E">
-i have one chat currently on this site, which is hosted by cbox. i have some rules of use for it :<br>
-・ i use a tiny image as avatar for quick identification. you shouldn't use an avatar, because it would be confusing for everyone. if you want to link images please post in imgur.com and put the link properly, according to the "help" ;<br>
-・ it is preferable not to use personal links because you may be blocked by spam. in fact, avoid anything that can be identified as spam, be as clean as possible ;<br>
-・ please use clear language and do not speak in languages ​​other than english for a long conversation. i will answer, but predictably use english ;<br>
-・ you can ask questions about what you want, and i will select every week an interesting and complex topic to answer in a q&a, because i like to discuss interesting subjects with you, and mainly clarify any doubts ;<br>
-・ i'll block who pretend to be someone else ( i can see your ip ), who post nsfw content without warning and who say extremely rude and uncomfortable things ;<br>
-・ this chat doesn't have the capacity to receive messages in large quantity, which is good, because i like to read everything and respond appropriately. if your message is not sent, you can try again at another time or send me an email ( letters@middlepot.com )<br>
-・ i disable the chat normally because i feel anxious to leave it open when i'm not observing, so if you receive a "closed chat" message, that's why, just try later ! thank you for the patience ♡<br>
 <br><br><br><br><br><br>
 </font>
 
@@ -1647,9 +1577,8 @@ never think that you have no hope, that you are dirty or rotten, that your dream
 <font color="#d8b9af">　( june . 01 . 2018 + january . 30 . 2019 )</font>
 <br><br>
 <font color="#B1A69E">
-　　　𝚖𝚊𝚒𝚗 𝚙𝚊𝚐𝚎 𝚊𝚗𝚍 𝚝𝚞𝚖𝚋𝚕𝚛 𝚋𝚕𝚘𝚐 𝚊𝚎𝚜𝚝𝚑𝚎𝚝𝚒𝚌 𝚌𝚑𝚊𝚗𝚐𝚎𝚜 _<br>
-i created the page with a friend and the tumblr blog later, in order to improve the content of the page, improving its aesthetics. the problem is that our opinions were very different and she posted things very different from me, so everything was a mess. so far so good, but the biggest problem was that she liked to post things from kink blogs and lots of offensive stuff that i think it's very bad and ruined the page environment completely. our friendship dissolved over time ( not only because of that ) and she decided she didn't want to post on the page or tumblr anymore for lack of time, so i erased all the content that i definitely hate and left everything clean and neat again. posting alone i could have control over the content quality and aesthetics. i hope that everything has been completely deleted, i'm very ashamed of this past. if you find anything, PLEASE let me know !<br>
-<b>edit //</b> i decided to change my fb pages content for twitter, i'll paste the text i've writed about it :<br>
+　　　𝚌𝚑𝚊𝚗𝚐𝚎𝚜 _<br>
+i decided to change my fb pages content for twitter, i'll paste the text i've writed about it :<br>
 i know this is sudden, but i'll stop using facebook as of today ( january . 30 . 2018 )<br>
 i wanna keep posting the same kind of content : cute + comfy aesthetics and promote artists i admire ; and it'll be easier to include all the sources and i'll not have to repost things often like here. i want this new acc to be clear and safe for everyone, so i know this is going to be an improvement ♡<br>
 i also have a tumblr, where i post the same content, so please follow !<br>
@@ -1659,18 +1588,8 @@ i know that sooner or later facebook will delete my pages, since it already no l
 so i decided to continue this project on twitter and tumblr only.<br>
 i'm really sorry if you don't use twitter or tumblr.. i really wish i could continue here but things are getting worse every day, i need to change things ; ;<br>
 <br>
-　　　𝚝𝚑𝚎 𝚏𝚊𝚗 𝚙𝚒𝚌 𝚍𝚊𝚢 _<br>
-who knows the not bad page since its beginning remembers that saturday was a day where i posted pictures from followers. the intention was to post beautiful pics that matched the aesthetics of the page, but things didn't go very well.. saturday became a very annoying day, people only sent super edited selfies and poor quality pics, even super inappropriate ones. and if i didn't post those pics, people would get really mad at me and keep spamming more and more photos every day !! of course one day my patience was over and i had to end it. i deleted all the pictures.<br>
-<br>
-　　　𝚖𝚒𝚍𝚍𝚕𝚎𝚙𝚘𝚝 𝚙𝚊𝚐𝚎 𝚌𝚘𝚗𝚝𝚎𝚗𝚝 _<br>
-this page was made to post my personal stuff + things that inspire me. it was before i started making this website, it was my last chance to use a social media as a personal space and of course it wasn't a good idea because it's facebook, even if a fb page, it's still fb, and i don't like it at all, i just like to post aesthetics there. i wasn't able to post my stuff properly, only images ! so, i gived up in a few months, and stopped posting everything personal, even images. i started making this website, and continued posting art that inspire me on this page, because it's still nice to post and people can get inspired too ! i really like to spread the art of talented people.<br>
-<br>
-<style type="text/css">
-#uhhh { color: #d8bcbc; }
-</style>
 　　　𝚒𝚗𝚜𝚝𝚊𝚐𝚛𝚊𝚖 𝚙𝚛𝚘𝚋𝚕𝚎𝚖𝚜 _<br>
-this story is quite complicated and people are always doing theories and posting screenshots about it.. i think it's time to say what really happened to my ig : i used my acc for a short six months ( approximately ), problems began to happen at three months, i couldn't stop following people or following more people, my acc was frozen for about a month like this. i ignored it, but then i could no longer comment, they just vanished. then things started to get really heavy : my pics were erased randomly. sometimes it took a few days, a few hours, sometimes it was instantaneous, it would always disappear. i was already with many followers to that point, i was losing many because my account was becoming a mess. i was upset and contacted the instagram countless times, until one day they said that my account had been hacked. they did nothing about it really so i changed the password several times, but the problem persisted, random comments and pics were erased all the time. i always put the link of my ig on fb pages, so i had many followers, but when i started to suspect the activities i told everyone to stop following me because i would make another account, so i lost a massive number of followers ( i don't know if this was really the cause of the loss of followers because it was really a lot ). i deleted most of the pics, i left only 15 there and i didn't use the acc anymore. i decided not to make another account at all because of the problems and how nobody did anything to help me. the acc is still there until today.<br>
-<b>edit //</b> i decided to clean it completely and stop using.. i made a new acc where i post self care tips and games, mainly for helping mutuals. i did it because i was feeling really uncomfortable about all the random people following me and stalking, i want to interact with my friends safely !!<br>
+i decided to clean it completely.. i made a new acc where i post self care tips and games, mainly for helping mutuals. i did it because i was feeling really uncomfortable about all the random people following me and stalking, i want to interact with my friends safely !!<br>
 <br><br><br><br><br><br>
 </font>
 
@@ -2030,10 +1949,7 @@ some people will never learn to be happy, some people will never truly love. per
 </div>
 
 </div>
-
-
 </div>
-
 
 
 
