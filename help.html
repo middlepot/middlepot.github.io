@@ -25,18 +25,19 @@
 
 -->
 
-<title>middlepot ഒ</title>
+<title>ഒ</title>
 
-<link rel="shortcut icon" href="https://i.imgur.com/C7cSCvF.gif">
+<link rel="shortcut icon" href="https://i.imgur.com/c2cyx81.png">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="・゜ ♡   。・　゜ ♡   。・゜ ♡   ゜・。。 ♡　。・゜ ♡ ・  。・゜ ♡   ・゜ ♡ ゜・。 ・ ♡ °  . 。 ♡  .">
 <style>
 body{ 
-  cursor: url(https://i.imgur.com/xrySzI4.png), progress;}
-a:hover {cursor: url(https://i.imgur.com/LY1tJ6u.png), progress;
+  cursor: url(https://i.imgur.com/C9RGjYt.png), progress;}
+a:hover {cursor: url(https://i.imgur.com/EZZ5Vol.png), progress;
   
   }
- ::selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
- ::-moz-selection {text-shadow: 0 0 2px #ddd3ce;color:#afa7a3}
+ ::selection {text-shadow: 0 0 2px #cec1bb;color:#cec1bb}
+ ::-moz-selection {text-shadow: 0 0 2px #cec1bb;color:#cec1bb}
 }
 }
 </style>
@@ -49,14 +50,13 @@ height: 4px;
 background: #FFF9F9;
 }
 ::-webkit-scrollbar-thumb {
-background-color: #FCE4E4;
+background-color: #f9f0ed;
 -webkit-border-radius: 0ex;
-border: 1px solid #C1A3A3;
+border: 1px dotted #e2d5d0;
 }
-#linkbjinho { color: #ffacac; border-bottom:1px solid #897B7B; }
-#linkkkkkkkk { color: #ffacac; }
-#linkzinho { color: #938373; text-decoration: none;}
-#linkzinhoo { color: #6E6156; text-decoration: none;}
+#linkbjinho { color: #bca7a7; padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
+#linkzinho { padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
+
 </style>
 
 <!--
@@ -101,8 +101,8 @@ max-width:300px; /*how big the tooltip can be at most*/
 border-radius: 0px; /*change your border radius*/
 padding:3px 4px 5px 4px; /*padding inside tooltip*/
 margin:10px 7px -2px 10px; /*distance from word*/
-background-color:#FFF5F5; /*background color*/ 
-  border:1px dashed #CEB6B6; /*border info*/
+background-color:#fcf6f2; /*background color*/ 
+  border:1px dotted #CEB6B6; /*border info*/
   font-family:tahoma; /*tooltip font*/
 font-size:7px; /*tooltip font size*/
 letter-spacing:2px; /*tooltip letter spacing*/
@@ -129,11 +129,11 @@ menuuuuuuuuuuuuuuu
 			}
 			
 			#context_menu {
-				background: #fff9f9;
-				-moz-border-radius: 2px 2px;
-				border: 1px solid #baada3;
+				background: #fcf6f2;
+				-moz-border-radius: 1px 1px;
+				border: 1px dotted #baada3;
 				letter-spacing:1px; 
-				width: 85px;
+				width: 70px;
 				font-size: 8px;
 				position: absolute;
 				display: none;
@@ -141,13 +141,13 @@ menuuuuuuuuuuuuuuu
 			}
 			
 			#context_menu ul li {
-				padding: 4px 3px;
+				padding: 4px 4px;
 				-moz-border-radius: 10px 10px;
-				cursor: url(https://i.imgur.com/xrySzI4.png), progress;
+				cursor: url(https://i.imgur.com/C9RGjYt.png), progress;
 			}
 			
 			#context_menu ul li:hover {
-				background: #fff9f9;
+				background: #fcf6f2;
 				color: #baada3;
 			}
 		</style>
@@ -194,152 +194,99 @@ menuuuuuuuuuuuuuuu
 		<div id="teste"></div>
 		<div id="context_menu">
 			<ul>
-				<li>　<font color="#baada3">© middlepot</font></li>
+				<li><font color="#baada3">stay safe.. !</font></li>
 			</ul>
 		</div>
 <!--
 menuuuuuuuuuuuuuuu
 -->
 
-
-<script>
-function popcbox(tid, tkey) {
-	var baseurl = "https://www5.cbox.ws/box/?boxid=884320&boxtag=v1q22y",
-		baseid = '5-884320',
-		fontop = 0;
-		turl = '',
-		tid = tid || 0,
-		tkey = tkey || "",
-		html = [],
-		width = 220,
-		height = 380,
-		fheight = 107;
-
-	if (tid && tkey) {
-		turl = '&tid='+tid+'&tkey='+tkey;
-	}
-		
-	var htmlform = '<frame src="'+baseurl+turl+'&sec=form" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxform'+baseid+'-'+tid+'">';
-	var htmlmain = '<frame src="'+baseurl+turl+'&sec=main" marginwidth="0" marginheight="0" noresize="true" scrolling="auto" name="cboxmain'+baseid+'-'+tid+'">';
-	var prows = (fontop) ? (fheight+',*') : ('*,'+fheight);
-	
-	html.push('<!DOCTYPE html><html><head><title>*.。ଘ(*´ ˘ `*)ഒ 。.*</title><meta name="viewport" content="width=device-width, user-scalable=no"><meta http-equiv="X-UA-Compatible" content="IE=edge"></head><frameset rows="'+prows+'" frameborder="0" framespacing="0">');
-	html.push(fontop ? htmlform : htmlmain);
-	html.push(fontop ? htmlmain : htmlform);
-	html.push('</frameset><noframes>Frames required</noframes></html>');
-	
-	var cboxwin = window.open("","Cbox-"+baseid+"-"+tid,"width="+width+",height="+height+",toolbar=no,scrollbars=no,status=no,resizable=yes");
-	cboxwin.document.open();
-	cboxwin.document.write(html.join(''));
-	try {
-		x = screen.width;
-		y = screen.height;
-		cboxwin.moveTo(Math.max((x - width)/2, 0), Math.max((y - height)/2, 0));
-		cboxwin.focus();
-	} catch (e) {};
-}
-</script>
-
 </head>
 
 
-<body ondragstart="return false" style="background-image:url(https://i.imgur.com/y6B6r2v.png); background-color:#FFF9F9; font-family: Verdana; font-size: 10px;">
+<body ondragstart="return false" style="background-image:url(https://i.imgur.com/s0V8ydU.png); background-repeat: no-repeat; background-size: cover; background-color:#fefbfb; font-family: Verdana; font-size: 10px;">
 <style>
 #base {
 position: absolute;
-	left: 20%;
-	top: 15%;
+	left: 13%;
+	top: 10%;
 overflow-y:hidden;
 overflow-x:hidden;
  }
 #menu1 {
 position: absolute;
-	left: 2%;
-	top: 4%;
-max-width: 130px;
-max-height: 490px;
+	left: %;
+	top: 30%;
+width: 130px;
+height: 250px;
 overflow-y:hidden;
 overflow-x:hidden;
 z-index: 2;
  }
 #menu2 {
 position: absolute;
-	left: 55%;
-	top: 4%;
-max-width: 560px;
-max-height: 35px;
+	left: 23%;
+	top: 1%;
+width: 560px;
+height: 35px;
 overflow-y:hidden;
 overflow-x:hidden;
 z-index: 4;
  }
+#menu3 {
+position: absolute;
+	left: 85%;
+	top: 50%;
+width: 130px;
+height: 250px;
+overflow-y:hidden;
+overflow-x:hidden;
+z-index: 2;
+ }
 #stuff {
 position: absolute;
-	left: 23%;
-	top: 14%;
+	left: 18.5%;
+	top: 12%;
 width: 594px;
 height: 433px;
 overflow-x:hidden;
 z-index: 6;
  }
-#aaa {
-position: relative;
-	left: 8%;
- }
 </style>
 <div id="base">
-<img src="https://i.imgur.com/pfTi48h.png"/>
+<img src="https://i.imgur.com/fEKbdEW.png"/>
 
 <div onselectstart="return false" id="menu1">
+<p style="font-size:10px;line-height:50%;"><br><br>
 
-　　&nbsp;<a href="https://middlepot.com"><img width="100px" height="auto" src="https://i.imgur.com/4XdG5rK.png"/></a><br><center><font color="#A08D7E">　© middlepot.com</font></center>
-<p style="font-size:10px;line-height:50%;">
-<br><br><br></p>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/about">about</a></font><br>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/links">links</a></font><br>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/contact">contact</a></font><br>
-　　　　<img src="https://i.imgur.com/p4C6BSA.png"/>&nbsp;&nbsp;<font color="#938373"><a id="linkzinho" href="https://middlepot.com/credits">credits</a></font>
-<p style="font-size:10px;line-height:50%;">
-<br><br><br></p>
-
-<center>　　<img src="https://i.imgur.com/HA2l4dB.gif"/>
- <font color="#6E6156"><font size="2"><sup><a id="linkzinhoo" href="https://middlepot.com/blog">news blog</a></sup></font></font> <img src="https://i.imgur.com/VV0vQHD.gif"/></center>
-
-<p style="font-size:10px;line-height:50%;">
-<br></p>
-<center>　　<a href="JavaScript:popcbox('', '');"><img src="https://i.imgur.com/ysc4y4D.gif"/></a></center>
-<p style="font-size:10px;line-height:70%;">
-<br></p>
-
-<center><div id="aaa"><img src="https://i.imgur.com/93DE8B0.png"/><br>
-<a href="https://middlepot.com/milky-woods"><img src="https://i.imgur.com/43guVp5.png"/></a><br>
-<a href="https://middlepot.com/not-bad"><img src="https://i.imgur.com/OlFt7cw.png"/></a><br>
-<a href="https://middlepot.com/puporipot"><img src="https://i.imgur.com/m7ehqeT.png"/></a><br>
-<a href="https://middlepot.com/crwel-friends"><img src="https://i.imgur.com/czEnR0y.png"/></a><br>
-<a href="https://middlepot.com/fairy-loli"><img src="https://i.imgur.com/aJzy5nD.png"/></a><br>
-<a href="https://middlepot.com/potetomid"><img src="https://i.imgur.com/yE0iyO0.png"/></a><br>
-<a href="https://middlepot.com/soft-collection"><img src="https://i.imgur.com/k4KPMRn.png"/></a><br>
-<a href="https://middlepot.com/moep"><img src="https://i.imgur.com/MkgULzx.png"/></a><br>
-<img src="https://i.imgur.com/op6oXma.png"/></div></center>
-
-<p style="font-size:10px;line-height:70%;">
-<br><br></p>
-<center>
-　　<a href="https://shybunny.middlepot.com" target="_blank"><img src="https://i.imgur.com/gtevTSn.gif"/></a></center>
-
+　　　　<font color="#c6a799">ణ</font>　<a href="/about" style="text-decoration: none; color:#a3948d;">about</a><br><br><br>
+　　　　<font color="#c6a799">ణ</font>　<a href="/links" style="text-decoration: none; color:#a3948d;">links</a><br><br><br>
+　　　　<font color="#c6a799">ణ</font>　<a href="/contact" style="text-decoration: none; color:#a3948d;">contact</a><br><br><br>
+　　　　<font color="#c6a799">ణ</font>　<a href="/credits" style="text-decoration: none; color:#a3948d;">credits</a><br><br><br>
+</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+　　　　　　<a href="/poofties" style="text-decoration: none; color:#8c7d75;">poofties</a>
 </div>
 
 <div id="menu2">
-<center>
-<img src="https://i.imgur.com/PTzpVdh.png"/><a href="https://middlepot.com/reminders"><img src="https://i.imgur.com/17r4hJ1.png"/></a><img src="https://i.imgur.com/W6coopC.png"/></center>
-
-</center>
+<br>
+　　<a id="linkzinho" href="/status" style="text-decoration: none; color:#93847d;">status</a>　　　　　　　 <a id="linkzinho" href="/fashion" style="text-decoration: none; color:#93847d;">fashion</a>　　　　　　　<a id="linkzinho"href="/portfolio" style="text-decoration: none; color:#93847d;">portfolio</a>　　　　　　　<a id="linkzinho" href="/gaming" style="text-decoration: none; color:#93847d;">gaming</a>　　　　　　<a id="linkzinho" href="/recommended" style="text-decoration: none; color:#93847d;">recommended</a>
 
 </div>
 
-<div id="stuff">
-<div style="background-image:url(https://i.imgur.com/ou8WpdJ.png); background-attachment: fixed; width: 594px; height: 433px; color: #BC9F9F; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:8px; line-height: 10px">
+<div id="menu3">
+<br><br>
+　　　　　 <a href="/blog" style="text-decoration: none; color:#b29487;">my blog</a>
+</div>
 
-<div style="width: 650px;height: 60px;overflow-x: hidden; overflow-y: hidden;"><img src="https://i.imgur.com/4OlCQvD.gif"><img src="https://i.imgur.com/4OlCQvD.gif"><img src="https://i.imgur.com/4OlCQvD.gif"><img src="https://i.imgur.com/4OlCQvD.gif"><img src="https://i.imgur.com/4OlCQvD.gif"><img src="https://i.imgur.com/4OlCQvD.gif"><img src="https://i.imgur.com/4OlCQvD.gif"><img src="https://i.imgur.com/4OlCQvD.gif"></div>
+<div id="stuff">
+
+
+<div style="background-image:url(https://i.imgur.com/MP2qiqN.png); background-attachment: fixed; width: 594px; height: 433px; color: #BC9F9F; overflow-x: hidden; text-align:justify ; font-family: Verdana; font-size:8px; line-height: 10px">
+
+
+<img style="position: absolute; left: 100px; top: -230px; overflow-y:hidden; overflow-x:hidden;" src="https://i.imgur.com/PIsAgXv.png"/>
+
 
 <audio id="musict" preload="true">
   <source src="https://files.catbox.moe/ld07dj.mp3" type="audio/mpeg">
@@ -360,7 +307,7 @@ position: relative;
     border: none;
     background-repeat: no-repeat;
     outline:none;
-    cursor: url(https://i.imgur.com/LY1tJ6u.png), progress;
+    cursor: url(https://i.imgur.com/EZZ5Vol.png), progress;
 }
 
 .play{background: url('https://i.imgur.com/aRUFUyE.gif') ;}
@@ -459,7 +406,9 @@ function getPosition(el) {
 }
 </script>
 
-<div style= "padding-left: 25%; padding-right: 25%;">
+<div style="padding-left: 22%; padding-right: 25%;">
+
+<div style="top:85px; padding: 20px; position: absolute; width: 300px; height: 300px; overflow-x: hidden; z-index: 30; text-align:justify; line-height: 130%">
 
 <style>
 #linklinklink { color: #d39aab; }
@@ -467,38 +416,36 @@ function getPosition(el) {
 #linky { color: #9ba1b2; }
 </style>
 
-<a name="english" id="english"></a>
-<center><img src="https://i.imgur.com/AyjOGqY.gif"></center><br>
-<center><font color="#3D3636">{ tips to help you }</font>
-<br><br><font color="#A19494">your tiny guide to day-to-day problems</font>
-<br><br><a href="#ptbr"><font color="#EDA1A1">pt / br</font></a></center>
-<br>
+<center><img width="100px" height="auto" src="https://i.imgur.com/yFjVeAS.png"></center><br>
+<center><font color="#a39284">you deserve happiness</font>
+<br><font color="#c1afa0">let me try to help you !</font>
+</center>
 <br><br>
-<font color="#B4CCB0">♡ what's the problem, little angel ? how are you feeling ?</font>
+　<font color="#b78f8f">♡ what is the problem, little angel ? how are you feeling ?</font>
 <br><br>
-<a href="#calm"><font color="#A0B99C">i need to calm down</font></a> | <a href="#numb"><font color="#A0B99C">i feel numb</font></a> | <a href="#care"><font color="#A0B99C">i want to feel good</font></a> | <a href="#cut"><font color="#A0B99C">i cut myself sometimes</font></a> | <a href="#stress"><font color="#A0B99C">i'm stressed</font></a> | <a href="#suicide"><font color="#A0B99C">i don't want to live anymore</font></a> | <a href="#lovelife"><font color="#A0B99C">i want to fall in love with life</font></a> | <a href="#depression"><font color="#A0B99C">i'm depressed</font></a> | <a href="#panic"><font color="#A0B99C">i'm scared, in panic</font></a> | <a href="#letitgo"><font color="#A0B99C">i want to forget the bad things</font></a> | <a href="#deprtips"><font color="#A0B99C">i need tips for depression cope</font></a> | <a href="#introvert"><font color="#A0B99C">i want to take care of a very introverted person</font></a> | <a href="#miss"><font color="#A0B99C">i can't understand introverted people</font></a> | <a href="#cry"><font color="#A0B99C">i cry a lot</font></a> | <a href="#happen"><font color="#A0B99C">what will happen to me</font></a> | <a href="#period"><font color="#A0B99C">i'm at that time of the month</font></a> | <a href="#procrastinating"><font color="#A0B99C">help me stop procrastinating</font></a> | <a href="#self"><font color="#A0B99C">my self esteem goes low</font></a> | <a href="#health"><font color="#A0B99C">how to improve my mental health</font></a> | <a href="#improve"><font color="#A0B99C">i want to improve on something that i do</font></a> | <a href="#anxious"><font color="#A0B99C">i want to take care of a very anxious person</font></a> | <a href="#anxiety"><font color="#A0B99C">i'm anxious</font></a> | <a href="#life"><font color="#A0B99C">i want to live better</font></a> | <a href="#tea"><font color="#A0B99C">i don't know which tea is the best for me</font></a> | <a href="#paranoia"><font color="#A0B99C">i want to take care of someone with paranoia</font></a> | <a href="#kindness"><font color="#A0B99C">i want to show kindness</font></a> | <a href="#loved"><font color="#A0B99C">i want to make someone feel loved</font></a> | <a href="#mood"><font color="#A0B99C">i'm in a bad mood</font></a> | <a href="#rumors"><font color="#A0B99C">i don't want people to spread rumors about me</font></a> | <a href="#pressure"><font color="#A0B99C">i have problems with my blood pressure</font></a> | <a href="#diabetes"><font color="#A0B99C">i want to better understand children's diabetes</font></a> | <a href="#sleep"><font color="#A0B99C">i can't sleep</font></a> | <a href="#happy"><font color="#A0B99C">i want to cherish small moments</font></a> | <a href="#abandonment"><font color="#A0B99C">i'm always afraid of abandonment</font></a> | <a href="#real"><font color="#A0B99C">i want to feel real</font></a> | <a href="#endorphins"><font color="#A0B99C">i need endorphins</font></a> | <a href="#selfish"><font color="#A0B99C">am i being selfish ?</font></a> | <a href="#sad"><font color="#A0B99C">i'm sad</font></a> | <a href="#friendship"><font color="#A0B99C">i'm having problems with friendships</font></a> | <a href="#loneliness"><font color="#A0B99C">i'm feeling lonely</font></a> | <a href="#loss"><font color="#A0B99C">i lost something / someone</font></a> | <a href="#talking"><font color="#A0B99C">i'm having trouble with talking</font></a>
+<a href="#calm"><font color="#a39284">i need to calm down</font></a> | <a href="#numb"><font color="#a39284">i feel numb</font></a> | <a href="#care"><font color="#a39284">i want to feel good</font></a> | <a href="#cut"><font color="#a39284">i cut myself sometimes</font></a> | <a href="#stress"><font color="#a39284">i'm stressed</font></a> | <a href="#suicide"><font color="#a39284">i don't want to live anymore</font></a> | <a href="#lovelife"><font color="#a39284">i want to fall in love with life</font></a> | <a href="#depression"><font color="#a39284">i'm depressed</font></a> | <a href="#panic"><font color="#a39284">i'm scared, in panic</font></a> | <a href="#letitgo"><font color="#a39284">i want to forget the bad things</font></a> | <a href="#deprtips"><font color="#a39284">i need tips for depression cope</font></a> | <a href="#introvert"><font color="#a39284">i want to take care of a very introverted person</font></a> | <a href="#miss"><font color="#a39284">i can't understand introverted people</font></a> | <a href="#cry"><font color="#a39284">i cry a lot</font></a> | <a href="#happen"><font color="#a39284">what will happen to me</font></a> | <a href="#period"><font color="#a39284">i'm at that time of the month</font></a> | <a href="#procrastinating"><font color="#a39284">help me stop procrastinating</font></a> | <a href="#self"><font color="#a39284">my self esteem goes low</font></a> | <a href="#health"><font color="#a39284">how to improve my mental health</font></a> | <a href="#improve"><font color="#a39284">i want to improve on something that i do</font></a> | <a href="#anxious"><font color="#a39284">i want to take care of a very anxious person</font></a> | <a href="#anxiety"><font color="#a39284">i'm anxious</font></a> | <a href="#life"><font color="#a39284">i want to live better</font></a> | <a href="#tea"><font color="#a39284">i don't know which tea is the best for me</font></a> | <a href="#paranoia"><font color="#a39284">i want to take care of someone with paranoia</font></a> | <a href="#kindness"><font color="#a39284">i want to show kindness</font></a> | <a href="#loved"><font color="#a39284">i want to make someone feel loved</font></a> | <a href="#mood"><font color="#a39284">i'm in a bad mood</font></a> | <a href="#rumors"><font color="#a39284">i don't want people to spread rumors about me</font></a> | <a href="#pressure"><font color="#a39284">i have problems with my blood pressure</font></a> | <a href="#diabetes"><font color="#a39284">i want to better understand children's diabetes</font></a> | <a href="#sleep"><font color="#a39284">i can't sleep</font></a> | <a href="#happy"><font color="#a39284">i want to cherish small moments</font></a> | <a href="#abandonment"><font color="#a39284">i'm always afraid of abandonment</font></a> | <a href="#real"><font color="#a39284">i want to feel real</font></a> | <a href="#endorphins"><font color="#a39284">i need endorphins</font></a> | <a href="#selfish"><font color="#a39284">am i being selfish ?</font></a> | <a href="#sad"><font color="#a39284">i'm sad</font></a> | <a href="#friendship"><font color="#a39284">i'm having problems with friendships</font></a> | <a href="#loneliness"><font color="#a39284">i'm feeling lonely</font></a> | <a href="#loss"><font color="#a39284">i lost something / someone</font></a> | <a href="#talking"><font color="#a39284">i'm having trouble with talking</font></a>
 <br>
 <br><br><br>
 <br>
 
 <font color="#968484"><a name="calm" id="calm"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO CALM DOWN</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to calm down :</font><br><br>
 ・ take a warm bath / shower<br>
-・ wrap yourself in a cosy blanket<br>
+・ wrap yourself in a cozy blanket<br>
 ・ drink tea + a spoon of honey<br>
 ・ caress your hair and massage your shoulders<br>
 ・ do something that distracts you and makes you feel happy<br>
 <br>
 <br><br>
 <br><a name="numb" id="numb"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">IF YOU FEEL NUMB</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">if you feel numb :</font><br><br>
 ・ wash your face or take a cold shower<br>
 ・ hold an ice cube around your arms or legs<br>
 ・ eat an ice cream<br>
 <br>
 <br><br>
 <br><a name="care" id="care"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">SELF CARE IDEAS</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">self care ideas :</font><br><br>
 ・ eat fruit or something sweet<br>
 ・ take a warm bath with lots of bubbles !!<br>
 ・ brush hair gently<br>
@@ -511,14 +458,14 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="cut" id="cut"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">IF YOU CUT YOURSELF</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">if you cut yourself :</font><br><br>
 ・ hide the scars with long sleeves, wear bracelets or use make up<br>
 ・ fade the scars with aloe vera juice, vitamin e oil, lemon juice<br>
 ・ substitutes for cutting : draw something with a red or a black pen where you want to cut ; put band aids in the place where you want to cut ; get a scrap book and write down your feelings, scribblings, drawings or poems on it<br>
 <br>
 <br><br>
 <br><a name="stress" id="stress"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">STRESS RELIEF</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">stress relief :</font><br><br>
 ・ meditate - try to clear your mind<br>
 ・ take a 5 minute break to focus on your breathing<br>
 ・ talk to others about how you feel, it will calm you down and they might help you<br>
@@ -531,7 +478,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="suicide" id="suicide"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">SUICIDE</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">suicide :</font><br><br>
 ・ if you want to suicide for any reason rembeber that you will go through your problems like many other people<br>
 ・ say to yourself that you will wait 24 hours before doing it. or more. feelings and action are two different things, just because you feel that like killing yourself you don't actually have to do it right now<br>
 ・ people often choose suicide to relief their pain. remember that relief is a feeling and you need to be alive to feel it. you won't find relief if you're dead<br>
@@ -545,7 +492,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="lovelife" id="lovelife"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO FALL BACK IN LOVE WITH LIFE</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to fall back in love with life :</font><br><br>
 ・ clean your room, clean space, clean the dishes, sweep. take out the trash. peel the clothes off the floor and wash them, and then actually fold / hang them. take a long shower. scrub behind your knees. brush your teeth ( this can be utterly exhausting, but try to get it done in a day, if you can. the end result is worth it i promise ! )<br>
 ・ pull out your notebook. it doesn't need to be a new notebook, but preferably one that you don't usually write in, or that you haven't touched in a while. a cute one will work fine. sit in your room, or in the park, or in the library, and write a list. count clouds. describe all the colors that you see, and note patterns that arise. sketch the cracks in the walls. note the shape light makes when it enters a space. talk about what the air tastes like, smells like. what sounds are there ? even the white nose, break that down : air planes, fans, cicadas, anything. remind yourself that you are sitting in the middle of a space brimming with detail. remind yourself that you are not in nothingness and emptiness. your world is fathomless. it has potential<br>
 ・ drink cold water and try to eat something that isn't processed. it doesn't need to be fancy. buy yourself an apple with the change between your couch cushions. eat it outside. if you're someone who walks, walk somewhere afterwards, just to stretch your legs. take your meds. remember that it's a good thing that you are inside your body. your body is a fantastic and endlessly intricate machine, and even though society has smacked a bunch of poisonous ideas on it, that doesn't change its inherent worth and splendor. take care of it !<br>
@@ -556,7 +503,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="depression" id="depression"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">EASING DEPRESSION SYMPTOMS</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">easing depression symptoms :</font><br><br>
 ・ turn the lights on and open a window<br>
 ・ eat something healthy and drink cold water<br>
 ・ create a comfortable playlist to when you feel bad<br>
@@ -569,7 +516,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="panic" id="panic"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COPING WITH PANIC FEELINGS</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">coping with panic feelings :</font><br><br>
 ・ remember, feelings of panic are just exaggerations of normal bodily stress reactions.<br>
 ・ sensations are neither harmful nor dangerous - just unpleasant. nothing worse will happen.<br>
 ・ stop adding to the panic with frightening thoughts of where panic will lead.<br>
@@ -584,7 +531,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="letitgo" id="letitgo"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">LET IT GO</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">let it go :</font><br><br>
 ・ face and accept what happened, supression doesn't work as long-term solution<br>
 ・ identify the lessons you learned from what happened and write them in a notebook. everytime you have painful memories just read the lessons<br>
 ・ don't forget : the past experiences does not determine who you are, you're a strong person now and only you can choose your future and the person you want to be<br>
@@ -595,7 +542,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="deprtips" id="deprtips"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">DEPRESSION TIPS</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">depression tips :</font><br><br>
 ・ shower. not a bath, a shower. use water as hot or cold as you like, you don't even need to wash, just get in under the water and let it run over you for a while. sit on the floor if you gotta<br>
 ・ moisturize everything. use whatever lotion you like. unscented ? 48 hour lotion that makes you smell like a field of wildflowers ? use whatever you want, and use it all over<br>
 ・ put on clean, comfortable clothes<br>
@@ -611,7 +558,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="introvert" id="introvert"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO CARE FOR INTROVERTS</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to care for introverts :</font><br><br>
 ・ NEVER try to make them extroverts ; respect their introversion<br>
 ・ respect their privacy<br>
 ・ never embarass them in public<br>
@@ -623,7 +570,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="miss" id="miss"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">MISCONCEPTIONS ABOUT INTROVERTS</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">misconceptions about introverts :</font><br><br>
 ・ they don't like people<br>
 ・ they're unfriendly<br>
 ・ they lack emotions and feel things less intensely<br>
@@ -633,7 +580,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="cry" id="cry"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">WHAT TO DO AFTER A REALLY LONG CRY</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">what to do after a really long cry :</font><br><br>
 ・ take a shower and change all of your clothes even your socks and underwear. this is the first step to everything<br>
 ・ pour yourself a big, cold glass of water and drink it. all of it. once you're done, get yourself a refill. this will boost you physically and emotionally instantly please trust me<br>
 ・ grab a snack, something light that you don't have to wait to prepare. i recommend a pudding cup, a piece of fruit, yogurt, a popsicle, or some crackers<br>
@@ -642,7 +589,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="happen" id="happen"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">THINGS THAT WILL HAPPEN TO YOU</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">things that will happen to you :</font><br><br>
 ・ you will find a new song that you can play on repeat when you can't sleep<br>
 ・ new people will come into your life unexpectedly and make everything better<br>
 ・ you will get good grades, graduate and find a job that you like<br>
@@ -651,7 +598,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="period" id="period"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">RELAXING DURING THAT TIME OF THE MONTH</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">relaxing during that time of the month :</font><br><br>
 ・ drink lots of tea<br>
 ・ a warm bath will make everything better<br>
 ・ listen to some relaxing music<br>
@@ -664,7 +611,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="procrastinating" id="procrastinating"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO STOP PROCRASTINATING</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to stop procrastinating :</font><br><br>
 ・ to start, do it slowly ! 15 minutes at a time is enough, so rest a little and continue until you get into and don't need to stop<br>
 ・ make a list of what you have to do, start with the easiest things to not feel tired fast<br>
 ・ stay away from social media !!! they get your attention all the time and make you lose focus<br>
@@ -672,7 +619,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="self" id="self"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">IF YOU HAVE LOW SELF ESTEEM</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">if you have low self esteem :</font><br><br>
 ・ treat the others the way you'd like them to treat you, and treat yourself the way you'd treat a person you love very much !<br>
 ・ don't blame yourself ! its normal to make mistakes<br>
 ・ never put yourself down !<br>
@@ -684,7 +631,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="health" id="health"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">LITTLE THINGS YOU CAN DO TO IMPROVE YOUR MENTAL HEALTH</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">little things you can do to improve your mental health :</font><br><br>
 ・ make sure you go outside, or change your environment at least once a day<br>
 ・ text and message your friends. make sure you don't isolate yourself !<br>
 ・ budget for small treats and indulgences<br>
@@ -698,12 +645,12 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="improve" id="improve"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO GET BETTER AT SOMETHING</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to get better at something :</font><br><br>
 ・ " practice, practice, practice, and all will come "<br>
 ・ your opinion first ! the opinion of others is important if you want to improve, but the most important is that you are enjoying what produced and it's not affecting anyone in a negative way, of course<br>
 <br>
 <br><br><br><a name="anxious" id="anxious"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO CARE FOR ANXIOUS PEOPLE</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to care for anxious people :</font><br><br>
 ・ reassure them constantly<br>
 ・ share plans with them<br>
 ・ hugs make everything better<br>
@@ -713,7 +660,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><br><br><a name="anxiety" id="anxiety"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">ANXIETY ATTACK</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">anxiety attack :</font><br><br>
 ・ look around you and try to find 5 things you can see, 4 things you can touch, 3 things you can hear, 2 things you can smell and 1 thing you can taste<br>
 ・ stop whatever you are doing! you may end later when you're feeling better, you need to take care of yourself at the moment! you'll not get anywhere if you don't stop everything and focus on anxiety.<br>
 ・ occupy all your senses will help you a lot. i usually eat something very soft ( i can also touch it ) and good for my taste, like bread, a soft cake or pudding while watching some relaxing video<br>
@@ -722,7 +669,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="life" id="life"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">SMALL THINGS TO IMPROVE YOUR LIFE</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">small things to improve your life :</font><br><br>
 ・ change your bedding each month<br>
 ・ wake up early ( at least before 10am )<br>
 ・ spend more time with people you really love<br>
@@ -753,7 +700,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="tea" id="tea"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HAVE A TEA</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">have a tea :</font><br><br>
 ・ slow metabolism: green tea<br>
 ・ sleepless nights: chamomile<br>
 ・ cold: elderflower<br>
@@ -764,7 +711,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="paranoia" id="paranoia"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO CARE FOR SOMEONE WITH PARANOIA</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to care for someone with paranoia :</font><br><br>
 ・ NEVER try to make them extroverts; respect their introversion<br>
 ・ let them know you are there for them and you wont leave<br>
 ・ ff they're inside, lock all the doors and windows possible, show them everything is locked<br>
@@ -776,7 +723,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="kindness" id="kindness"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">TIPS TO SHOW KINDNESS</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">tips to show kindness :</font><br><br>
 ・ always be positive, patient, encouraging<br>
 ・ be willing to help others<br>
 ・ notice the little things that make difference to others<br>
@@ -789,7 +736,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="loved" id="loved"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">THINGS THAT MAKE PEOPLE FEEL LOVED</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">things that make people feel loved :</font><br><br>
 ・ making them a playlist<br>
 ・ baking them cookies<br>
 ・ giving them flowers<br>
@@ -805,7 +752,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="mood" id="mood"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">LITTLE THINGS THAT HELP MOODS</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">little things that help moods :</font><br><br>
 ・ getting enough sunshine<br>
 ・ opening the curtains<br>
 ・ eating regular meals<br>
@@ -829,7 +776,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="rumors" id="rumors"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">WHAT TO DO WHEN PEOPLE ARE SPREADING RUMORS ABOUT YOU</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">what to do when people are spreading rumors about you :</font><br><br>
 ・ you know whether or not this information is real, whether it's false or whether it's misinterpreted, then you must first calm down and reflect on your situation<br>
 ・ do not talk about it until you know what to say, do not write huge texts, do not record videos crying, it will only make you look like an immature and dramatic person !<br>
 ・ talk to someone you trust about what people are talking about, it's important to vent at those times, so you will know what to do and you will not feel the need to vent publicly<br>
@@ -840,7 +787,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="pressure" id="pressure"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">PROBLEMS WITH BLOOD PRESSURE</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">problems with blood pressure :</font><br><br>
 ・ if you feel you are sick or is going to faint, watch for symptoms before taking further action. just in case, it is best to sit down, breathe deeply, drink some water and get help<br>
 ・ DO NOT take action if you are unsure of how's your pressure ! this is very important. for example if you take water with sugar and your blood pressure is low, you will probably feel worse because it only helps in cases of high blood pressure. so don't try to do anything alone if you are not absolutely sure what happened, just relax and have a glass of water.<br>
 ・ a way to distinguish the symptoms of high blood pressure or low pressure is that during low pressure, the individual tends to feel weak, drowsy, blurred vision and with the sensation that will pass out, while the high pressure is most frequent feel the heart pounding, persistent headache and double or blurred vision. however, the most effective way is to differentiate measuring the blood pressure.<br>
@@ -850,7 +797,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="diabetes" id="diabetes"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">MYTHS REGARDING CHILDREN'S DIABETES</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">myths regarding children's diabetes :</font><br><br>
 ・ diabetes on children dissapear when they grow up - no it will not dissapear.<br>
 ・ if your child have got diabetes, it's because she have been eating to much sugar - no, you don´t get diabetes 1 from eating sugar. you get it because of an autoimmune disorder.<br>
 ・ a child who have diabetes can't eat sweets at all - wrong. she can, it's just have to be a little better planed, together with her dinner.<br>
@@ -859,7 +806,7 @@ function getPosition(el) {
 <br>
 <br>
 <br><a name="sleep" id="sleep"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">INSOMNIA</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">insomnia :</font><br><br>
 ・ give preference to eat light and nutritious food especially at night<br>
 ・ always try to sleep and wake up the same time, including on weekends<br>
 ・ take a relaxing warm bath and stay a moment in a calm and peaceful environment before going to sleep. read something instead of watching tv or use the internet can help bring sleep well<br>
@@ -872,7 +819,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="happy" id="happy"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HAPPY THINGS TO THINK OF</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">happy things to think of :</font><br><br>
 ・ being sleepy from too much sun<br>
 ・ stuffed animals that are special to you<br>
 ・ filling up photo albums with adventures<br>
@@ -889,14 +836,14 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="abandonment" id="abandonment"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">FEAR OF ABANDONMENT</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">fear of abandonment :</font><br><br>
 ・ you must tie in your mind : you are not a bad person. you have many qualities and if you realize this you will know that there is no reason for anyone to abandon you. write down a list of your qualities, all you can think of, and then your bad side. you will realize that your bad side is your fears and insecurities ( or very small and irrelevant things ). they can be overcome and improved, they are not part of your personality, different from your qualities ( you're absolutely good enough !! )<br>
 ・ people come and go in your life, just like you do in their lives. this is not bad or wrong, even though it can be very painful when it happens to you, it's a natural process and doesn't mean that they don't like you or that you are less important. it was not something you did, it's not anyone's fault. it's life following its course, just how seasons change and time passes ( and yes they can come back, be patient )<br>
 ・ it's common to think of patterns to understand people's attitudes and "fix" them so they wouldn't "punish" you anymore. this doesn't work because it is not really something that has to do with you, people have their own reasons to move away from others and can not be avoided. enjoy every second and don't think about it because it will only cause suffering and disrupt your happy memories ( which are surely eternal )<br>
 <br>
 <br><br>
 <br><a name="real" id="real"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO FEEL REAL</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to feel real :</font><br><br>
 ・ turn out the lights and open the windows, whatever the time is, whatever the weather. feel the natural light, the smells that come from outside, the sounds, the breeze on your face. you are part of nature.<br>
 ・ drink a large glass of water, eat a fruit. feel the flavors, the textures. feel how you swallow and how your body appreciates all your efforts in keeping you healthy. you are alive.<br>
 ・ take off your clothes and touch your skin and hair. notice how the textures are different, how some parts are warmer than others. feel the softness and endurance of your body. you are perfect.<br>
@@ -906,7 +853,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="endorphins" id="endorphins"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">THINGS TO RELEASE ENDORPHINS IN EVERYDAY LIFE</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">things to release endorphins in everyday life :</font><br><br>
 ・ endorphins are the hormones that make us feel happy and are important because they avoid depression, anxiety and keeps us motivated + with good self-esteem. these are things i usually do to release endorphins in a practical way when i'm feeling sad :<br>
 ・ oxytocin : give and receive gifts and compliments !!!<br>
 ・ dopamine : fulfill little tasks, start new projects !!!<br>
@@ -920,7 +867,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="selfish" id="selfish"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">SELFISHNESS x SELF RESPECT</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">selfishness x self respect :</font><br><br>
 ・ selfishness is putting the wants of yourself over the needs of others.<br>
 ・ self respect is putting the needs of yourself over the wants of others.<br>
 ・ one is disregarding others, one is taking care of yourself.<br>
@@ -929,7 +876,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="sad" id="sad"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO STAY ON TOP OF LIVE WHEN FEELING SAD</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to stay on top of life when feeling sad :</font><br><br>
 ・ acknowledge how you feel, and accept that this is going to be a more challenging day<br>
 ・ commit to doing the absolute essentials but don't push yourself to do everything<br>
 ・ prioritize what's important. for example, if you have a paper due that is worth a large percentage of your marks, work on that. if it is something that can wait, set it aside for now.<br>
@@ -942,7 +889,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="friendship" id="friendship"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO HAVE HEALTHY FRIENDSHIPS</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to have healthy friendships :</font><br><br>
 ・ it's normal for some people not to want new friends, when approaching someone don't think about rejection as something personal. you're not boring or annoying because someone doesn't want to have new friends !<br>
 ・ everyone needs time to do their own thing and to talk to other people, if a friend is distant it doesn't necessarily mean that they don't want to talk to you or is tired of you. most likely it's nothing directly related to you.<br>
 ・ you don't have to be close to someone to be a good friend to them and exchange good times together ! it's okay to interact less intimately with other people, you don't have to force approach or feel less valid by not being their best friend.<br>
@@ -953,7 +900,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="loneliness" id="loneliness"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO DEAL WITH LONELINESS</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to deal with loneliness :</font><br><br>
 ・ start new hobbies! there are endless fun activities to do that will take up your time. some things like crafts, reading, writing, gardening ; all activities you do alone, anyway.<br>
 ・ watch movies, series, play something new and fun ! get new interests that will make you very happy and busy.<br>
 ・ now that you have several new interests and hobbies, you'll find it much easier to meet nice people with common interests. look for groups of people and make new friends ! you will surely have lots of fun and will feel better.<br>
@@ -964,7 +911,7 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="loss" id="loss"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO DEAL WITH LOSSES</font><br><br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to deal with losses :</font><br><br>
 ・ maybe you have lost something you like really much or someone very important is no longer in your life. whatever the case, the first thing you must do is accept what happened. you are probably now trying to forget and not think about it, but you remember from time to time and it hurts your heart ; so what i suggest to you is that you start writing honestly what you feel about that loss. describe why it was important to you and what you used to feel about it, write why you are missing it. describe your feelings as accurately as you can, and you can scribble and draw some things that you can't describe with words.<br>
 ・ cry, you can cry. there is no problem in crying for a loss. cry as much as you want to cry, even though it seems that you will never tire of crying, at some point you will feel tired and you will be able to feel more relieved. accepting your sadness is important, suppressing feelings hurts the heart and is not healthy !<br>
 ・ read what you wrote earlier and try to make a list of things you would like to continue living to feel good like before even without the presence of what you have lost. you will certainly be able to experience similar happy experiences, even if you can't replace people. happy emotions are similar and have similar weight in your life, and that's why time will make you feel more relieved.<br>
@@ -973,624 +920,35 @@ function getPosition(el) {
 <br>
 <br><br>
 <br><a name="talking" id="talking"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">HOW TO KEEP A HEALTHY CONVERSATION</font><br><br>
-・ if you're too quiet : you probably feel like you have nothing interesting to say and that you'll bother you if you try to start a conversation. important : you certainly always have something interesting in front of you and you just didn't notice it. try to comment on what you are doing and ask about the other person's day. sharing interesting, funny or cute content you've seen is also a way to keep in touch without talking too much if it makes you anxious.<br>
+<img src="https://i.imgur.com/Whw2SOT.png"> <font color="#b29372" style="font-size:9px">how to keep a healthy conversation :</font><br><br>
+・ if you're too quiet : you probably feel like you have nothing interesting to say and that you'll bother if you try to start a conversation. important : you certainly always have something interesting in front of you and you just didn't notice it. try to comment on what you are doing and ask about the other person's day. sharing interesting, funny or cute content you've seen is also a way to keep in touch without talking too much if it makes you anxious.<br>
 ・ if you feel uncomfortable asking questions and "invading" other people's space, know that they usually feel good about knowing someone is interested in them. ask questions about things that you would be interested in responding to as well, and say that if the person doesn't want to respond it's okay. they certainly will not feel pressured in this way and you'll be able to know them better and be closer.<br>
 ・ if someone is venting or telling you something, be sure to make comments and questions about it so you can show that you are paying attention. you don't necessarily have to use words or give advice or say anything about yourself, just show that you are there and that you are interested and not bothered by the conversation. try to make them feel valid, it's enough.<br>
 <br>
 ・ if you're too talkative : you probably feel afraid of silence and not being present and you always want to comment on something. the silence is important and will not necessarily keep you distant from people. silence don't have to be uncomfortable. everyone has their time to talk and you too can have yours.<br>
-・ think before you speak. think if what you're going to say really is a nice subject and not just something to "fill the empty space". there is no need to break the silence to say anything. when starting a subject ask a question to understand if it's the person's interest before continuing to speak. if the person doesn't seem interested, you don't have to find another subject ; just let it go. if the person is interested, be careful to give time to the other person. be careful not to talk unnecessarily or repeat things. try to keep the same pace as the other person : after speaking, encourage them to talk too and wait until they finish and then you can comment on what they said. if they are notspeaking so much, try to keep short sentences too ; if they are talking enough, you can talk more too.<br>
+・ think before you speak. think if what you're going to say really is a nice subject and not just something to "fill the empty space". there is no need to break the silence to say anything. when starting a subject ask a question to understand if it's the person's interest before continuing to speak. if the person doesn't seem interested, you don't have to find another subject ; just let it go. if the person is interested, be careful to give time to the other person. be careful not to talk unnecessarily or repeat things. try to keep the same pace as the other person : after speaking, encourage them to talk too and wait until they finish and then you can comment on what they said. if they are not speaking so much, try to keep short sentences too ; if they are talking enough, you can talk more too.<br>
 ・ you don't have to be the first and last to speak. if no one is talking, don't be that first one to start the subject every time. if someone is speaking, you don't always have to respond with words. don't always try to prolong the subject because you'll be ignored, once no one is interested in it.<br>
 ・ if you need to vent or say something important and complicated, try writing what you think alone before talking to someone. by saying everything at once to someone, you may end up talking too much and overloading them with information. if you have already written what you feel before, you will be able to express yourself with few words and you'll not feel embarrassed in the end.<br>
+
+<br><br><center><img src="https://i.imgur.com/9EkFzLw.png"></center>
 <br>
-<br><br><center><img src="https://i.imgur.com/Ht48FNf.gif"></center>
-<br>
-<font color="#99A8BD">more will be added | i don't own most of the tips ; they were taken from tumblr posts and from <a id="linky" href="https://sulyia.deviantart.com" target="_blank">sulyia</a> | do you have something you think important to add ? tell me !</font>
+<font color="#b78f8f">
+* i don't own some of the tips ; some are tumblr posts and from <a id="linkbjinho" href="https://sulyia.deviantart.com" target="_blank">sulyia</a> ;<br>
+* do you have something important to add ? please tell me !</font>
 <br><br>
 
 
 <br><br>
-<center><font color="#CD8B8B"> tell your friends about this and help other people !<br><br><img src="https://i.imgur.com/amo0S36.gif"></center>
-<br>
+<center><font color="#bc7373">tell your friends about this page and help other people !!
 
-<br><br><br><br><br>
 </font>
-<center><img src="https://i.imgur.com/YUCSCmi.gif"><br><br><br><br><a name="ptbr" id="ptbr"></a>
-<center><img src="https://i.imgur.com/AyjOGqY.gif"></center><br>
-<center><font color="#3D3636">{ dicas para te ajudar }</font>
-<br><br><font color="#A19494">seu pequeno guia para problemas do dia-a-dia</font>
-<br><br><a href="#english"><font color="#EDA1A1">english</font></a></center>
-<br><br><br>
-
-
-
-
-
-
-<style>
-p { margin: 0; }
-.spoiler-area {
-
-}
-.spoiler-area.is-closed { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-</head>
-<body>
-
-<div style="font-family: Verdana; font-size:8px;"><font color="#624646"><a data-target="spoiler1" class="btn-spoiler">+ clique aqui para ver</a></font></div><br><br>
-<div id="spoiler1" class="spoiler-area is-closed">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-
-
-
-
-
-
-
-<div style="text-align: left;">
-<br>
-<br><br>
-<font color="#B4CCB0">♡ qual o problema, anjinho ? como você está se sentindo ?</font>
-<br><br>
-<a href="#calma"><font color="#A0B99C">preciso me acalmar</font></a> | <a href="#entorpecido"><font color="#A0B99C">me sinto entorpecido</font></a> | <a href="#bem"><font color="#A0B99C">quero me sentir bem</font></a> | <a href="#cortar"><font color="#A0B99C">eu me corto as vezes</font></a> | <a href="#estresse"><font color="#A0B99C">estou estressado</font></a> | <a href="#suicidio"><font color="#A0B99C">não quero mais viver</font></a> | <a href="#amorvida"><font color="#A0B99C">quero me apaixonar pela vida</font></a> | <a href="#depressao"><font color="#A0B99C">estou com depressão</font></a> | <a href="#panico"><font color="#A0B99C">estou com medo, em pânico</font></a> | <a href="#deixe"><font color="#A0B99C">quero esquecer as coisas ruins</font></a> | <a href="#deprdicas"><font color="#A0B99C">preciso de dicas para depressão</font></a> | <a href="#introversao"><font color="#A0B99C">quero cuidar de uma pessoa introvertida</font></a> | <a href="#erros"><font color="#A0B99C">eu não consigo entender pessoas introvertidas</font></a> | <a href="#choro"><font color="#A0B99C">eu choro muito</font></a> | <a href="#acontecer"><font color="#A0B99C">o que vai acontecer comigo</font></a> | <a href="#periodo"><font color="#A0B99C">estou naqueles dias do mês</font></a> | <a href="#procrastinar"><font color="#A0B99C">me ajude a parar de procrastinar</font></a> | <a href="#estima"><font color="#A0B99C">minha auto estima anda baixa</font></a> | <a href="#mental"><font color="#A0B99C">como melhorar minha saúde mental</font></a> | <a href="#melhorar"><font color="#A0B99C">quero melhorar em algo que faço</font></a> | <a href="#ansiosa"><font color="#A0B99C">quero cuidar de uma pessoa com ansiedade</font></a> | <a href="#ansiedade"><font color="#A0B99C">estou com ansiedade</font></a> | <a href="#viver"><font color="#A0B99C">quero viver melhor</font></a> | <a href="#cha"><font color="#A0B99C">eu não sei qual chá é o melhor pra mim</font></a> | <a href="#paranoica"><font color="#A0B99C">quero cuidar de uma pessoa com paranoia</font></a> | <a href="#gentileza"><font color="#A0B99C">eu quero demonstrar gentileza</font></a> | <a href="#amado"><font color="#A0B99C">eu quero fazer alguém se sentir amado</font></a> | <a href="#humor"><font color="#A0B99C">estou de mau humor</font></a> | <a href="#rumores"><font color="#A0B99C">não quero que as pessoas espalhem rumores sobre mim</font></a> | <a href="#pressao"><font color="#A0B99C">tenho problemas com minha pressão sanguinea</font></a> | <a href="#diabetess"><font color="#A0B99C">queria entender melhor a diabetes infantil</font></a> | <a href="#insonia"><font color="#A0B99C">não consigo dormir</font></a> | <a href="#feliz"><font color="#A0B99C">eu quero apreciar pequenos momentos</font></a> | <a href="#abandono"><font color="#A0B99C">estou sempre com medo do abandono</font></a> | <a href="#reaal"><font color="#A0B99C">quero me sentir real</font></a> | <a href="#endorfinas"><font color="#A0B99C">preciso de endorfinas</font></a> | <a href="#egoista"><font color="#A0B99C">estou sendo egoísta ?</font></a> | <a href="#triste"><font color="#A0B99C">estou triste</font></a> | <a href="#amizade"><font color="#A0B99C">estou tendo problemas com amizades</font></a> | <a href="#solidão"><font color="#A0B99C">estou me sentindo sozinho</font></a> | <a href="#perda"><font color="#A0B99C">eu perdi algo / alguém</font></a> | <a href="#conversas"><font color="#A0B99C">tenho problemas para conversar</font></a>
-<br>
-<br><br><br>
-<br>
-<font color="#968484"><a name="calma" id="calma"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO SE ACALMAR</font><br><br>
-・ tome um banho quente<br>
-・ cubra-se com um cobertor aconchegante<br>
-・ beba chá + uma colher de mel<br>
-・ acaricie seu cabelo e massageie seus ombros<br>
-・ faça algo que vá distraí-lo e faz você se sentir feliz<br>
-<br>
-<br><br>
-<br><a name="entorpecido" id="entorpecido"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">SE VOCÊ SE SENTE ENTORPECIDO</font><br><br>
-・ lave o rosto ou tome uma ducha fria<br>
-・ segure um cubo de gelo em torno dos seus braços ou pernas<br>
-・ tome sorvete<br>
-<br>
-<br><br>
-<br><a name="bem" id="bem"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">IDEIAS DE CUIDADO PRÓPRIO</font><br><br>
-・ coma fruta ou algo doce<br>
-・ tome um banho quente com um monte de bolhas !!<br>
-・ penteie o cabelo gentilmente<br>
-・ ande lá fora descalço, procure flores bonitas<br>
-・ escute música calma e agradável<br>
-・ vá a um brechó e compre roupas antigas legais<br>
-・ cozinhe alguma coisa<br>
-・ lave suas roupas e faça elas ficarem cheirosas<br>
-・ penteie um gatinho<br>
-<br>
-<br><br>
-<br><a name="cortar" id="cortar"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">SE VOCÊ SE CORTAR</font><br><br>
-・ esconda as cicatrizes com mangas compridas, use pulseiras ou use maquiagem<br>
-・ disfarce as cicatrizes com suco de aloe vera, vitamina e óleo, suco de limão<br>
-・ substitutos para o corte : desenhar algo com uma caneta vermelha ou preta onde você quer cortar ; colocar band-aids no lugar onde você quer cortar ; pegue um caderno e anote seus sentimentos, rabisque, desenhe ou escreva poemas nele
-<br>
-<br><br>
-<br><a name="estresse" id="estresse"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">ALÍVIO DE ESTRESSE</font><br><br>
-・ medite - tente limpar sua mente<br>
-・ faça uma pausa de 5 minutos para se concentrar em sua respiração<br>
-・ converse com outras pessoas sobre como se sente, isso irá acalmá-lo e eles podem te ajudar<br>
-・ tome um banho quente<br>
-・ faça algo que te faça rir ( assista alguns vídeos engraçados )<br>
-・ crie uma lista de músicas calmas e escute-a, você também pode achar playlists prontas<br>
-・ faça uma caminhada lá fora, exercício é muito importante<br>
-・ observe o céu e os sons do ambiente<br>
-・ tome chá + uma colher de mel<br>
-<br>
-<br><br>
-<br><a name="suicidio" id="suicidio"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">SUICÍDIO</font><br><br>
-・ se você quer se suicidar por qualquer razão lembre-se de que você vai passar por seus problemas, como muitas outras pessoas<br>
-・ diga para si mesmo que você vai esperar 24 horas antes de fazer isso. ou mais. sentimentos e ação são duas coisas diferentes, só porque você sente como se quisesse matar a si mesmo não significa que você realmente tem que fazê-lo agora<br>
-・ pessoas muitas vezes escolhem o suicídio para aliviar sua dor. lembre-se de que é um sentimento de alívio e você precisa ser vivo para senti-lo. você não vai encontrar alívio se você estiver morto<br>
-・ em vez de terminar sua vida, tente iniciá-la.<br>
-・ se algo der errado, nunca desista! sempre tente ver o lado bom<br>
-・ valorize as coisas boas em sua vida<br>
-・ maus pensamentos não são bem-vindos !!!<br>
-・ socialize, mesmo que você não quer se ver em torno de qualquer um<br>
-・ fale com novas pessoas, apenas por falar<br>
-・ sorria e fique positivo !<br>
-<br>
-<br><br>
-<br><a name="amorvida" id="amorvida"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO SE APAIXONAR NOVAMENTE PELA VIDA</font><br><br>
-・ limpe seu quarto, limpe algum espaço, lave a louça, varra. tire o lixo. retire as roupas do chão e lave-as, e então, de verdade, dobre / pendure-as. tome um longo banho. esfregue atrás dos joelhos. escove os dentes ( isso pode ser totalmente exaustivo, mas tente fazer tudo isso em um dia, se você puder. o resultado final vale a pena, eu prometo ! )<br>
-・ pegue seu caderno de anotações. não precisa ser um novo caderno, mas de preferência um que você geralmente não escreve, ou que você não tocou há algum tempo. um bonitinho funcionará bem. sente-se no seu quarto, ou no parque, ou na biblioteca, e escreva uma lista. conte nuvens. descreva todas as cores que vê, e note os padrões que surgem. esboce as rachaduras nas paredes. observe que a luz faz formas faz quando entra em um espaço. fale sobre como é o gosto e o cheiro do ar. que sons você pode ouvir ? até mesmo ruídos brancos : aviões, ventiladores, cigarras, qualquer coisa. lembre-se de que você está sentado no meio de um espaço repleto de detalhes. lembre-se de que você não está no nada e no vazio. seu mundo é insondável. ele tem potencial<br>
-・ beba água fria e tente comer algo que não seja processado. não precisa ser nada extravagante. compre uma maçã com as moedinhas entre as almofadas do seu sofá. coma lá fora. se você é alguém que caminha, vá para algum lugar depois, apenas para esticar as pernas. tome seus medicamentos. lembre-se que é bom que você esteja dentro do seu corpo. seu corpo é uma máquina fantástica e infinitamente intrincada, e mesmo que a sociedade tenha golpeado um monte de ideias venenosas sobre isso, isso não altera seu valor inerente e seu esplendor. cuide dele !<br>
-・ leia um romance. sublinhe suas linhas favoritas e escreva frases que esquentam seu coração dentro de seu peito na parte de trás da mão com uma caneta de tinta. leia um romance como poesia. leia poesia, algo decadente, mas despretensioso. assista a um filme que você não viu antes. se houver galerias de arte gratuitas perto de você, passeie por uma. não tenha pressa. deixe-se descansar. se houver padrões no que faz a sua alma doer, escreva esses padrões : arcos de mármores ou tijolos quebrados ou dentes-de-leão ou descrições de vestidos ou o que quer que seja, anote-os<br>
-・ sua família escolhida é importante. lembre-se, eles o escolheram tanto quanto você os escolheu. o amor não tem nenhuma obrigação. é dado gratuitamente e é dado a partir de um lugar de compaixão. você não é um fardo. se você precisa respirar, tome um minuto sozinho e apenas exista, mas lembre-se de voltar para o seu povo. quando eles precisam de você, escute e seja gracioso. sempre seja gracioso. o universo as vezes se lembra de coisas assim<br>
-・ ouça música nova. ouça algo que você normalmente não escutaria. tendemos a amarrar muita memória com a música. nós estamos nos apaixonando novamente. a trilha sonora precisa ser específica para isso<br>
-・ permita-se entregar-se aos atos românticos. pressione flores em livros antigos. assista filmes com legendas e digite as palavras. dance no seu quarto. use algo que faça você se sentir bem, mesmo que não o use em público. escreva cartas para sua família escolhida, mesmo que as entregue em mãos. escreva poesia, mesmo poesia terrível. desfrute-a. coma chocolate amargo. quando a sua família escolhida quiser sair, tente sair com eles as vezes, mesmo que seja apenas para o mercado !<br>
-<br>
-<br><br>
-<br><a name="depressao" id="depressao"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">ALIVIANDO SINTOMAS DE DEPRESSÃO</font><br><br>
-・ acenda as luzes e abra uma janela<br>
-・ coma algo saudável e beba água fria<br>
-・ crie uma playlist confortável para quando você se sentir mal<br>
-・ tome um banho relaxante<br>
-・ assista vídeos engraçados<br>
-・ vista sua roupa preferida<br>
-・ consiga um hobby<br>
-・ leia um bom livro ou assista um bom filme<br>
-・ lembre-se que você é muito importante e deve cuidar de si mesmo com carinho<br>
-<br>
-<br><br>
-<br><a name="panico" id="panico"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO LIDAR COM SENTIMENTOS DE PÂNICO</font><br><br>
-・ lembre-se, sentimentos de pânico são apenas exageros de reações de estresse corporais normais.<br>
-・ sensações não são nem prejudiciais nem perigosas - apenas desagradáveis. nada pior vai acontecer.<br>
-・ pare de aumentar o pânico com pensamentos assustadores de onde pânico vai te levar.<br>
-・ se mantenha no presente. esteja ciente do que está acontecendo com você em vez de se preocupar com o quão pior pode ficar.<br>
-・ espere e dê ao medo tempo para passar.<br>
-・ note que quando você parar de aumentar o pânico com pensamentos assustadores, o medo começa a desaparecer.<br>
-・ foque em lidar e enfrentar o medo em vez de tentar esquecer ele ou escapar dele.<br>
-・ bloqueie seu arredor. planeje o que você vai fazer depois que o pânico for embora.<br>
-・ pense sobre o progresso que você fez, mesmo com todas as dificuldades.<br>
-・ quando estiver pronto para continuar, faça de uma maneira fácil e descontraída. não há pressa.<br>
-・ cada vez que você lida com o pânico, você reduz seu medo !<br>
-<br>
-<br><br>
-<br><a name="deixe" id="deixe"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">DEIXE PRA LÁ</font><br><br>
-・ encare e aceite o que aconteceu, supressão não funciona como solução a longo prazo<br>
-・ identifique as lições que você aprendeu com o que aconteceu e anote-as. toda vez que você tiver memórias dolorosas apenas leia as lições<br>
-・ não se esqueça : as experiências do passado não determinam quem você é, você é uma pessoa forte agora e só você pode escolher o seu futuro e a pessoa que você quer ser<br>
-・ sempre busque a paz. quando você está em paz, velhas lembranças dolorosas têm menos poder<br>
-・ sempre foque e viva o presente<br>
-・ perdoe ( para o seu próprio bem ) e tente curar o que aconteceu em seguida, deixe pra lá. não fique magoado com o que aconteceu<br>
-・ as lutas diárias valem a pena, porque um dia você estará livre<br>
-<br>
-<br><br>
-<br><a name="deprdicas" id="deprdicas"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">DICAS PARA DEPRESSÃO</font><br><br>
-・ tome banho. não de banheira, de chuveiro. use água quente ou fria, como você quiser, nem precisa se lavar, basta entrar dentro da água e deixá-la escorrer por um tempo. sente-se no chão, se você conseguir<br>
-・ hidrate tudo. use qualquer loção que você gosta. sem cheiro ? loção de 48 horas que faz você cheirar como um campo de flores silvestres ? use o que quiser, e use em tudo<br>
-・ coloque roupas limpas e confortáveis<br>
-・ coloque sua lingerie preferida. calcinhas bonitinhas de renda ? aquelas boxers ridículas que você comprou no natal passado ? o que você quiser !<br>
-・ tome água gelada. use gelo. se você quiser, adicione menta ou limão como extra<br>
-・ limpe alguma coisa. não tem que ser algo grande, organize uma gaveta da sua mesa. lave cinco pratos sujos, coloque roupas pra lavar<br>
-・ ouça algo animado e dançante e alto, algo que tenha um monte de energia. cante, dance, mesmo se você não for bom nisso<br>
-・ faça comida, não apenas pegue uma barrinha de granola para comer, use seu tempo para fazer comida. mesmo que seja ramen ! adicione algo especial a ele, como um ovo cozido ou alguns vegetais. prepare comida, ela vai ter um sabor bem melhor e você vai sentir que realizou alguma coisa<br>
-・ faça algo. escreva uma pequena história ou poema, desenhe uma imagem, pinte uma imagem, faça origamis, crochê ou tricô, modele alguma coisa com massinha, qualquer coisa artística. mesmo que você não ache que é bom nisso !<br>
-・ vá lá fora, caminhe, sente na grama, olhe pras nuvens, cheire as flores, coloque sua mão na terra e sinta o solo contra sua pele<br>
-・ ligue ou mande texto para alguém. alguém amado, um amigo, um membro da família, um serviço de chat se você não tem ninguém para conversar. fale com um estranho na rua. tenha uma conversa e escute a voz de alguém. se você não quer, converse por texto ou email ou qualquer outra coisa, apenas tenha interação social com outra pessoa. mesmo que você não fale muito, escute-os<br>
-・ abrace seus bichinhos de estimação se você tiver / puder abraçar, tire fotos deles, fale com eles. diga a eles como você se sente !<br>
-<br>
-<br><br>
-<br><a name="timida" id="timida"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO CUIDAR DE INTROVERTIDOS</font><br><br>
-・ NUNCA tente fazê-los extrovertidos; respeite a sua introversão<br>
-・ respeite sua privacidade<br>
-・ nunca constranja-os em público<br>
-・ dê-lhes tempo para pensar ; não exija respostas instantâneas<br>
-・ não os interrupa<br>
-・ dê a eles avisos de 15 minutos para eles terminarem o que estão fazendo<br>
-・ não empurre-os para fazer muitos amigos ; está ok para eles tentar encontrar um melhor amigo com os mesmos interesses / habilidades<br>
-<br>
-<br>
-<br>
-<br><a name="erros" id="erros"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">MAL-ENTENDIDOS SOBRE INTROVERTIDOS</font><br><br>
-・ eles não gostam de pessoas<br>
-・ eles não são amigáveis<br>
-・ eles tem poucas emoções e sentem as coisas menos intensamente<br>
-・ eles não se interessam no que importa pras outras pessoas<br>
-・ eles não são facilmente machucados pelos outros. você pode excluí-los ou deixá-los e isso não vai afetá-los profundamente<br>
-・ eles são sérios e tem pouco senso de humor<br>
-<br>
-<br><br>
-<br><a name="choro" id="choro"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">O QUE FAZER DEPOIS DE CHORAR MUITO</font><br><br>
-・ tome um banho e troque todas as suas roupas, até mesmo suas meias e roupas íntimas. esse é o primeiro passo de tudo<br>
-・ pegue um grande, gelado copo de água e tome. tudo. assim que você terminar, pegue um refil. isso vai te ajudar fisicamente e emocionalmente instantaneamente, por favor confie em mim<br>
-・ pegue um lanchinho, alguma coisa leve que você não vai precisar esperar para preparar. eu recomendo pudim, uma fruta, iogurte, um picolé ou alguns biscoitos<br>
-・ vá pra debaixo das cobertas. coloque alguma coisa - tv, um filme, música, qualquer coisa distrativa. ou considere ligar para um amigo ou falar com qualquer pessoa próxima, até mesmo seu irmão no quarto ao lado !!<br>
-・ você provavelmente está sentindo todos os tipos de esgotamento e eu não quero isso para você: saiba que você é amado. você é importante. você quer dizer mais do que você sabe agora, mais do que você talvez jamais saiba. você vale todas as estrelas no céu. você merece se sentir bem<br>
-<br>
-<br><br>
-<br><a name="acontecer" id="acontecer"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COISAS QUE ACONTECERÃO COM VOCÊ</font><br><br>
-・ você encontrará uma nova música que você poderá ouvir repetidamente quando você não conseguir dormir<br>
-・ novas pessoas entrarão em sua vida inesperadamente e tornarão tudo melhor<br>
-・ você receberá boas notas, se formará e encontrará um emprego que você gosta<br>
-・ seu coração vai se curar e você aprenderá lentamente a controlar a dor<br>
-・ coisas boas que o farão muito feliz por estar vivo !<br>
-<br>
-<br><br>
-<br><a name="periodo" id="periodo"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">RELAXANDO DURANTE AQUELES DIAS DO MÊS</font><br><br>
-・ tome bastante chá<br>
-・ um banho quente tornará tudo melhor<br>
-・ ouça música relaxante<br>
-・ faça algo para se distrair<br>
-・ assista a um filme<br>
-・ dê uma volta e tome um pouco de ar fresco<br>
-・ use apenas roupas confortáveis<br>
-・ atividades físicas leves podem ajudar<br>
-・ vá ao banheiro com mais frequência<br>
-<br>
-<br><br>
-<br><a name="procrastinar" id="procrastinar"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO PARAR DE PROCRASTINAR</font><br><br>
-・ para começar, faça devagar ! 15 minutos de cada vez é suficiente, então, descanse um pouco e continue até entrar no ritmo e não precisar parar<br>
-・ faça uma lista do que você precisa fazer, comece com as coisas mais fáceis para não se sentir cansado rápido<br>
-・ fique longe das redes sociais !!! elas chamam sua atenção o tempo todo e fazem você perder o foco<br>
-・ nunca se castigue por procrastinar, é natural, seja gentil com você mesmo !<br>
-<br><br>
-<br><a name="estima" id="estima"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">SE VOCÊ TEM BAIXA ALTO-ESTIMA</font><br><br>
-・ trate os outros da maneira que você gostaria de ser tratado, e trate a si mesmo como trataria uma pessoa que você ama muito !<br>
-・ não se culpe ! é normal cometer erros<br>
-・ nunca se coloque pra baixo !<br>
-・ cuide de si mesmo, faça e pense o que te deixa confortável e faça o que te faz feliz !<br>
-・ outras pessoas podem ter opiniões negativas em relação a você; opiniões e fatos não são a mesma coisa !!!<br>
-・ sempre se coloque em primeiro lugar. se você colocar outros em primeiro lugar eles vão se acostumar com isso<br>
-・ todas as pessoas tem um tipo de beleza diferente, não baseada na mídia. encontre a sua !<br>
-・ encontre algo em que você é bom ( como desenho, culinária, jardinagem ) e use isso como um hobbie<br>
-<br>
-<br><br>
-<br><a name="mental" id="mental"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">PEQUENAS COISAS QUE VOCÊ PODE FAZER PARA MELHORAR SUA SAÚDE MENTAL</font><br><br>
-・ certifique-se de sair ou mudar o seu ambiente pelo menos uma vez por dia<br>
-・ mande mensagens para seus amigos. certifique-se de não se isolar !<br>
-・ guarde orçamento para pequenas iguarias e indulgências<br>
-・ decide dizer "não" às tendências favoritas das pessoas. seja seguro em quem você é e no que deseja para "você" !<br>
-・ invista em hobbies que você realmente gosta, e que tendem a deixá-lo se sentindo bem consigo mesmo<br>
-・ tenha uma playlist favorita que você sabe que elevará seu humor<br>
-・ decore seu espaço ou quarto de forma que reflita quem você é<br>
-・ limite quanto tempo você gasta com aqueles que drenam sua energia<br>
-・ trate-se da maneira como você trataria uma pessoa especial, ou um bom amigo<br>
-・ não se compare com os outros, apenas aprecie ser você<br>
-<br>
-<br><br>
-<br><a name="melhorar" id="melhorar"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO FICAR MELHOR EM ALGUMA COISA</font><br><br>
-・ " prática, prática, prática, e tudo virá a você "<br>
-・ sua opinião primeiro ! a opinião dos outros é importante se você quer melhorar, mas o mais importante é que você esteja apreciando o que produziu e não esteja afetando ninguém de uma forma negativa, é claro<br>
-<br>
-<br><br><br><a name="ansiosa" id="ansiosa"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO CUIDAR DE PESSOAS ANSIOSAS</font><br><br>
-・ tranquilize-as constantemente<br>
-・ compartilhe planos com elas<br>
-・ abraços tornam tudo melhor<br>
-・ não faça surpresas a menos que você saiba que as fará felizes<br>
-・ esteja lá !<br>
-<br>
-<br>
-<br>
-<br><br><br><a name="ansiedade" id="ansiedade"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">ATAQUE DE ANSIEDADE</font><br><br>
-・ olhe ao seu redor e tente encontrar 5 coisas que você pode ver, 4 coisas que você pode tocar, 3 coisas que você pode ouvir, 2 coisas que você pode sentir o cheiro e uma coisa que você pode saborear<br>
-・ pare tudo o que estiver fazendo ! você pode terminar mais tarde quando estiver se sentindo melhor, você precisa cuidar de si no momento ! não vai chegar a lugar nenhum se não parar tudo e focar na ansiedade.<br>
-・ ocupar todos os seus sentidos vai ajudar muito. eu costumo comer algo bem macio ( que eu possa também tocar ) e bom para meu paladar, como pão, um bolo ou pudim suave enquanto assisto algum vídeo relaxante<br>
-・ ataques de ansiedade acontecem porque você começa a hiperventilar; sempre que você começar a sentir sintomas de ansiedade não fique assustado, basta lembrar que esses sintomas são seu cérebro dizendo-lhe para respirar porque você não está respirando corretamente. portanto, respire profundamente.<br>
-<br>
-<br>
-<br>
-<br><a name="viver" id="viver"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">PEQUENAS COISAS PARA MELHORAR SUA VIDA</font><br><br>
-・ troque sua roupa de cama a cada mês<br>
-・ acorde cedo ( pelo menos antes das 10h )<br>
-・ passe mais tempo com pessoas que você realmente ama<br>
-・ luzes de fada por toda parte<br>
-・ lave seu rosto diariamente<br>
-・ se hidrate regularmente<br>
-・ cozinhe algumas guloseimas saudáveis<br>
-・ não use nenhuma maquiagem, pelo menos enquanto estiver em casa<br>
-・ limpe seu quarto pelo menos a cada duas semanas<br>
-・ corra lá fora<br>
-・ compre uma toalha nova regularmente<br>
-・ invista tempo em cozinhar refeições incríveis<br>
-・ descubra músicas novas<br>
-・ passe menos tempo online<br>
-・ tome suas vitaminas<br>
-・ coma um monte de frutas<br>
-・ acenta algumas velas aromatizantes<br>
-・ apenas vá para a cama para dormir ( descanse no sofá )<br>
-・ abra as janelas do seu quarto<br>
-・ tome banhos quentinhos ( mas não muito quentes, apenas confortáveis )<br>
-・ mantenha uma boa postura<br>
-・ se alongue pela manhã<br>
-・ coma em menores porções e em maior frequência<br>
-・ tome dois litros de água por dia<br>
-・ regule a iluminação dos seus dispositivos e da sua casa, iluminação de mais ou de menos causa muitos problemas<br>
-・ escute música em um volume médio, seu ouvido vai se acostumar, eu prometo<br>
-<br>
-<br>
-<br>
-<br><a name="cha" id="cha"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">TOME CHÁ</font><br><br>
-・ metabolismo lento: chá verde<br>
-・ noites sem sono: camomila<br>
-・ frio: flor de sabugueiro<br>
-・ estresse: bálsamo de limão / bálsamo de abelha / erva-cidreira / melissa<br>
-・ náuseas: chá de gengibre<br>
-・ inchaços: hortelã-pimenta<br>
-<br>
-<br>
-<br>
-<br><a name="paranoica" id="paranoica"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO CUIDAR DE ALGUÉM COM PARANOIA</font><br><br>
-・ NUNCA tente torná-los extrovertidos ; respeite a sua introversão<br>
-・ deixe-os saber que você está lá para eles e que você não vai embora<br>
-・ se eles estiverem dentro de casa, tranque todas as portas e janelas possíveis, mostre-lhes que tudo está trancado<br>
-・ mantenha-os falando ou distraídos<br>
-・ diga-lhes suavemente e com calma que eles estão seguros e protegidos<br>
-・ não aja irritado ou chame seu medo de estúpido / infantil<br>
-・ não insista que tudo está bem ou que eles tem que superar<br>
-<br>
-<br>
-<br>
-<br><a name="gentileza" id="gentileza"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">DICAS PARA DEMONSTRAR GENTILEZA</font><br><br>
-・ sempre seja positivo, paciente, encorajador<br>
-・ esteja disposto a ajudar os outros<br>
-・ repare nas pequenas coisas que fazem a diferença para os outros<br>
-・ não guarde rancores - perdoe e esqueça<br>
-・ seja educado, respeitoso e compreensivo<br>
-・ procure por dicas práticas para ajudar outras pessoas<br>
-・ não se envolva em fofocas ou dramas, esse tipo de ambiente não faz bem a ninguém<br>
-・ não incentive ninguém a atacar outra pessoa porque ela fez algo ruim, palavras ruins e intimidação não ensinam ninguém a ser uma pessoa melhor. tente conversar privadamente e de forma pacífica, então se nada puder ser feito, denuncie.<br>
-<br>
-<br>
-<br>
-<br><a name="amado" id="amado"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COISAS QUE FAZEM AS PESSOAS SE SENTIREM AMADAS</font><br><br>
-・ criar-lhes uma playlist<br>
-・ assar-lhes biscoitos<br>
-・ dar-lhes flores<br>
-・ criar-lhes arte<br>
-・ lembretes aleatórios que eles são amados<br>
-・ escrever-lhes um poema<br>
-・ elogiá-los sobre seus talentos<br>
-・ perguntar-lhes como foi seu dia<br>
-・ enviar links de coisas que você acha que eles vão gostar<br>
-・ abraços aleatórios<br>
-・ "isso me fez pensar em você"<br>
-<br>
-<br>
-<br>
-<br><a name="humor" id="humor"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">PEQUENAS COISAS QUE AJUDAM O HUMOR</font><br><br>
-・ getting enough sunshine<br>
-・ receber luz do sol suficiente<br>
-・ abrir as cortinas<br>
-・ comer refeições regulares<br>
-・ caminhadas curtas com sua música favorita<br>
-・ não fique acordado / fora depois da meia-noite<br>
-・ não tente se relacionar com posts "relacionáveis"<br>
-・ saia das redes sociais se não estiver saudável<br>
-・ tome banho<br>
-・ não fique na cama o dia inteiro<br>
-・ planeje seu dia<br>
-・ escute música<br>
-・ troque suas roupas<br>
-・ defina metas pequenas<br>
-・ diga sim para eventos divertidos e não para os desconfortáveis<br>
-・ beba água, leva 5 segundos<br>
-・ fale com um amigo próximo<br>
-・ lembre-se : um mau humor pode mentir para você<br>
-・ você não é indesejável ou sem esperança<br>
-・ você merece amor, seja legal com você mesmo<br>
-<br>
-<br>
-<br>
-<br><a name="rumores" id="rumores"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">O QUE FAZER QUANDO ESTÃO ESPALHANDO RUMORES SOBRE VOCÊ</font><br><br>
-・ você sabe ou não se essas informações são reais, se são totalmente mentira ou se estão sendo mal-interpretadas, então você deve primeiramente se acalmar e refletir sobre a sua situação<br>
-・ não fale sobre o assunto enquanto não souber o que dizer, não escreva um texto enorme, não grave vídeos chorando, isso tudo apenas fará você parecer uma pessoa imatura e dramática !<br>
-・ converse com alguém que você confie sobre o que estão falando sobre você, é importante desabafar nesses momentos, assim você vai saber o que fazer e não vai sentir a necessidade de desabafar publicamente<br>
-・ se são informações reais: mas você se sente mal pela forma como estão falando sobre ela, se for algo que você não queria que ninguém soubesse, depende do seu caso e da gravidade do assunto. você pode falar sobre como se sente sobre isso, justificar suas ações ou apenas ignorar. lembre-se de não transformar isso em um drama, porque não vai ajudar. se for algo que você pode mudar e melhorar, se esforce pra isso, seja humilde, aceite as críticas. se for algo que você não tem controle a respeito, não se culpe, não culpe os outros. ser uma pessoa madura e manter a calma é a melhor forma de lidar com situações assim<br>
-・ se são informações falsas: você pode tentar esclarecer as coisas, tente conseguir provas, se puder. não se preocupe com a reação das pessoas sobre isso, pois quem se importa e confia em você vai acreditar nas suas palavras. não extenda o assunto por muito tempo, seja breve e direto. se você não fez nada de errado, não tem motivo pra se preocupar !<br>
-・ em qualquer caso: não ofenda ninguém, não exagere nas palavras, não se faça de vítima, não transforme a situação em um grande drama. isso é muito importante e só assim as pessoas vão te levar a sério<br>
-<br>
-<br>
-<br>
-<br><a name="pressao" id="pressao"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">PROBLEMAS COM PRESSÃO SANGUINEA</font><br><br>
-・ se você sentir que está passando mal ou vai desmaiar, fique atento aos sintomas antes de tomar alguma atitude. por via das dúvidas, o melhor é se sentar, respirar profundamente, tomar um pouco de água e pedir ajuda<br>
-・ NÃO tome providências se você não tiver certeza de como está sua pressão ! isso é MUITO importante. se você por exemplo tomar água com açúcar e sua pressão estiver baixa, provavelmente você irá se sentir pior, pois isso apenas ajuda em casos de pressão alta. então não tente fazer nada sozinho se não tiver absoluta certeza do que aconteceu, apenas relaxe e tome um copo de água.<br>
-・ uma forma de diferenciar os sintomas de pressão alta ou de pressão baixa é que, na pressão baixa, o indivíduo costuma sentir-se fraco, sonolento, com a visão turva e sensação que vai desmaiar, enquanto que na pressão alta é mais frequente sentir o coração palpitando, dor persistente na cabeça e visão dupla ou embaçada. porém, a forma mais eficaz de diferenciar é medir a pressão arterial.<br>
-・ em caso de pressão alta, o indivíduo deve tomar um copo de suco de laranja e tentar se acalmar, pois a laranja ajuda a regular a pressão por ser diurética e rica em potássio e magnésio. água com açúcar também ajuda. caso o indivíduo tome algum remédio para pressão alta prescrito pelo médico, deve tomá-lo. se após 1 hora a pressão ainda continuar alta, o indivíduo deve ir ao hospital para tomar um remédio para baixar a pressão.<br>
-・ em caso de pressão baixa, o indivíduo deve sentar em um local arejado, afrouxar as roupas e elevar as pernas, de forma a aumentar a circulação do sangue no cérebro e regular a pressão arterial. quando os sintomas de pressão baixa passarem, o indivíduo pode levantar-se normalmente, no entanto, deve repousar e evitar fazer movimentos bruscos. colocar uma pitada de sal refinado embaixo da língua deve ajudar bastante.<br>
-<br>
-<br>
-<br>
-<br><a name="diabetess" id="diabetess"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">MITOS RELATIVOS AO DIABETES INFANTIL</font><br><br>
-・ diabetes em crianças desaparecem quando crescem - não, não vai desaparecer.<br>
-・ se seu filho tem diabetes, é porque ele tem comido muito açúcar - não, você não tem diabetes tipo 1 por comer açúcar. você tem por causa de uma doença auto-imune.<br>
-・ uma criança que tem diabetes não pode comer doces de qualquer maneira - errado. ela pode, só tem que ser um pouco melhor planejado, juntamente com o seu jantar.<br>
-・ se o valor da glicose saltar para cima e para baixo, você fez algo errado. - errado. mesmo se você tem as doses e o tipo de insulina apropriados, e você fêz o que você pode, o valor da glicose do seu filho pode ainda saltar para cima e para baixo. algumas crianças são difíceis de manter um nível de 5-7 mmol.<br>
-<br>
-<br>
-<br>
-<br><a name="insonia" id="insonia"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">INSÔNIA</font><br><br>
-・ dê preferência ao consumo de alimentos leves e nutritivos especialmente à noite<br>
-・ tente sempre dormir e acordar a mesma hora, inclusive aos fins de semana<br>
-・ tome um banho morno relaxante e fique algum tempo num ambiente calmo e tranquilo antes de ir dormir. ler alguma coisa em vez de ver tv ou na internet pode ajudar a trazer o sono também<br>
-・ tome um chá calmante como o de erva-cidreira ou valeriana cerca de 30 minutos antes de ir para cama<br>
-・ eu não recomendo ouvir música enquanto dorme, a não ser que seja uma música muito calma e em volume baixo. escutar música em volume alto a noite toda pode fazer mal aos seus ouvidos, além de dar dor de cabeça !<br>
-・ eu recomendo altamente vídeos de ASMR ( se você não sabe o que isso significa, veja <a href="https://en.wikipedia.org/wiki/Autonomous_sensory_meridian_response" target="_blank" id="linklinklink">aqui</a> ) ! eu tenho uma playlist de asmr que você pode conferir <a href="https://www.youtube.com/playlist?list=PLsBmCEP2InOp69wlTeQKg7GnB2EG5apxD" target="_blank" id="linklinklink">aqui</a><br>
-・ se você for assistir vídeos antes de dormir apenas assista aqueles que irão te relaxar e te deixar sonolento. por favor não se esqueça de usar um filtro de luz azul para não fazer mal pra sua vista, e eu recomendo apenas ouvir o áudio em volume mínimo para um sono mais rápido ( não se esqueça de tirar os fones antes de cair no sono )<br>
-・ faça um diário do seu sono ! anote a hora que acordou, a quantidade de horas que dormiu e a qualidade do seu sono. isso vai te ajudar a melhorar<br>
-・ se estiver dormindo adequadamente, não vai ter dificuldades para acordar cedo. se ainda tiver, tente se ocupar rápido com algo no horário de acordar : levante rapidamente da cama e prepare um pouco de café, pegue o celular, jogue um pouco ou veja suas redes sociais, desapegue da cama, o dia começou !<br>
-<br>
-<br><br>
-<br><a name="feliz" id="feliz"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COISAS FELIZES PARA PENSAR SOBRE</font><br><br>
-・ estar sonolento por ter tomado muito sol<br>
-・ bichinhos de pelúcia que são especiais para você<br>
-・ preencher álbuns de fotos com aventuras<br>
-・ flores pressionadas em um livro<br>
-・ ver sua pessoa favorita dormir<br>
-・ ter bons momentos inesperados com estranhos<br>
-・ ver alguém sorrir genuinamente para você<br>
-・ deitar no final do dia e sentir o cansaço lentamente deixando você<br>
-・ entrar em um cômodo quentinho no frio<br>
-・ falar apaixonadamente sobre seus interesses para alguém que se importa<br>
-・ acordar naturalmente<br>
-・ passarinhos bonitinhos cantando<br>
-・ como as pessoas reagem quando você as elogia<br>
-<br>
-<br><br>
-<br><a name="abandono" id="abandono"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">MEDO DO ABANDONO</font><br><br>
-・ você deve fixar em sua mente : você não é uma pessoa ruim. você tem muitas qualidades e se você perceber isso, você saberá que não há razão para alguém te abandonar. escreva uma lista de suas qualidades, tudo que você pode pensar e, em seguida, seu lado ruim. você perceberá que o seu lado ruim são seus medos e inseguranças ( ou coisas muito pequenas e irrelevantes ). eles podem ser superados e melhorados, eles não são parte de sua personalidade, diferente de suas qualidades ( você é absolutamente bom o suficiente !! )<br>
-・ as pessoas vêm e vão em sua vida, assim como você faz em suas vidas. isso não é ruim ou errado, mesmo que isso possa ser muito doloroso quando acontece com você, é um processo natural e não significa que eles não gostem de você ou que você seja menos importante. não foi algo que você fez, não é culpa de ninguém. é a vida seguindo seu curso, como as estações mudam e o tempo passa ( e sim, elas podem voltar, seja paciente )<br>
-・ é comum pensar em padrões para entender as atitudes das pessoas e "corrigi-las" para que elas não "punissem" mais você. isso não funciona porque não é realmente algo que tem a ver com você, as pessoas têm suas próprias razões para se afastar dos outros e não podem ser evitadas. aproveite cada segundo e não pense sobre isso, porque isso só causará sofrimento e atrapalhará suas memórias felizes ( que certamente são eternas )<br>
-<br>
-<br><br>
-<br><a name="reaal" id="reaal"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO SE SENTIR REAL</font><br><br>
-・ apague as luzes e abra as janelas, seja lá que horas são, seja lá que clima. sinta a iluminação natural, os cheiros que vêm lá de fora, os sons, a briza no seu rosto. você é parte da natureza.<br>
-・ beba um copo grande de água, coma uma fruta. sinta os sabores, as texturas. sinta como você engole e como seu organismo aprecia todo o seu esforço em mantê-lo saudável. você está vivo.<br>
-・ tire suas roupas e toque sua pele e cabelo. perceba como as texturas são diferentes, como algumas partes são mais quentinhas do que outras. sinta a suavidade e resistência do seu corpo. você é perfeito.<br>
-・ observe atentamente todos os pequenos detalhes do ambiente que você está. procure por vida, pequenas plantas, pequenos insetos, até mesmo mofo. anote tudo de interessante que você encontrou. olhe pela janela e observe as paisagens, o mundo é tão grande. você nunca está sozinho.<br>
-・ vá lá fora, pise descalço na grama. respire fundo, sinta seus batimentos cardíacos. deite na grama e comece a escrever e rabiscar tudo o que você consegue pensar, todas as palavras aleatórias, formas estranhas. anote seus pequenos desejos, o que você quer do fundo do coração nesse exato momento. não pense muito, apenas desabafe. você é puro.<br>
-・ coloque música instrumental para tocar como trilha sonora para sua vida. escolha algo que seja compatível com seus sentimentos. dance sob a luz do luar. você é real.<br>
-<br>
-<br><br>
-<br><a name="endorfinas" id="endorfinas"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COISAS PARA LIBERAR ENDORFINAS NO DIA-A-DIA</font><br><br>
-・ endorfinas são os hormônios que nos fazem sentir felizes e são importantes pois evitam a depressão, ansiedade e nos mantém motivados + com boa auto-estima. essas são coisas que eu costumo fazer pra liberar endorfinas de maneira prática quando estou me sentindo tristinha :<br>
-・ oxitocina : dar e receber presentes e elogios !!!<br>
-・ dopamina : cumprir tarefinhas, começar novos projetos !!!<br>
-・ serotonina : sentir nostalgia feliz, descobrir coisinhas novas legais !!!<br>
-・ endorfina : assistir ou ler historinhas dramáticas, dançar e cantar !!!<br>
-・ anandamina : comer chocolate amargo sempre é bom !!!<br>
-・ se exercitar sempre ajuda muito a liberar endorfinas ! pode ser algo como organizar e limpar, o importante é gastar energia.<br>
-・ interagir com outras pessoas é também muito bom, mas isso deve ser feito com cuidado para não se forçar a manter conversas desconfortáveis e relações ruins, ou sobrecarregar os outros com sua carência. ser feliz sozinho é o mais importante !!<br>
-・ tome cuidado para não começar práticas ruins quando sentir falta de endorfinas. sempre que se sentir desanimado, antes de fazer algo pense se isso é bom ou não pra você, de verdade. é fácil cometermos erros e nos sentirmos viciados em fazer coisas que nos machucam ( e machucam outras pessoas ) por falta de endorfinas<br>
-・ lembre-se que é natural sentir desejos ( às vezes egoístas ou até mesmo imorais ), mas você é consciente e forte o bastante, sempre pense antes de agir e tudo ficará bem ♡ !<br>
-<br>
-<br><br>
-<br><a name="egoista" id="egoista"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">EGOÍSMO x RESPEITO PRÓPRIO</font><br><br>
-・ egoísmo é colocar as suas vontades sobre as necessidades dos outros.<br>
-・ respeito próprio é colocar as suas necessidades sobre as vontades dos outros. <br>
-・ um é desconsiderar os outros, um é cuidar de si mesmo.<br>
-・ a diferença entre os dois é a diferença entre ser um amigo e um capacho.<br>
-・ cuidar de si mesmo não faz de você uma pessoa ruim !!!!<br>
-<br>
-<br><br>
-<br><a name="triste" id="triste"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO SE MANTER NO TOPO DA VIDA QUANDO SE SENTIR TRISTE</font><br><br>
-・ reconheça como você se sente e aceite que este será um dia mais desafiador<br>
-・ comprometa-se a fazer o absolutamente essencial, mas não se esforce para fazer tudo<br>
-・ priorize o que é importante. por exemplo, se você tiver um trabalho que valha uma grande porcentagem de suas notas, trabalhe nisso. se é algo que pode esperar, deixe de lado por enquanto.<br>
-・ trabalhe em sua lista de afazeres em pequenos pedaços de tempo - certificando-se de que você tenha muitas pausas<br>
-・ conte para alguém que vai entender. precisamos ter apoio quando nos sentimos mal, mas nem todos estarão lá para você. descubra quem vai estar lá, e quem não vai<br>
-・ seja sábio no uso das redes sociais. pode ser bom ficar offline por um tempo, desligar o telefone e proteger-se de coisas que apenas exacerbam a maneira como você se sente<br>
-・ certifique-se de sair de casa e ter uma mudança de cenário<br>
-・ invista deliberadamente em alguma forma de cuidado pessoal, e certifique-se de que é algo que você sabe que ajudará seu humor<br>
-・ lembre-se de que amanhã é outro dia !<br>
-<br>
-<br><br>
-<br><a name="amizade" id="amizade"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO TER AMIZADES SAUDÁVEIS</font><br><br>
-・ é normal que algumas pessoas não queiram novos amigos, quando se aproximar de alguém não interprete a rejeição como algo pessoal. você não é chato ou sem graça porque alguém não quer ter novos amigos !<br>
-・ todos precisam de tempo para fazer as próprias coisas e para conversar com outras pessoas, se um amigo está distante isso não necessariamente significa que ele não quer conversar com você ou está cansado de você. muito provavelmente não é nada diretamente relacionado a você.<br>
-・ você não precisa ser próximo de alguém para ser um bom amigo pra ela e trocar bons momentos juntos ! está tudo bem em interagir de forma menos íntima com outras pessoas, você não precisa forçar aproximação ou se sentir menos válido por não ser o melhor amigo dela.<br>
-・ ter grupos de amigos é divertido, mas é também muito romantizado. quanto maior o grupo, mais pessoas nele não realmente se sentem incluídas, então valorizar as poucas amizades é o que é realmente importante. ter amigos individuais não é algo ruim, até porque em grupos de amigos, há sempre alguns que estão mais próximos uns dos outros, não é possível ser extremamente próximo de tantas pessoas igualmente !!<br>
-・ ter amigos virtuais não é menos relevante do que ter amigos na vida real, vocês ainda podem trocar experiências, sentimentos e até mesmo ser muito próximos, sem estar literalmente próximos ! muitas amizades na vida real são superficiais, o que prova que o que realmente importa é que seus corações esteja conectados.<br>
-・ ser o melhor amigo de alguém não é a coisa mais importante do mundo, você ainda é igualmente válido e pode fazer as pessoas felizes não sendo o melhor amigo delas. aliás, o que torna alguém seu melhor amigo é mais uma questão de tempo, e não realmente tem relação com quem você é. se você simplesmente não teve sorte em manter uma amizade próxima por muitos anos isso não diz nada sobre quem você é, por ser apenas sorte !<br>
-・ amigos que se afastam é normal e faz parte da vida ; as pessoas começam novas fases e novas experiências e muitas vezes não têm mais tanto tempo pra manter tantas amizades quanto antes ( muitas vezes não conseguem manter nenhuma ). aproveite essa oportunidade pra conhecer novas pessoas, pois existem tantas pessoas adoráveis pra você conhecer ! se lamentar por algo que não foi culpa de ninguém não vale a pena.<br>
-<br>
-<br><br>
-<br><a name="solidão" id="solidão"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO LIDAR COM A SOLIDÃO</font><br><br>
-・ comece hobbies novos ! existem infinitas atividades divertidas pra se fazer que vão ocupar seu tempo. algumas coisas como artesanato, leitura, escrita, jardinagem ; são todas atividades que você faz sozinho, de qualquer maneira.<br>
-・ assista filmes, séries, jogue algo novo e divertido ! adquira novos interesses, que vão te deixar muito feliz e ocupado.<br>
-・ agora que você tem vários novos interesses e hobbies, você vai ter muito mais facilidade em conhecer pessoas legais com interesses em comum. procure grupos de pessoas e faça novos amigos ! você certamente vai se divertir muito e vai se sentir melhor.<br>
-・ talvez você já tenha amigos, mas eles não estão te dando tanta atenção quanto você gostaria.. nesse caso, apenas procurar novos amigos não vai ajudar tanto, pois você claramente é uma pessoa que tem um coração que produz amor demais e precisa de combustível pra se manter funcionando.. então, espalhe esse amor para outras pessoas também, ao invés de sobrecarregar seus amigos :<br>
-・ entre em redes sociais onde você possa anonimamente falar com alguém que você admira e diga tudo o que você pensa sobre ela. você certamente vai se sentir muito feliz quando ver que fez alguém sorrir !<br>
-・ entre em servidores aleatórios de chat e se divirta falando coisas aleatórias com estranhos. apenas falar o que quiser e rir um pouco às vezes é necessário, relacionamentos são complicados e podem te deixar sobrecarregado ou carente.<br>
-・ se puder, tenha um bichinho de estimação !! talvez você já tenha, então vá brincar com ele, agora !<br>
-<br>
-<br><br>
-<br><a name="perda" id="perda"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO LIDAR COM PERDAS</font><br><br>
-・ talvez você tenha perdido algo que gosta muito ou alguém muito importante não esteja mais na sua vida. seja qual for o caso, a primeira coisa que você deve fazer é aceitar o que aconteceu. você provavelmente está agora tentando esquecer e não pensar sobre isso, mas você se lembra de tempos em tempos e isso machuca seu coração ; então o que eu sugiro pra você é que comece a escrever honestamente o que você sente sobre essa perda. descreva por que era importante pra você e o que você costumava sentir sobre isso, então escreva por que você está sentindo falta. descreva seus sentimentos o mais precisamente que você conseguir, e você pode rabiscar e desenhar algumas coisas que você não conseguir descrever com palavras.<br>
-・ chore, você pode chorar. não tem nenhum problema em chorar por uma perda. chore o quanto você quiser chorar, mesmo que pareça que você nunca vai cansar de chorar, em algum momento você vai se sentir cansado e vai poder se sentir mais aliviado. aceitar sua tristeza é importante, reprimir sentimentos dói o coração e não é saudável !<br>
-・ leia o que você escreveu anteriormente e tente fazer uma lista de coisas que você gostaria de continuar vivendo para se sentir bem como antes, mesmo sem a presença do que você perdeu. você com certeza vai conseguir viver experiências felizes semelhantes, mesmo que não possa substituir pessoas. emoções felizes são semelhantes e têm peso semelhante na sua vida, e é por isso que o tempo vai conseguir te fazer sentir mais aliviado.<br>
-・ agora sim é o momento de tentar se distrair e não pensar tanto na sua perda. foque no que você quer sentir e nas experiências que quer viver e no que pode fazer para alcançá-las, e não foque mais na sua perda e nas experiências passadas. você tem muito potencial para viver coisas incríveis e ser muito feliz !!!<br>
-・ tente começar a fazer algo novo que você sempre teve receio ou medo de tentar. comece com coisas simples : mude seu cabelo, reorganize seu quarto, delete e refaça suas redes sociais.. consiga um bichinho de estimação novo, faça novos amigos ! mesmo as pequenas mudanças vão te ajudar a aceitar que agora você está em uma nova fase e precisa se esforçar para começá-la.<br>
-<br>
-<br><br>
-<br><a name="conversas" id="conversas"></a>
-<img src="https://i.imgur.com/g7Put7W.gif"> <font color="#AAB9BF">COMO CONVERSAR DE MANEIRA SAUDÁVEL</font><br><br>
-・ se você é muito quieto : você provavelmente sente que não tem nada de interessante a dizer e que vai incomodar se tentar começar uma conversa. importante : você com certeza tem sempre algum assunto bem na sua frente e apenas não percebeu. tente comentar sobre o que está fazendo e perguntar sobre o dia da outra pessoa. compartilhar conteúdo interessante, engraçado ou fofinho que você viu é também uma maneira de manter contato sem precisar falar muito, se isso te deixa ansioso.<br>
-・ se você se sente desconfortável em fazer perguntas e "invadir" o espaço de outras pessoas, saiba que normalmente elas se sentem muito bem em saber que alguém se interessa por elas. faça perguntas sobre coisas que você se interessaria em responder também, e diga que se a pessoa não quiser responder está tudo bem. ela com certeza não se sentirá pressionada dessa maneira e vocês vão poder se conhecer melhor e estar mais próximos.<br>
-・ se alguém está desabafando ou contando algo para você, não se esqueça de fazer comentários e perguntas a respeito para poder mostrar que está prestando atenção. você não precisa necessariamente dar conselhos ou falar algo sobre você, apenas mostre que está ali e que está interessado e não incomodado com a conversa. tente fazer a pessoa se sentir válida, é o suficiente.<br>
-<br>
-・ se você é muito falante : você provavelmente sente medo do silêncio e de não estar presente e quer sempre comentar alguma coisa sobre tudo. o silêncio é importante e não vai necessariamente afastar você das pessoas. o silêncio não precisa ser desconfortável. todos têm seu tempo para conversar e você também pode ter o seu.<br>
-・ pense antes de falar. pense se o que você vai dizer realmente é um assunto legal e não apenas para "preencher o espaço vazio". não há necessidade em quebrar o silêncio para dizer qualquer coisa. quando começar um assunto faça uma pergunta para entender se é do interesse da pessoa antes de continuar falando. se a pessoa não parecer interessada, não precisa arranjar outro assunto ; apenas deixe pra lá. se a pessoa estiver interessada, tome cuidado para dar tempo para a outra pessoa. tome cuidado não falar desnecessariamente ou repetir coisas. tente manter o mesmo ritmo da outra pessoa : depois de falar, incentive ela a falar também e espere até que ela termine  e então você pode comentar sobre o que ela disse. se ela está falando pouco, tente manter frases curtas ; se ela estiver falando o bastante, pode falar bastante também.<br>
-・ você não precisa ser o primeiro e último a falar. se ninguém está falando, não seja aquele começa o assunto todas as vezes. se alguém está falando, você não precisa sempre responder com palavras. não tente sempre prolongar o assunto pois você vai ser ignorado, uma vez que ninguém está mais interessado.<br>
-・ se você estiver precisando desabafar ou falar algo importante e complicado, tente primeiro escrever o que sente sozinho antes de falar com alguém. ao dizer tudo de uma vez para alguém, você pode acabar falando demais e sobrecarregando ela de informações. se você já tiver escrito o que sente previamente, vai poder se expressar com poucas palavras e não vai se sentir constrangido no final.<br>
-<br>
-<br><br><center><img src="https://i.imgur.com/Ht48FNf.gif"></center>
-<br>
-<font color="#99A8BD"> mais será adicionado | eu não possuo a maioria das dicas ; foram retiradas de posts do tumblr e da <a id="linky" href="https://sulyia.deviantart.com" target="_blank">sulyia</a> | você tem alguma coisa que acha importante acrescentar ? me conte !</font></div>
-<br><br>
-
-
-<br><br>
-<center><font color="#CD8B8B"> conte aos seus amigos sobre isso e ajude outras pessoas !<br><br><img src="https://i.imgur.com/amo0S36.gif"></center>
-<br>
-
-<br><br>
-
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "+ clique aqui para ver" ){
-                this.innerHTML = "- clique para fechar";
-                $spoiler.classList.remove("is-closed");
-            } else {
-                this.innerHTML = "+ clique aqui para ver";
-                $spoiler.classList.add("is-closed");
-            }
-        });
-
-    });
-
-}());
-</script>
-<br><br>
-
-</div>
-
-<div style="position:relative; left:-100%; width: 750px;height: 66px;overflow-x: hidden; overflow-y: hidden;"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"><img src="https://i.imgur.com/YHr9zgw.gif"></div>
 
 </div>
 
 </div>
-
-
 </div>
-
+</div>
+</div>
 
 
 
