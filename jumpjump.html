@@ -111,95 +111,6 @@ z-index:9999;
 }
 </style>
 
-<!--
-menuuuuuuuuuuuuuuu
--->
-<html xmlns="https://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<style type="text/css">
-			* {
-				margin: 0;
-				padding: 0;
-				font-family: Verdana;
-			}
-			
-			ul {
-				list-style: none
-			}
-			
-			#context_menu {
-				background: #fcf6f2;
-				-moz-border-radius: 1px 1px;
-				border: 1px dotted #baada3;
-				letter-spacing:1px; 
-				width: 70px;
-				font-size: 8px;
-				position: absolute;
-				display: none;
-				z-index:999;
-			}
-			
-			#context_menu ul li {
-				padding: 4px 4px;
-				-moz-border-radius: 10px 10px;
-				cursor: url(https://i.imgur.com/C9RGjYt.png), progress;
-			}
-			
-			#context_menu ul li:hover {
-				background: #fcf6f2;
-				color: #baada3;
-			}
-		</style>
-		<script type="text/javascript" language="JavaScript">
-			function click(e){
-				document.getElementById("teste").innerHTML = "";
-				var menu = document.getElementById("context_menu");
-				var mouseEvent = e || event;
-				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
-					mostrar(mouseEvent);
-					menu.onmouseout = function(e){
-						var mouseEvent = e || event;
-						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
-						if (element.nodeName != "LI") {
-							mouseEvent.toElement;
-						}
-					};
-				}
-				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
-					esconder();
-				}
-			}
-			
-			document.onmousedown = click;
-			document.oncontextmenu = function(){
-				return false
-			};
-			function mostrar(e){
-				var menu = document.getElementById("context_menu");
-				menu.style.display = "block";
-				menu.style.top = e.pageY + 5 + "px";
-				menu.style.left = e.pageX + 5 + "px";
-			}
-			
-			function esconder(){
-				setTimeout(function(){
-					var menu = document.getElementById("context_menu");
-					menu.style.display = "none"
-				}, 100);
-			}
-			
-		</script>
-	</head>
-		<div id="teste"></div>
-		<div id="context_menu">
-			<ul>
-				<li><font color="#baada3">stay safe.. !</font></li>
-			</ul>
-		</div>
-<!--
-menuuuuuuuuuuuuuuu
--->
 
 </head>
 
@@ -299,7 +210,7 @@ z-index: 3;
 <br><br>
 <br>
 <center>
-<object width="400" height="267"><param value="https://files.catbox.moe/i1ntb1.swf" name="movie"/><param value="high" name="quality"/><embed width="400" height="267" type="application/x-shockwave-flash" quality="high" src="https://files.catbox.moe/up4thg.swf"></embed></object>
+<object width="500" height="333"><param value="https://files.catbox.moe/i1ntb1.swf" name="movie"/><param value="high" name="quality"/><embed width="400" height="267" type="application/x-shockwave-flash" quality="high" src="https://files.catbox.moe/up4thg.swf"></embed></object>
 
 
 <br><br>
