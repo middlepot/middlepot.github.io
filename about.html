@@ -55,7 +55,8 @@ background-color: #f9f0ed;
 border: 1px dotted #e2d5d0;
 }
 #linkbjinho { color: #bca7a7; padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
-#linkzinho { padding-bottom: 2px; border-bottom:1px dotted #c6a799; }</style>
+#linkzinho { padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
+#linkzinhoo { padding-bottom: 2px; border-bottom:1px dotted #e8c1c5; }</style>
 
 <!--
 tooooooooltip
@@ -296,14 +297,135 @@ z-index: 3;
 <div style="position:absolute; left:18%; right:18%;"><center>
 <img src="https://i.imgur.com/71Lplc0.gif"/>
 <br><br><br>
-<font color="#d6b3b3"><a title="click here to see me !" data-target="spoiler1" class="btn-spoiler">i'm melissa</a></font><font color="#8e7d7d"> ・ </font><font color="#bca6a0"><a title="august . 11 . 1997">i'm 22</a></font><font color="#8e7d7d"> ・ </font><font color="#d6b3b3"><a title="a bunny girl ..">i'm a girl</a></font><font color="#8e7d7d">  ・ </font><font color="#bca6a0"><a title="i'm going to move soon, tho">i live in são paulo</a></font></center>
-<br>
+<font color="#d6b3b3"><a id="linkzinhoo" title="click here to see me !" data-target="spoiler1" class="btn-spoiler">i'm melissa</a></font><font color="#8e7d7d"> ・ </font><font color="#bca6a0"><a id="linkzinhoo" title="august . 11 . 1997" data-target="spoiler2" class="btn-spoiler2">i'm 22</a></font><font color="#8e7d7d"> ・ </font><font color="#d6b3b3"><a id="linkzinhoo" title="a bunny girl .." data-target="spoiler3" class="btn-spoiler3">i'm a girl</a></font><font color="#8e7d7d">  ・ </font><font color="#bca6a0"><a id="linkzinhoo" title="in a countryside small town" data-target="spoiler4" class="btn-spoiler4">i live in são paulo</a></font></center>
+
 
 <center>
+<div style="line-height:30px">
+
+<div id="spoiler2" class="spoiler-area2 is-closed2">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+
+<font color="#d6b3b3" style="font-size:9px; letter-spacing:0.5px;">( august . 11 . 1997 )</font>
+
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area2 {
+
+}
+.spoiler-area2.is-closed2 { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler2');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "i'm 22" ){
+                this.innerHTML = "i'm 22 ˣ";
+                $spoiler.classList.remove("is-closed2");
+            } else {
+                this.innerHTML = "i'm 22";
+                $spoiler.classList.add("is-closed2");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+<div id="spoiler3" class="spoiler-area3 is-closed3">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+
+<font color="#8e7d7d" style="font-size:9px; letter-spacing:0.5px;">( a bunny girl .. )</font>
+
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area3 {
+
+}
+.spoiler-area3.is-closed3 { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler3');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "i'm a girl" ){
+                this.innerHTML = "i'm a girl ˣ";
+                $spoiler.classList.remove("is-closed3");
+            } else {
+                this.innerHTML = "i'm a girl";
+                $spoiler.classList.add("is-closed3");
+            }
+        });
+
+    });
+
+}());
+</script>
+
+<div id="spoiler4" class="spoiler-area4 is-closed4">
+<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+
+<font color="#d6b3b3" style="font-size:9px; letter-spacing:0.5px;">( in a countryside small town )</font>
+
+</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<style>
+p { margin: 0; }
+.spoiler-area4 {
+
+}
+.spoiler-area4.is-closed4 { height: 0; overflow: hidden; padding: 10px 0 0; }
+</style>
+<script>
+(function(){
+    "use strict";
+    var $btns = document.querySelectorAll('.btn-spoiler4');
+    function loop($els, cb) {
+        var i = $els.length;
+        while(i--) {
+            cb($els[i]);
+        }
+    }
+    loop($btns, function($btn){
+        $btn.addEventListener("click", function(){
+            var $spoiler = document.getElementById(this.getAttribute("data-target"));
+            if( this.innerHTML === "i live in são paulo" ){
+                this.innerHTML = "i live in são paulo ˣ";
+                $spoiler.classList.remove("is-closed4");
+            } else {
+                this.innerHTML = "i live in são paulo";
+                $spoiler.classList.add("is-closed4");
+            }
+        });
+
+    });
+
+}());
+</script>
 
 <div id="spoiler1" class="spoiler-area is-closed">
 <!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
+
 <img width="180" height="auto" src="https://i.imgur.com/smoPDcy.png"/>　
 <img width="180" height="auto" src="https://i.imgur.com/M6mxDX6.png"/>
 <br><br>
@@ -341,18 +463,19 @@ p { margin: 0; }
 
 }());
 </script>
+</div>
 
 
 </center>
 
-<br>
-<center><font color="#efcfc6"><font style="font-size:11px">♡</font> </font><font color="#8e7d7d">(﻿</font><font color="#efcfc6">〃</font>﻿<font color="#8e7d7d">´˘`﻿</font><font color="#efcfc6">〃﻿ </font><font color="#a59490">bubu , fairies , softness , roll cake</font><br>
-<font color="#bca9a4">﻿﻿!! </font><font color="#8e7d7d">(﻿</font><font color="#efcfc6">〃﻿﻿</font><font color="#8e7d7d">`ˆ´</font><font color="#efcfc6">〃﻿ </font><font color="#bca9a4">loud noises , mean people</font><br></center>
+
+<center><font color="#efcfc6"><font style="font-size:11px">♡</font> </font><font color="#8e7d7d">꒰﻿</font><font color="#efcfc6">〃</font>﻿<font color="#8e7d7d">´˘`﻿</font><font color="#efcfc6">〃﻿ </font><font color="#a59490">bubu , fairies , softness , roll cake</font><br>
+<font color="#bca9a4">﻿﻿!! </font><font color="#8e7d7d">꒰</font><font color="#efcfc6">〃﻿﻿</font><font color="#8e7d7d">`ˆ´</font><font color="#efcfc6">〃﻿ </font><font color="#bca9a4">loud noises , mean people</font><br></center>
 <br>
 <br><br>
 <font color="#ceaaa9">my goal is to live a beautiful life + spread happiness & comfort ഒ</font><br>
 <font color="#a08e8d">i have lots of interests, i don't do things perfectly but i work hard to improve so i can help others through my works.. i aim to be the guardian angel that will guide good-hearted people to purity and innocence.<br>
-i'm a housewife, maid, magical nurse & wannabe internet idol graduated in game design ; i love to write, create little critters, bake, sew, study html + css, languages, mythology & other things !</font>
+i'm a housewife, healer & artisan graduated in game design ; i love to write, create little critters, bake, sew, garden, journal, study html + css, mythology & other things !</font>
 <br><br><br>
 <font color="#827272">if you want more info about me and my stuff, please check out the </font><a style="color:#baa8a7;" href="https://middlepot.com/faq">faq</a>
 <br><br><br><br>
