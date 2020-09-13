@@ -68,7 +68,7 @@ background-color: #f9f0ed;
 -webkit-border-radius: 0ex;
 border: 1px dotted #e2d5d0;
 }
-#linkbjinho { color: #bca7a7; padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
+#linkbjinho { color: #ab9e98; padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
 #linkzinho { padding-bottom: 2px; border-bottom:1px dotted #c6a799; }</style>
 
 <!--
@@ -306,893 +306,143 @@ z-index: 3;
 
 <div id="stuff">
 
-<div style="background-image:url(https://i.imgur.com/MpIbHfy.png); background-attachment: fixed; width: 594px; height: 433px; overflow-x: hidden; text-align:justify; line-height: 100%">
+<div style="background-image:url(https://i.imgur.com/VusyAnK.png); background-attachment: fixed; width: 594px; height: 433px; overflow-x: hidden; text-align:justify; line-height: 100%">
 
-<div style="width: 650px;height: 32px;overflow-x: hidden; overflow-y: hidden;"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif"><img src="https://i.imgur.com/q9UNnQa.gif">
+<div style="width: 650px;height: 32px;overflow-x: hidden; overflow-y: hidden;">
+<img src="https://i.imgur.com/LGxPAUr.png"><img src="https://i.imgur.com/LGxPAUr.png"><img src="https://i.imgur.com/LGxPAUr.png"><img src="https://i.imgur.com/LGxPAUr.png"><img src="https://i.imgur.com/LGxPAUr.png">
 </div>
 
-<audio id="musict" preload="true">
-  <source src="https://file.pooftie.me/a/73.mp3" type="audio/mpeg">
-</audio>
-<div id="audioplayer">
- <button id="pButton" class="play"></button>
-  <div id="timeline">    
-      <div id="playhead"></div>
-  </div>
-</div>
-
-
-
-<style>
-#pButton{
-    height:20px; 
-    width: 20px;
-    border: none;
-    background-repeat: no-repeat;
-    outline:none;
-    cursor: url(https://i.imgur.com/EZZ5Vol.png), progress;
-}
-
-.play{background: url('https://i.imgur.com/aRUFUyE.gif') ;}
-.pause{background: url('https://i.imgur.com/aRUFUyE.gif') ;}
-</style>
-
-
-
-
-
-
-<script>
-var music = document.getElementById('musict');
-var duration = music.duration;
-var pButton = document.getElementById('pButton');
-var playhead = document.getElementById('playhead');
-var timeline = document.getElementById('timeline');
-
-var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
-
-pButton.addEventListener("click", play);
-
-music.addEventListener("timeupdate", timeUpdate, false);
-
-timeline.addEventListener("click", function(event) {
-    moveplayhead(event);
-    music.currentTime = duration * clickPercent(event);
-}, false);
-
-function clickPercent(event) {
-    return (event.clientX - getPosition(timeline)) / timelineWidth;
-}
-
-playhead.addEventListener('mousedown', mouseDown, false);
-window.addEventListener('mouseup', mouseUp, false);
-
-
-var onplayhead = false;
-
-function mouseDown() {
-    onplayhead = true;
-    window.addEventListener('mousemove', moveplayhead, true);
-    music.removeEventListener('timeupdate', timeUpdate, false);
-}
-
-function mouseUp(event) {
-    if (onplayhead == true) {
-        moveplayhead(event);
-        window.removeEventListener('mousemove', moveplayhead, true);
-        music.currentTime = duration * clickPercent(event);
-        music.addEventListener('timeupdate', timeUpdate, false);
-    }
-    onplayhead = false;
-}
-function moveplayhead(event) {
-    var newMargLeft = event.clientX - getPosition(timeline);
-
-    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
-        playhead.style.marginLeft = newMargLeft + "px";
-    }
-    if (newMargLeft < 0) {
-        playhead.style.marginLeft = "0px";
-    }
-    if (newMargLeft > timelineWidth) {
-        playhead.style.marginLeft = timelineWidth + "px";
-    }
-}
-
-function timeUpdate() {
-    var playPercent = timelineWidth * (music.currentTime / duration);
-    playhead.style.marginLeft = playPercent + "px";
-    if (music.currentTime == duration) {
-        pButton.className = "";
-        pButton.className = "play";
-    }
-}
-
-function play() {
-    if (music.paused) {
-        music.play();
-        pButton.className = "";
-        pButton.className = "pause";
-    } else { 
-        music.pause();
-        pButton.className = "";
-        pButton.className = "play";
-    }
-}
-
-music.addEventListener("canplaythrough", function() {
-    duration = music.duration;
-}, false);
-
-function getPosition(el) {
-    return el.getBoundingClientRect().left;
-}
-</script>
-
+<br><br>
 <div style= "padding-left: 10%; padding-right: 10%;">
-<center><img src="https://i.imgur.com/IweZVLu.gif"></center>
+<center><img src="https://i.imgur.com/XkJgm59.png"></center>
 <br>
 <br>
 
-<font family = "Verdana" style="font-size:8px;"><font color="#af8c8c">
-<center>here you can check the main games i've played or still play.. <br>
-please recommend me cute games !!</center>
+<font family = "Verdana" style="font-size:8px;"><font color="#a8958d">
+<center>this is my progress diary for online games i'm playing currently<br>
++ my personal mobile game recommendations</center>
 </font></font>
 </center>
 <br><br>
 
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>ragnarok</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler1" class="btn-spoiler">my characters</a>
+<sub><sub><sub><img src="https://i.imgur.com/Y8IvPGs.png"></sub></sub></sub>
+<font color="#a8958d">　<b>ragnarok online</b><br>
+　　　official br server : thor<br>
+　　　ui skin : <a href="https://file.pooftie.me/r/rosemilktea.rar" target="_blank"><font color="#b08087">rosemilktea.rar</font></a></font><br><br><br>
 
-
-<center>
-
-<div id="spoiler1" class="spoiler-area is-closed">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
+<div style="position:relative; left:7%; overflow:hidden; background-color:rgb(255, 255, 255, 0.3); border: 20px solid transparent; border-image: url(https://i.imgur.com/fEEVmBa.png) 30 round; width: 360px; height: 140px; line-height:10px; padding:5px;">
+<img style="position:absolute; left:5px;" src="https://i.imgur.com/vA6cZGh.gif"><img style="position:absolute; left:80px; top:105px;" src="https://i.imgur.com/83XdPpp.png">
+<font color="#a37c81" style="position:absolute; left:105px; top:9px; font-size:8px;">
+<sub><img src="https://i.imgur.com/GMn79dn.png"></sub> ‌ <b>pupuf</b><br><br>
+<font color="#b89196">level :</font> 102<br>
+<font color="#b89196">job :</font> archbishop<br>
+<font color="#b89196">build :</font> exorcist<br>
+<font color="#b89196">traits :</font> quiet & caring<br>
+<font color="#b89196">pet :</font> lunatic ( tutu )<br>
+<font color="#b89196">hometown :</font> prontera<br>
+<font color="#b89196">aspiration :</font> help others<br>
+　　by bringing peace ..<br>
+　　　<font color="#b89196">fav place :</font> <a href="https://divine-pride.net/client/xmas_dun02" target="_blank"><font color="#b08087">xmas_dun02</font></a><br>
+　　　<font color="#b89196">fav music :</font> <a href="https://divine-pride.net/media/bgm/56.mp3" target="_blank"><font color="#b08087">56.mp3</font></a>
+</font>
+<font color="#a37c81" style="position:absolute; left:240px; top:9px; font-size:8px;">
+<sub><sub><img width="20px" height="auto" src="https://i.imgur.com/3TeZWaF.png"></sub></sub> ‌ <b>precious items :</b><br>
+　　<img src="https://i.imgur.com/K1A7JZ9.png"> 
+<img src="https://i.imgur.com/QDP0hqK.png"> 
+<img src="https://i.imgur.com/3SpWceZ.png">
 <br>
-<img src="https://i.imgur.com/ssHv1Lx.png"/><br><br>
-<img src="https://i.imgur.com/blqterX.png"/><br><br>
-<img src="https://i.imgur.com/P9PjGb3.png"/><br><br>
-<img src="https://i.imgur.com/VYxcVA8.png"/><br><br>
-<img src="https://i.imgur.com/h3o9avc.png"/><br><br>
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area {
-
-}
-.spoiler-area.is-closed { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "my characters" ){
-                this.innerHTML = "my characters ˣ";
-                $spoiler.classList.remove("is-closed");
-            } else {
-                this.innerHTML = "my characters";
-                $spoiler.classList.add("is-closed");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-
-
-
-<br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/ro1" target="_blank">
-<font color="#af8c8c">my regular pets</font></a><font color="#d6bebe"> | </font>
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/ro2" target="_blank">
-<font color="#af8c8c">my hocus pocus pets</font></a><font color="#d6bebe"> | </font>
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/ro3" target="_blank">
-<font color="#af8c8c">my homunculus</font></a><font color="#d6bebe"> | </font>
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/ro4" target="_blank">
-<font color="#af8c8c">my elemental spirits</font></a>
-
-<br><br><br><br>
-
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>cocoppa play</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler2" class="btn-spoiler2">me</a>
-
-
-<center>
-
-<div id="spoiler2" class="spoiler-area is-closed2">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img width="200px" height="auto" src="https://i.imgur.com/fTyzsQu.png"/>
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area2 {
-
-}
-.spoiler-area.is-closed2 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler2');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "me" ){
-                this.innerHTML = "me ˣ";
-                $spoiler.classList.remove("is-closed2");
-            } else {
-                this.innerHTML = "me";
-                $spoiler.classList.add("is-closed2");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/cc" target="_blank">
-<font color="#af8c8c">more images</font></a>
-
-<br><br><br><br>
-
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>poupee girl ( rip )</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler3" class="btn-spoiler3">me</a>
-
-
-<center>
-
-<div id="spoiler3" class="spoiler-area is-closed3">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img width="350px" height="auto" src="https://i.imgur.com/5hDrPWp.jpg"/>
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area3 {
-
-}
-.spoiler-area.is-closed3 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler3');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "me" ){
-                this.innerHTML = "me ˣ";
-                $spoiler.classList.remove("is-closed3");
-            } else {
-                this.innerHTML = "me";
-                $spoiler.classList.add("is-closed3");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/pp" target="_blank">
-<font color="#af8c8c">more images</font></a>
-
-<br><br><br><br>
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>animal restaurant</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler102" class="btn-spoiler102">my restaurant</a>
-
-
-<center>
-
-<div id="spoiler102" class="spoiler-area is-closed102">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img width="300px" height="auto" src="https://i.imgur.com/uozUxqr.jpg"/><br><br>
-<img width="300px" height="auto" src="https://i.imgur.com/orUH3Xb.png"/><br><br>
-<img width="300px" height="auto" src="https://i.imgur.com/qvktxRW.jpg"/><br><br>
-<img width="300px" height="auto" src="https://i.imgur.com/6ZlAoT7.jpg"/><br><br>
-<img width="300px" height="auto" src="https://i.imgur.com/E5Em0ki.png"/>
-
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area102 {
-
-}
-.spoiler-area.is-closed102 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler102');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "my restaurant" ){
-                this.innerHTML = "my restaurant ˣ";
-                $spoiler.classList.remove("is-closed102");
-            } else {
-                this.innerHTML = "my restaurant";
-                $spoiler.classList.add("is-closed102");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br><br><br>
-
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>love nikki</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler9" class="btn-spoiler9">my home</a>
-
-
-<center>
-
-<div id="spoiler9" class="spoiler-area is-closed9">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img width="300px" height="auto" src="https://i.imgur.com/0N5e0w1.png"/>
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area9 {
-
-}
-.spoiler-area.is-closed9 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler9');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "my home" ){
-                this.innerHTML = "my home ˣ";
-                $spoiler.classList.remove("is-closed9");
-            } else {
-                this.innerHTML = "my home";
-                $spoiler.classList.add("is-closed9");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/ln" target="_blank">
-<font color="#af8c8c">me</font></a>
-
-<br><br><br><br>
-
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>picrew.me</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler5" class="btn-spoiler5">me</a>
-
-
-<center>
-
-<div id="spoiler5" class="spoiler-area is-closed5">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img width="300px" height="auto" src="https://i.imgur.com/7QBjASG.png"/><br><br>
-<img width="300px" height="auto" src="https://i.imgur.com/H14xgsP.png"/><br><br>
-<img width="300px" height="auto" src="https://i.imgur.com/WyhVtnu.png"/><br><br>
-<img width="300px" height="auto" src="https://i.imgur.com/Fzw1Ri0.png"/><br><br>
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area5 {
-
-}
-.spoiler-area.is-closed5 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler5');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "me" ){
-                this.innerHTML = "me ˣ";
-                $spoiler.classList.remove("is-closed5");
-            } else {
-                this.innerHTML = "me";
-                $spoiler.classList.add("is-closed5");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/pm" target="_blank">
-<font color="#af8c8c">more images</font></a>
-
-<br><br><br><br>
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>pokemon</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler10" class="btn-spoiler10">my fav pkmn</a>
-
-
-<center>
-
-<div id="spoiler10" class="spoiler-area is-closed10">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img src="https://i.imgur.com/YJMBRnY.gif"/>　<img src="https://i.imgur.com/f38jgcv.gif"/>　<img src="https://i.imgur.com/osKIKE8.gif"/><br><br>
-<img src="https://i.imgur.com/RFcyci1.gif"/>　<img src="https://i.imgur.com/6vSkecb.gif"/>　<img src="https://i.imgur.com/McI88Bm.gif"/><br><br>
-<img src="https://i.imgur.com/x21peRl.gif"/>　<img src="https://i.imgur.com/oRjKJfb.gif"/>　<img src="https://i.imgur.com/WSU8xPc.gif"/>
-
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area10 {
-
-}
-.spoiler-area.is-closed10 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler10');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "my fav pkmn" ){
-                this.innerHTML = "my fav pkmn ˣ";
-                $spoiler.classList.remove("is-closed10");
-            } else {
-                this.innerHTML = "my fav pkmn";
-                $spoiler.classList.add("is-closed10");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br><br><br><br>
-
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>カスタムキャスト</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler6" class="btn-spoiler6">me</a>
-
-
-<center>
-
-<div id="spoiler6" class="spoiler-area is-closed6">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img width="300px" height="auto" src="https://i.imgur.com/Q8TXHFi.png"/>
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area6 {
-
-}
-.spoiler-area.is-closed6 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler6');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "me" ){
-                this.innerHTML = "me ˣ";
-                $spoiler.classList.remove("is-closed6");
-            } else {
-                this.innerHTML = "me";
-                $spoiler.classList.add("is-closed6");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/kk" target="_blank">
-<font color="#af8c8c">more images</font></a>
-
-<br><br><br><br>
-
-
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>Vカツ</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler7" class="btn-spoiler7">me</a>
-
-
-<center>
-
-<div id="spoiler7" class="spoiler-area is-closed7">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img width="300px" height="auto" src="https://i.imgur.com/o0drbYB.png"/><br><br>
-<img width="300px" height="auto" src="https://i.imgur.com/OGTJcem.png"/>
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area7 {
-
-}
-.spoiler-area.is-closed7 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler7');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "me" ){
-                this.innerHTML = "me ˣ";
-                $spoiler.classList.remove("is-closed7");
-            } else {
-                this.innerHTML = "me";
-                $spoiler.classList.add("is-closed7");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/vk" target="_blank">
-<font color="#af8c8c">more images</font></a>
-
-<br><br><br><br>
-
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>hidden world</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/hw" target="_blank">
-<font color="#af8c8c">my village</font></a>
-
-<br><br><br><br>
-
-
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>peter rabbit's garden</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler12" class="btn-spoiler12">my village</a>
-
-
-<center>
-
-<div id="spoiler12" class="spoiler-area is-closed12">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img width="350px" height="auto" src="https://i.imgur.com/KpskcxN.png"/>
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area12 {
-
-}
-.spoiler-area.is-closed12 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler12');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "my village" ){
-                this.innerHTML = "my village ˣ";
-                $spoiler.classList.remove("is-closed12");
-            } else {
-                this.innerHTML = "my village";
-                $spoiler.classList.add("is-closed12");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/pg" target="_blank">
-<font color="#af8c8c">more images</font></a>
-
-<br><br><br><br>
-
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>hamster hamster</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler13" class="btn-spoiler13">my hamsters</a>
-
-
-<center>
-
-<div id="spoiler13" class="spoiler-area is-closed13">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img width="250px" height="auto" src="https://i.imgur.com/tsnNFRP.png"/>
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area13 {
-
-}
-.spoiler-area.is-closed13 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler13');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "my hamsters" ){
-                this.innerHTML = "my hamsters ˣ";
-                $spoiler.classList.remove("is-closed13");
-            } else {
-                this.innerHTML = "my hamsters";
-                $spoiler.classList.add("is-closed13");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br><br><br><br>
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>momo's dressup</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/mm" target="_blank">
-<font color="#af8c8c">me</font></a>
-
-<br><br><br><br>
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>my little star</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/ls" target="_blank">
-<font color="#af8c8c">me</font></a>
-
-<br><br><br><br>
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>vlinder life</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/v3VaYjZ.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none; color:#af8c8c;" data-target="spoiler15" class="btn-spoiler15">me</a>
-
-
-<center>
-
-<div id="spoiler15" class="spoiler-area is-closed15">
-<!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<br>
-<img width="300px" height="auto" src="https://i.imgur.com/h6HmJg2.png"/>
-<br><br>
-</div><!-- SPOILER AREAAAAAAAAAAAAAAAAAAAAA -->
-<style>
-p { margin: 0; }
-.spoiler-area15 {
-
-}
-.spoiler-area.is-closed15 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler15');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "me" ){
-                this.innerHTML = "me ˣ";
-                $spoiler.classList.remove("is-closed15");
-            } else {
-                this.innerHTML = "me";
-                $spoiler.classList.add("is-closed15");
-            }
-        });
-
-    });
-
-}());
-</script>
-
-
-</center>
-
-<br><br><br><br>
-
-<sub><sub><img width="28px" height="auto" src="https://i.imgur.com/nX9OFvm.gif"></sub></sub>
-<font color="#a37a7a">　<b>charat</b>　<font style="font-size:9px">♡</font></font><br><br>
-　　　<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub>　
-<a id="linkbjinho" style="text-decoration:none;" href="https://file.pooftie.me/ct" target="_blank">
-<font color="#af8c8c">me</font></a>
-
-
-<br><br><br><br>
-
+<sub><sub><img width="20px" height="auto" src="https://i.imgur.com/Zttv8dJ.gif"></sub></sub> ‌ <b>adventure logs :</b><br>
+　‌ • niflheim ( !!! )<br>
+　‌ • the plain of ida<br>
+　‌ • glast heim church<br>
+　‌ • sphinx ( ♬ )<br>
+　‌ • toy factory ( ♡ )<br>
+　‌ • payon cave<br>
+</div>
+</font>
 
 <br><br>
 
-<sub><sub><img src="https://i.imgur.com/h01NXXS.gif"></sub></sub><font color="#af8c8c">　<b>android mobile games i recommend :</b></font>
+<div style="position:relative; left:7%; overflow:hidden; background-color:rgb(255, 255, 255, 0.3); border: 20px solid transparent; border-image: url(https://i.imgur.com/fEEVmBa.png) 30 round; width: 360px; height: 140px; line-height:10px; padding:5px;">
+<img style="position:absolute; left:5px; top:10px;" src="https://i.imgur.com/Ww4Ptmb.gif"><img width="55px" height="auto" style="position:absolute; left:70px; top:105px;" src="https://i.imgur.com/ABu7boW.png">
+<font color="#a37c81" style="position:absolute; left:105px; top:9px; font-size:8px;">
+<sub><img src="https://i.imgur.com/GMn79dn.png"></sub> ‌ <b>pufie</b><br><br>
+<font color="#b89196">level :</font> 100<br>
+<font color="#b89196">job :</font> wanderer<br>
+<font color="#b89196">build :</font> battle<br>
+<font color="#b89196">traits :</font> girly & energetic<br>
+<font color="#b89196">pet :</font> angeling ( chu )<br>
+<font color="#b89196">hometown :</font> comodo<br>
+<font color="#b89196">aspiration :</font> explore the<br>
+　　whole wide world !!<br>
+　　　<font color="#b89196">fav place :</font> <a href="https://divine-pride.net/client/amatsu" target="_blank"><font color="#b08087">amatsu</font></a><br>
+　　　<font color="#b89196">fav music :</font> <a href="https://divine-pride.net/media/bgm/73.mp3" target="_blank"><font color="#b08087">73.mp3</font></a>
+</font>
+<font color="#a37c81" style="position:absolute; left:240px; top:9px; font-size:8px;">
+<sub><sub><img width="20px" height="auto" src="https://i.imgur.com/3TeZWaF.png"></sub></sub> ‌ <b>precious items :</b><br>
+　　<img src="https://i.imgur.com/01lKQv1.png"> 
+<img src="https://i.imgur.com/oAHiz4a.png"> 
+<img src="https://i.imgur.com/rRwPvpI.png">
 <br>
+<sub><sub><img width="20px" height="auto" src="https://i.imgur.com/Zttv8dJ.gif"></sub></sub> ‌ <b>adventure logs :</b><br>
+　‌ • abyss lake<br>
+　‌ • einbroch fields ( ew )<br>
+　‌ • hermit's checkers ( !? )<br>
+　‌ • suei long gon<br>
+　‌ • tatami maze ( ♬ )<br>
+　‌ • hoomga jungle ( ♪ )<br>
+</div>
+</font>
+
 <br><br>
-<div style="padding-left:20px">
+
+<div style="position:relative; left:7%; overflow:hidden; background-color:rgb(255, 255, 255, 0.3); border: 20px solid transparent; border-image: url(https://i.imgur.com/fEEVmBa.png) 30 round; width: 360px; height: 140px; line-height:10px; padding:5px;">
+<img style="position:absolute; left:-5px; top:16px;" src="https://i.imgur.com/EBkBCTP.gif"><img width="43px" height="auto" style="position:absolute; left:75px; top:105px;" src="https://i.imgur.com/XPZ4Myr.png">
+<font color="#a37c81" style="position:absolute; left:105px; top:9px; font-size:8px;">
+<sub><img src="https://i.imgur.com/GMn79dn.png"></sub> ‌ <b>pufs</b><br><br>
+<font color="#b89196">level :</font> 72<br>
+<font color="#b89196">job :</font> biochemist<br>
+<font color="#b89196">build :</font> pure potter<br>
+<font color="#b89196">traits :</font> clumsy & curious<br>
+<font color="#b89196">homunculus :</font> amistr ( fluff )<br>
+<font color="#b89196">hometown :</font> hugel<br>
+<font color="#b89196">aspiration :</font> collect all cute<br>
+　　‌ items, specially stuffies.. !<br>
+　　　<font color="#b89196">fav place :</font> <a href="https://divine-pride.net/client/mosk_dun01" target="_blank"><font color="#b08087">mosk_dun01</font></a><br>
+　　　<font color="#b89196">fav music :</font> <a href="https://divine-pride.net/media/bgm/64.mp3" target="_blank"><font color="#b08087">64.mp3</font></a>
+</font>
+<font color="#a37c81" style="position:absolute; left:240px; top:9px; font-size:8px;">
+<sub><sub><img width="20px" height="auto" src="https://i.imgur.com/3TeZWaF.png"></sub></sub> ‌ <b>precious items :</b><br>
+　　‌ <img src="https://i.imgur.com/8GzLyoC.png"> 
+<img src="https://i.imgur.com/XhMrq5r.png"> 
+<img src="https://i.imgur.com/PGeJgd1.png">
+<br>
+<sub><sub><img width="20px" height="auto" src="https://i.imgur.com/Zttv8dJ.gif"></sub></sub> ‌ <b>adventure logs :</b><br>
+　‌ • les forest ( ♡ )<br>
+　‌ • kiel hyre's academy ( !! )<br>
+　‌ • undersea tunnel<br>
+　‌ • mt. mjolnir ( ♫ )<br>
+　‌ • orc village<br>
+　‌ • payon forest<br>
+</div>
+</font>
+
+<br><br><br><br>
+
+<sub><sub><img src="https://i.imgur.com/p85CyLw.png"></sub></sub><font color="#a8958d">　<b>mobile games i have played and recommend :</b></font>
+<br>
+<br><br><br><br>
+<div style="position:relative; left:10%; bottom:30px; overflow:hidden; background-color:rgb(255, 255, 255, 0.3); border: 20px solid transparent; border-image: url(https://i.imgur.com/fEEVmBa.png) 30 round; width: 270px; height: 300px; line-height:10px; padding:10px;">
+<div style="border: none; width: 260px; height: 290px; margin-top:6px; overflow-x:hidden; line-height:10px; padding-right:5px; padding-left:5px;">
+<a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=droidhang.twgame.restaurant" target="_blank">animal restaurant</a><br><br>
+<a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=com.poppin_games.peterrabbit_hog" target="_blank">hidden world</a><br><br>
+<a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=jp.cocone.p2" target="_blank">ポケコロツイン</a><br><br>
+<a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=com.elex.nikkigp" target="_blank">love nikki</a><br><br>
+<a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=com.poppingames.android.peter" target="_blank">peter rabbit's garden</a><br><br>
+<a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=com.unitedfun.prod.apollo" target="_blank">cocoppa play</a><br><br>
+<a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=com.ThreeCatGames.HamsterAttack" target="_blank">hamster hamster</a><br><br>
+<a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=com.dressup.avatar.doll.dressupgame" target="_blank">vlinder life</a><br><br>
+<a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=com.MayGreenStudio.dressup" target="_blank">momo's dressup</a><br><br>
 <a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=com.hyperbeard.kiki" target="_blank">kiki's vacation</a><br><br>
 <a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=com.weplaydots.twodotsandroid" target="_blank">two dots</a><br><br>
 <a id="linkbjinho" style="text-decoration:none;" href="https://play.google.com/store/apps/details?id=com.hyperbeard.tsuki" target="_blank">tsuki adventure</a><br><br>
@@ -1247,7 +497,6 @@ p { margin: 0; }
 <a id="linkbjinho" style="text-decoration:none;" href="https://apkpure.com/br/%E6%9D%B1%E6%96%B9-%E3%81%B1%E3%81%9F%E3%81%B1%E3%81%9F%E3%83%95%E3%83%A9%E3%83%B3%EF%BD%9E%E7%84%A1%E6%96%99%E6%9A%87%E3%81%A4%E3%81%B6%E3%81%97%E3%82%B2%E3%83%BC%E3%83%A0%EF%BD%9E/com.Flansou" target="_blank">東方　ぱたぱたフラン～無料暇つぶしゲーム～</a><br><br>
 <a id="linkbjinho" style="text-decoration:none;" href="https://apkpure.com/tw/%E6%94%BE%E7%BD%AE%E8%82%B2%E6%88%90%E3%82%B2%E3%83%BC%E3%83%A0-%E8%B5%A4%E3%81%9A%E3%81%8D%E3%82%93%EF%BD%9E%E9%96%8B%E3%81%8B%E3%81%9A%E3%81%AE%E6%A3%AE%E3%81%AE%E7%89%A9%E8%AA%9E%EF%BD%9E/tokyo.seec.ikuseiAkazukin" target="_blank">放置育成ゲーム　赤ずきん～開かずの森の物語～</a>
 </div>
-<br><br>
 
 
 
