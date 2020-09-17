@@ -343,11 +343,11 @@ p { margin: 0; }
     loop($btns, function($btn){
         $btn.addEventListener("click", function(){
             var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "i'm 22" ){
-                this.innerHTML = "i'm 22 ˣ";
+            if( this.innerHTML === "i'm 23" ){
+                this.innerHTML = "i'm 23 ˣ";
                 $spoiler.classList.remove("is-closed2");
             } else {
-                this.innerHTML = "i'm 22";
+                this.innerHTML = "i'm 23";
                 $spoiler.classList.add("is-closed2");
             }
         });
