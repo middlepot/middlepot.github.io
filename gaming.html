@@ -398,12 +398,14 @@ z-index: 3;
     -ms-transform: rotate(90deg);
     transform: rotate(90deg); }
 #stuff { overflow: auto; overflow: scroll; }
-#frame { zoom: 155%; }
+#frame { -webkit-transform: scale(1.55);
+    transform: scale(1.55); }
 }
 @media screen and (max-width: 1000px) and (orientation: landscape){
 #everything { position: absolute; zoom: 100%; left:20px; top:10px;}
 #stuff { overflow: auto; overflow: scroll; }
-#frame { zoom: 100%; }
+#frame { -webkit-transform: scale(1);
+    transform: scale(1); }
 }
 </style>
 
