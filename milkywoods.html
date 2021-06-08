@@ -32,17 +32,21 @@
 <meta name="title" content="ഒ">
 <meta name="description" content="꒰ 𝑚𝑖𝑑𝑑𝑙𝑒𝑝𝑜𝑡'𝑠 𝑑𝑖𝑎𝑟𝑦 ꒱">
 <meta name="theme-color" content="#f7e9ed">
-<meta property="og:url" content="https://middlepot.com/milkywoods">
+<meta property="og:url" content="https://middlepot.com">
 <meta property="og:title" content="ഒ">
 <meta property="og:description" content="꒰ 𝑚𝑖𝑑𝑑𝑙𝑒𝑝𝑜𝑡'𝑠 𝑑𝑖𝑎𝑟𝑦 ꒱">
 <meta property="og:image" content="https://middlepot.com/img/pure.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:type" content="website">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://middlepot.com/milkywoods">
+<meta property="twitter:url" content="https://middlepot.com">
 <meta property="twitter:title" content="ഒ">
 <meta property="twitter:description" content="꒰ 𝑚𝑖𝑑𝑑𝑙𝑒𝑝𝑜𝑡'𝑠 𝑑𝑖𝑎𝑟𝑦 ꒱">
 <meta property="twitter:image" content="https://middlepot.com/img/pure.jpg">
+
+<script language= "JavaScript">
+location.href="https://poofties.middlepot.com/games"
+</script>
 
 <style>
 body{ 
@@ -55,11 +59,13 @@ a:hover {cursor: url(https://i.imgur.com/EZZ5Vol.png), progress;
 }
 }
 </style>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <style type="text/css">
 ::-webkit-scrollbar {
 width: 4px;
 height: 4px;
-background: transparent;
+background: #FFF9F9;
 }
 ::-webkit-scrollbar-thumb {
 background-color: #f9f0ed;
@@ -68,128 +74,17 @@ border: 1px dotted #e2d5d0;
 }
 #linkbjinho { color: #bca7a7; padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
 #linkzinho { padding-bottom: 2px; border-bottom:1px dotted #c6a799; }
-#linkzinhoo { padding-bottom: 2px; border-bottom:1px dotted #e8c1c5; }</style>
+
+</style>
 
 <!--
 tooooooooltip
 -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 
-<script>
-(function($){
-	var methods={
-		init:function(options){
-			var defaults={ 
-				tip_follows_cursor:false, //tooltip follows cursor: boolean
-				tip_delay_time:700, //tooltip delay before displaying: milliseconds
-				tip_fade_speed:300, //tooltip fade in/out speed: milliseconds
-				attribute:"title" //tooltip text come from this attribute
-			},
-			options=$.extend(defaults,options);
-			if($("#s-m-t-tooltip").length===0){
-				$("body").append("<div id='s-m-t-tooltip'><div></div></div>");
-			}
-			var smtTooltip=$("#s-m-t-tooltip"); 
-			smtTooltip.css({"position":"absolute","display":"none"}).data("smt-z-index",smtTooltip.css("z-index")).children("div").css({"width":"100%","height":"100%"});
-			function smtGetCursorCoords(event){
-				var smtCursorCoordsX=event.pageX,
-					smtCursorCoordsY=event.pageY;
-				smtTooltip.style_my_tooltips("position",{
-					smtCursorCoordsX:smtCursorCoordsX,
-					smtCursorCoordsY:smtCursorCoordsY
-				});
-			}
-			$(".smt-current-element").live("mouseout mousedown click",function(){
-				var $this=$(this);
-				clearTimeout(smtTooltip_delay);
-				smtTooltip.style_my_tooltips("hide",{
-					speed:$this.data("smt-fade-speed")
-				});
-				$(document).unbind("mousemove");
-				$this.removeClass("smt-current-element");
-				if($this.attr(options.attribute)===""){
-					$this.attr(options.attribute,$this.data("smt-title"));
-				}
-			});
-			return this["live"]("mouseover",function(event){
-				var $this=$(this),
-					title=$this.attr(options.attribute);
-				$this.addClass("smt-current-element").data({"smt-title":title,"smt-fade-speed":options.tip_fade_speed}).attr(options.attribute,"");
-				smtTooltip.style_my_tooltips("update",{
-					title:title,
-					speed:options.tip_fade_speed,
-					delay:options.tip_delay_time,
-					tip_follows_cursor:options.tip_follows_cursor
-				});
-				$(document).bind("mousemove", function(event){
-					smtGetCursorCoords(event); 
-				});
-			});
-		},
-		update:function(options){
-			var $this=$(this);
-			$this.stop().css({"display":"none","z-index":$this.data("smt-z-index")}).children("div").text(options.title);
-			smtTooltip_delay=setTimeout(function(){
-				$this.style_my_tooltips("show",{
-					speed:options.speed,
-					tip_follows_cursor:options.tip_follows_cursor
-				})
-			}, options.delay);
-		},
-		show:function(options){
-			var $this=$(this);
-			$this.stop().fadeTo(options.speed,1);
-			if(!options.tip_follows_cursor){
-				$(document).unbind("mousemove");
-			}
-		},
-		hide:function(options){
-			var $this=$(this);
-			$this.stop().fadeTo(options.speed,0,function(){
-				$this.css({"z-index":"-1"});
-			});
-		},
-		position:function(options){
-			var $this=$(this),
-				winScrollX=$(window).scrollLeft(),
-				winScrollY=$(window).scrollTop(),
-				tipWidth=$this.outerWidth(true),
-				tipHeight=$this.outerHeight(true),
-				leftOffset=(options.smtCursorCoordsX+tipWidth)-winScrollX,
-				topOffset=(options.smtCursorCoordsY+tipHeight)-winScrollY;
-			if(leftOffset<=$(window).width() && leftOffset<=$(document).width()){
-				$this.css("left",options.smtCursorCoordsX);
-			}else{
-				var thePosX=options.smtCursorCoordsX-tipWidth;
-				if(thePosX>=winScrollX){
-					$this.css("left",thePosX);
-				}else{
-					$this.css("left",winScrollX);
-				}
-			}
-			if(topOffset<=$(window).height() && topOffset<=$(document).height()){
-				$this.css("top",options.smtCursorCoordsY);
-			}else{
-				var thePosY=options.smtCursorCoordsY-tipHeight;
-				if(thePosY>=winScrollY){
-					$this.css("top",thePosY);
-				}else{
-					$this.css("top",winScrollY);
-				}
-			}
-		}
-	}
-	$.fn.style_my_tooltips=function(method){
-		if(methods[method]){
-			return methods[method].apply(this,Array.prototype.slice.call(arguments,1));
-		}else if(typeof method==="object" || !method){
-			return methods.init.apply(this,arguments);
-		}else{
-			$.error("Method "+method+" does not exist");
-		}
-	};
-})(jQuery);  
-</script>
+<script src="https://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js"></script>
+
 <script>
 
 (function($){
@@ -326,12 +221,9 @@ menuuuuuuuuuuuuuuu
 
 </head>
 
+
 <body ondragstart="return false" style="background-image:url(https://i.imgur.com/s0V8ydU.png); background-repeat: no-repeat; background-size: cover; background-color:#fefbfb; font-family: Verdana; font-size: 10px;">
 <style>
-html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
 #base {
 position: absolute;
 	left: 13%;
@@ -387,24 +279,8 @@ height: 100px;
 overflow-x:hidden;
 z-index: 3;
  }
-@media screen and (max-width: 1000px) and (orientation: portrait){
-#everything { position: absolute; zoom: 155%;
-	left:570px;
-	top:80px;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg); }
-#stuff { overflow: auto; overflow: scroll; }
-}
-@media screen and (max-width: 1000px) and (orientation: landscape){
-#everything { position: absolute; zoom: 100%; left:20px; top:10px;}
-#stuff { overflow: auto; overflow: scroll; }
-}
 </style>
 
-<div id="everything">
 <div id="base">
 
 <div id="aaa">
@@ -414,7 +290,9 @@ z-index: 3;
 <img src="https://i.imgur.com/Jm86w3I.png"/>
 
 <div onselectstart="return false" id="menu1">
-<p style="font-size:10px;line-height:50%;"><br><br>　　　　<font color="#c6a799">ణ</font>　<a href="/about" style="text-decoration: none; color:#a3948d;">about</a><br><br><br>
+<p style="font-size:10px;line-height:50%;"><br><br>
+
+　　　　<font color="#c6a799">ణ</font>　<a href="/about" style="text-decoration: none; color:#a3948d;">about</a><br><br><br>
 　　　　<font color="#c6a799">ణ</font>　<a href="/links" style="text-decoration: none; color:#a3948d;">links</a><br><br><br>
 　　　　<font color="#c6a799">ణ</font>　<a href="/contact" style="text-decoration: none; color:#a3948d;">contact</a><br><br><br>
 　　　　<font color="#c6a799">ణ</font>　<a href="/credits" style="text-decoration: none; color:#a3948d;">credits</a><br><br><br>
@@ -436,184 +314,17 @@ z-index: 3;
 
 <div id="stuff">
 
-<audio id="musict" preload="true">
-  <source src="https://file.pooftie.me/a/ratinhabranca.mp3" type="audio/mpeg">
-</audio>
-<div id="audioplayer">
- <button id="pButton" class="play"></button>
-  <div id="timeline">    
-      <div id="playhead"></div>
-  </div>
-</div>
-
-
-
-<style>
-#pButton{
-    height:20px; 
-    width: 20px;
-    border: none;
-    background-repeat: no-repeat;
-    outline:none;
-    cursor: url(https://i.imgur.com/EZZ5Vol.png), progress;
-}
-
-.play{background: url('https://i.imgur.com/aRUFUyE.gif') ;}
-.pause{background: url('https://i.imgur.com/aRUFUyE.gif') ;}
-</style>
-
-
-
-
-
-
-<script>
-var music = document.getElementById('musict');
-var duration = music.duration;
-var pButton = document.getElementById('pButton');
-var playhead = document.getElementById('playhead');
-var timeline = document.getElementById('timeline');
-
-var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
-
-pButton.addEventListener("click", play);
-
-music.addEventListener("timeupdate", timeUpdate, false);
-
-timeline.addEventListener("click", function(event) {
-    moveplayhead(event);
-    music.currentTime = duration * clickPercent(event);
-}, false);
-
-function clickPercent(event) {
-    return (event.clientX - getPosition(timeline)) / timelineWidth;
-}
-
-playhead.addEventListener('mousedown', mouseDown, false);
-window.addEventListener('mouseup', mouseUp, false);
-
-
-var onplayhead = false;
-
-function mouseDown() {
-    onplayhead = true;
-    window.addEventListener('mousemove', moveplayhead, true);
-    music.removeEventListener('timeupdate', timeUpdate, false);
-}
-
-function mouseUp(event) {
-    if (onplayhead == true) {
-        moveplayhead(event);
-        window.removeEventListener('mousemove', moveplayhead, true);
-        music.currentTime = duration * clickPercent(event);
-        music.addEventListener('timeupdate', timeUpdate, false);
-    }
-    onplayhead = false;
-}
-function moveplayhead(event) {
-    var newMargLeft = event.clientX - getPosition(timeline);
-
-    if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
-        playhead.style.marginLeft = newMargLeft + "px";
-    }
-    if (newMargLeft < 0) {
-        playhead.style.marginLeft = "0px";
-    }
-    if (newMargLeft > timelineWidth) {
-        playhead.style.marginLeft = timelineWidth + "px";
-    }
-}
-
-function timeUpdate() {
-    var playPercent = timelineWidth * (music.currentTime / duration);
-    playhead.style.marginLeft = playPercent + "px";
-    if (music.currentTime == duration) {
-        pButton.className = "";
-        pButton.className = "play";
-    }
-}
-
-function play() {
-    if (music.paused) {
-        music.play();
-        pButton.className = "";
-        pButton.className = "pause";
-    } else { 
-        music.pause();
-        pButton.className = "";
-        pButton.className = "play";
-    }
-}
-
-music.addEventListener("canplaythrough", function() {
-    duration = music.duration;
-}, false);
-
-function getPosition(el) {
-    return el.getBoundingClientRect().left;
-}
-</script>
-
-<div style="position:absolute; left:10%; right:10%;">
 <center>
-<sub><img width="auto" height="20px" src="https://i.imgur.com/OKCO1eA.png"/></sub><font color="#9c7776"> ‌milky woods</font>
-<br><font style="font-size: 8px;" color="#ad8887"> ‌ ‌ ‌ playing with dreams</font>
-<br>
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
+<font color="#a59090">redirecting .. !</font>
 <br><br>
-<font style="font-size: 8px;" color="#b38d94">
-<sub><sub><img width="auto" height="20px" src="https://i.imgur.com/OMOtqoa.png"/></sub></sub> ‌my released games ( outside links ) :
-<br><br>
-
-<div style="width:240px; padding:2px; border: 20px solid transparent; border-image: url(https://i.imgur.com/sYxacdk.png) 30 round;">
-<a href="https://picrew.me/image_maker/619666" target="_blank"><img width="230px" height="auto" src="https://i.imgur.com/NwfY8KN.png"/></a>
-<br><br>
-<center>
-<a style="text-decoration:none;" href="https://picrew.me/image_maker/619666" target="_blank"><font style="font-size:9px" color="#c7a9ad">picrew.me</font></a>
-</font>
-<br>
-<font style="font-size:9px" color="#d6c1c4">
-︶︶︶︶︶︶</font></center>
-</font>
-</div>
-
-
-<br><br>
-<font style="font-size: 8px;" color="#b38d94">
-<sub><sub><img width="auto" height="20px" src="https://i.imgur.com/OMOtqoa.png"/></sub></sub> ‌my small html games :</font>
-<br><br>
-<div style="width:320px; padding:2px; border: 20px solid transparent; border-image: url(https://i.imgur.com/sYxacdk.png) 30 round;">
-
-<a href="/fluffy"><img src="https://i.imgur.com/T3M3arC.png"/></a>　<a href="/lost"><img src="https://i.imgur.com/6Q8hBvu.png"/></a>
-<br><br>
-<a href="/pick"><img src="https://i.imgur.com/7kOPbrw.png"/></a>　<a href="/angel"><img src="https://i.imgur.com/j2NJoAH.png"/></a>
-
-</div>
-
-
-<br><br>
-<font style="font-size: 8px;" color="#b38d94">
-<sub><sub><img width="auto" height="20px" src="https://i.imgur.com/OMOtqoa.png"/></sub></sub> ‌my early flash games :
-<br><br>
-<div style="width:310px; padding:2px; border: 20px solid transparent; border-image: url(https://i.imgur.com/sYxacdk.png) 30 round;">
-<a href="https://file.pooftie.me/r/flash%20games.rar" target="_blank"><img src="https://i.imgur.com/BltA2XT.gif"/></a>
-<br><br>
-<center>
-<a style="text-decoration:none;" href="https://file.pooftie.me/r/flash%20games.rar" target="_blank"><font style="font-size:9px" color="#c7a9ad">click to download all the .swf files</font></a>
-</font>
-<br>
-<font style="font-size:9px" color="#d6c1c4">
-︶︶︶︶︶︶︶︶︶︶︶︶︶︶︶︶︶︶</font></center>
-</div>
-<br><br><br><br>
+<img src="https://i.imgur.com/WMKsOT0.gif"/>
 
 </center>
-
-</div>
 </div>
 </div>
 
-</div>
 
 </body>
 
