@@ -12,26 +12,21 @@ whiteoverlay.style.background = '#fff';
 whiteoverlay.style.zIndex = '999999';
 $('body').append(whiteoverlay);
 
+var emojisLoaded = false;
 function loadEmojis(){
 	var emojis = ['☂️', '☎️', '✂️', '✉️', '✏️', '❤️', '☕️', '⚰️', '⭐', '🌕', '🌡', '🌧', '🌱', '🌷', '🌹', '🌼', '🍄', '🍓', '🍞', '🍦', '🍩', '🍪', '🍮', '🍯', '🍰', '🍼', '🎀', '🎁', '🎃', '🎄', '🎗', '🎠', '🎻', '🏠', '🐁', '🐇', '🐈', '🐌', '🐑', '🐕', '🐝', '👒', '👗', '👚', '👜', '👶', '💉', '💊', '💌', '💐', '💓', '💕', '💖', '💗', '💘', '💝', '💟', '💻', '💿', '📍', '📚', '📱', '📷', '🔒', '🔪', '🖇', '🖋', '🗝', '🚲', '🛏', '🛼', '🤍', '🥄', '🥛', '🥞', '🥧', '🥿', '🦋', '🦷', '🧁', '🧇', '🧦', '🧴', '🧷', '🧸', '🧺', '🧼', '🩰', '🩳', '🩹', '🪑', '🪦', '🫖'];
-	var vanilla = true;
-	var inner = document.body.innerHTML;
-	if(!inner){
-		inner = $('body').text();
-		vanilla = false;
-	}
-
-	for(var i = 0; i < emojis.length; ++i){
-		var img = '<img src="https://middlepot.com/emoji/'+emojis[i]+'.gif" style="user-drag: none; -webkit-user-drag: none; user-select: none; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;"></img>';
-		var regex = new RegExp(emojis[i], "g");
-		inner = inner.replace(regex, img);
-	}
-	if(vanilla)
-		document.body.innerHTML = inner;
-	else
+	var inner = $('body').html();
+	if(!emojisLoaded){
+		for(var i = 0; i < emojis.length; ++i){
+			var regex = new RegExp(emojis[i], "g");
+			var img = '<img src="https://middlepot.com/emoji/'+emojis[i]+'.gif" style="user-drag: none; -webkit-user-drag: none; user-select: none; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;"></img>';
+			inner = inner.replace(regex, img);
+		}
+		emojisLoaded = true;
 		$('body').html(inner);
+	}
 }
 
-$(window).load(function() {
-    $('#emojis_whiteoverlay').hide();
+$(document).ready(function() {
+	$('#emojis_whiteoverlay').hide();
 });
