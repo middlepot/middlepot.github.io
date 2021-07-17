@@ -1027,7 +1027,6 @@ p { margin: 0; }
     loop($btns, function($btn){
         $btn.addEventListener("click", function(){
             var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            console.log(this);
             if( this.innerHTML === "first layout" ){
                 this.innerHTML = "first layout ˣ";
                 $spoiler.classList.remove("is-closed");
