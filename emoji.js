@@ -24,7 +24,7 @@ function loadEmojis(){
 		var img = '<img src="https://middlepot.com/emoji/'+emojis[i]+'.gif" style="user-drag: none; -webkit-user-drag: none; user-select: none; -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none;"></img>';
 		inner = inner.replace(regex, img);
 	}
-	inner = inner.replace('loadEmojis();', ''); //remove itself from the code
+	inner = inner.replace('<script>loadEmojis();</script>', ''); //remove itself from the code
 	$('body').html(inner);
 }
 
