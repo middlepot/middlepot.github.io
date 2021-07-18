@@ -25,6 +25,6 @@ function loadEmojis(){
 	$('body').html(inner);
 }
 
-$(document).ready(function() {
+$(window).on("load", function() {
 	$('#emojis_whiteoverlay').hide();
 });
