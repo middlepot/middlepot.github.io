@@ -1,3 +1,4 @@
+//adds white overlay
 var whiteoverlay = document.createElement('div');
 whiteoverlay.id = 'emojis_whiteoverlay';
 whiteoverlay.style.position = 'fixed';
@@ -10,10 +11,12 @@ whiteoverlay.style.top = '0';
 whiteoverlay.style.left = '0';
 whiteoverlay.style.background = '#fff';
 whiteoverlay.style.zIndex = '999999';
-if(!$('#emojis_whiteoverlay').length)
-	$('body').append(whiteoverlay);
+if(!$('#emojis_whiteoverlay').length){
+	$(whiteoverlay).insertAfter('head');
+}
 
 function loadEmojis(){
+	//looks for emotes
 	var emojis = ['☂️', '☎️', '✂️', '✉️', '✏️', '❤️', '☕️', '⚰️', '⭐', '🌕', '🌡', '🌧', '🌱', '🌷', '🌹', '🌼', '🍄', '🍓', '🍞', '🍦', '🍩', '🍪', '🍮', '🍯', '🍰', '🍼', '🎀', '🎁', '🎃', '🎄', '🎗', '🎠', '🎻', '🏠', '🐁', '🐇', '🐈', '🐌', '🐑', '🐕', '🐝', '👒', '👗', '👚', '👜', '👶', '💉', '💊', '💌', '💐', '💓', '💕', '💖', '💗', '💘', '💝', '💟', '💻', '💿', '📍', '📚', '📱', '📷', '🔒', '🔪', '🖇', '🖋', '🗝', '🚲', '🛏', '🛼', '🤍', '🥄', '🥛', '🥞', '🥧', '🥿', '🦋', '🦷', '🧁', '🧇', '🧦', '🧴', '🧷', '🧸', '🧺', '🧼', '🩰', '🩳', '🩹', '🪑', '🪦', '🫖'];
 	var inner = $('body').html();
 	for(var i = 0; i < emojis.length; ++i){
