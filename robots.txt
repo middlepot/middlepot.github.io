@@ -1,0 +1,4 @@
+# robots.txt for https://middlepot.com
+
+User-agent: *
+Disallow: /*
