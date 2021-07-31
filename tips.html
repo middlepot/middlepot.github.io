@@ -32,14 +32,14 @@
 <meta name="title" content="ഒ">
 <meta name="description" content="꒰ 𝑚𝑖𝑑𝑑𝑙𝑒𝑝𝑜𝑡'𝑠 𝑑𝑖𝑎𝑟𝑦 ꒱">
 <meta name="theme-color" content="#f7e9ed">
-<meta property="og:url" content="https://middlepot.com/contact">
+<meta property="og:url" content="https://middlepot.com/commissions">
 <meta property="og:title" content="ഒ">
 <meta property="og:description" content="꒰ 𝑚𝑖𝑑𝑑𝑙𝑒𝑝𝑜𝑡'𝑠 𝑑𝑖𝑎𝑟𝑦 ꒱">
 <meta property="og:image" content="https://middlepot.com/img/pure.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:type" content="website">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://middlepot.com/contact">
+<meta property="twitter:url" content="https://middlepot.com/commissions">
 <meta property="twitter:title" content="ഒ">
 <meta property="twitter:description" content="꒰ 𝑚𝑖𝑑𝑑𝑙𝑒𝑝𝑜𝑡'𝑠 𝑑𝑖𝑎𝑟𝑦 ꒱">
 <meta property="twitter:image" content="https://middlepot.com/img/pure.jpg">
@@ -52,6 +52,8 @@ a:hover {cursor: url(https://i.imgur.com/EZZ5Vol.png), progress;
   }
  ::selection {text-shadow: 0 0 2px #cec1bb;color:#cec1bb}
  ::-moz-selection {text-shadow: 0 0 2px #cec1bb;color:#cec1bb}
+}
+}
 </style>
 <style type="text/css">
 ::-webkit-scrollbar {
@@ -61,7 +63,6 @@ background: transparent;
 }
 ::-webkit-scrollbar-thumb {
 background-color: #f9f0ed;
-border-radius: 0ex;
 -webkit-border-radius: 0ex;
 border: 1px dotted #e2d5d0;
 }
@@ -252,7 +253,6 @@ menuuuuuuuuuuuuuuu
 			
 			#context_menu {
 				background: #fcf6f2;
-				border-radius: 1px 1px;
 				-moz-border-radius: 1px 1px;
 				border: 1px dotted #baada3;
 				letter-spacing:1px; 
@@ -265,7 +265,6 @@ menuuuuuuuuuuuuuuu
 			
 			#context_menu ul li {
 				padding: 4px 4px;
-				border-radius: 10px 10px;
 				-moz-border-radius: 10px 10px;
 				cursor: url(https://i.imgur.com/C9RGjYt.png), progress;
 			}
@@ -324,7 +323,31 @@ menuuuuuuuuuuuuuuu
 <!--
 menuuuuuuuuuuuuuuu
 -->
-<script>var api_path = 'https://api.middlepot.com/v1'</script>
+
+<!--   ・゜ ♡   emoji set code   ♡ ゜ ・  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="https://middlepot.com/emoji.js"></script>
+<!--   © middlepot.com  ꒰ ू´ ˘ ` ू ꒱  -->
+
+<script>var api_path = 'https://api.middlepot.com/v1';</script>
+<script>
+var loadedPaypalSdk = false;
+async function loadPaypalSdk(){
+	var base_url = 'https://www.paypal.com/sdk/js?client-id=AaJ_j9vf-Z4jI8C7WrbP81WAsXm7HaMGEtFjvostBsdRBze1xJv3DbSX7DasVPtYVar3urkgUhiX3_2Z&components=buttons,funding-eligibility';
+	var req = await fetch(api_path+'/currency', {method: 'GET'});
+	var res = await req.json();
+	if(res.currency === 'BRL')
+		base_url += '&currency=BRL';
+	var scrEl = document.createElement('script');
+	scrEl.src = base_url;
+	scrEl.onload = function(){
+		loadedPaypalSdk = true;
+	}
+	var head = document.head || document.getElementsByTagName("head")[0];
+	head.insertBefore(scrEl, head.firstChild);
+}
+loadPaypalSdk();
+</script>
 </head>
 
 
@@ -343,18 +366,8 @@ overflow-x:hidden;
  }
 #menu1 {
 position: absolute;
-	left: 0;
+	left: %;
 	top: 28%;
-width: 130px;
-height: 250px;
-overflow-y:hidden;
-overflow-x:hidden;
-z-index: 2;
- }
-#menu1-2 {
-position: absolute;
-	left: 0%;
-	top: 70%;
 width: 130px;
 height: 250px;
 overflow-y:hidden;
@@ -425,17 +438,13 @@ z-index: 3;
 
 <img src="https://i.imgur.com/Jm86w3I.png"/>
 
-
 <div onselectstart="return false" id="menu1">
-<p style="font-size:10px;line-height:50%;"><br><br>
-
-　　　　<font color="#c6a799">ణ</font>　<a href="/about" style="text-decoration: none; color:#a3948d;">about</a><br><br><br>
+<p style="font-size:10px;line-height:50%;"><br><br>　　　　<font color="#c6a799">ణ</font>　<a href="/about" style="text-decoration: none; color:#a3948d;">about</a><br><br><br>
 　　　　<font color="#c6a799">ణ</font>　<a href="/links" style="text-decoration: none; color:#a3948d;">links</a><br><br><br>
 　　　　<font color="#c6a799">ణ</font>　<a href="/contact" style="text-decoration: none; color:#a3948d;">contact</a><br><br><br>
 　　　　<font color="#c6a799">ణ</font>　<a href="/credits" style="text-decoration: none; color:#a3948d;">credits</a><br><br><br>
 </p>
-</div>
-<div onselectstart="return false" id="menu1-2">
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
 　　　　　　<a href="https://poofties.middlepot.com" target="_blank" style="text-decoration: none; color:#8c7d75;">poofties</a>
 </div>
 
@@ -450,63 +459,206 @@ z-index: 3;
 　　　　　 <a href="/blog" style="text-decoration: none; color:#b29487;">my blog</a>
 </div>
 
-<script>
-	function sendForm(){
-		var name = document.getElementById('name');
-		var email = document.getElementById('email');
-		var message = document.getElementById('message');
-		if(name.value && email.value && message.value){
-			fetch(api_path+'/form', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({name: name.value, email: email.value, message: message.value})
-			});
-			name.remove();
-			email.remove();
-			message.remove();
-			document.getElementById('send').remove();
-			document.getElementById('form-image').src = 'https://i.imgur.com/TvOJnFP.png';
-		}
-	}
-</script>
-
 <div id="stuff">
 
 <div style="position:absolute; left:15%; right:15%; line-height: 12px;">
+<br><br>
+<center><font color="#ada1a1">
+i'm always doing my best to spread happiness,<br>
+helping people feel comfy & safe through soft aesthetics.<br><br>
+if my work has ever helped or inspired you,<br>
+please consider supporting me <sub>💖</sub></center>
+<br><br>
+</div>
 
-<input id="name" maxlength="30" style="position: absolute; left: 130px; top: 50px;
-overflow: hidden; z-index: 10; width:180px; height:20px;
+<input id="quantity" style="position: absolute; top: 121px; left: 202px;
+overflow: hidden; z-index: 10; width:30px; height:20px; text-align: center;
 background: transparent; resize: none; padding:5px; outline:none;
 border: 0px; cursor: url(https://i.imgur.com/4oHqWDj.png), progress; color: #9e8e8e;
-font-family: verdana; font-size: 10px; letter-spacing:1px; line-height:15px;"></input>
+font-family: verdana; font-size: 12px; letter-spacing:1px; line-height:15px;" value="3"></input>
+<script>
+document.getElementById("quantity").addEventListener("change", function() {
+	let v = parseInt(this.value);
+	if (v < 1 || isNaN(v) || !isFinite(v)) this.value = 1;
+	else if (v > 9999) this.value = 9999;
+});
+</script>
 
-<input id="email" maxlength="50" style="position: absolute; left: 130px; top: 93px;
-overflow: hidden; z-index: 10; width:180px; height:20px;
+<input id="name" maxlength="10" style="position: absolute; top: 122px; left: 297px;
+overflow: hidden; z-index: 10; width:100px; height:20px;
 background: transparent; resize: none; padding:5px; outline:none;
 border: 0px; cursor: url(https://i.imgur.com/4oHqWDj.png), progress; color: #9e8e8e;
-font-family: verdana; font-size: 10px; letter-spacing:1px; line-height:15px;"></input>
+font-family: verdana; font-size: 9px; letter-spacing:1px; line-height:15px;"></input>
 
-<textarea id="message" maxlength="2000" style="position: absolute; left: 60px; top: 148px;
-overflow: auto; overflow: scroll; z-index: 10; width:290px; height:192px;
-background: transparent; resize: none; padding:5px; outline:none; white-space: pre-wrap;
+<textarea id="message" maxlength="500" style="position: absolute; top: 165px; left: 220px;
+overflow: auto; overflow: scroll; z-index: 10; width:180px; height:70px; white-space: pre-wrap;
+background: transparent; resize: none; padding:5px; outline:none;
 border: 0px; cursor: url(https://i.imgur.com/4oHqWDj.png), progress; color: #9e8e8e;
-font-family: verdana; font-size: 10px; letter-spacing:1px; line-height:15px;"></textarea>
+font-family: verdana; font-size: 9px; letter-spacing:1px; line-height:15px;"></textarea>
 
-<div style=" z-index: 9; position:absolute; top:40px; left:40px; line-height: 12px; ">
-<img id="form-image" src="https://i.imgur.com/OFETRDd.png">
+<div style=" z-index: 9; position:absolute; top:120px; left:150px; line-height: 12px; ">
+<img src="https://i.imgur.com/m4Arymc.png">
 </div>
 
-<div id="send" style=" z-index: 12; position:absolute; top:335px; left:310px; line-height: 12px; ">
-<a><img src="https://i.imgur.com/ojXFKqJ.png" onclick="sendForm();"></a>
+<img src="https://i.imgur.com/GG8lZVr.png" style="pointer-events: none; z-index: 12; position: absolute; top:110px; left:360px;">
+<div id="paypal-container" style="z-index: 11; width: 150px; position: absolute; top: 110px; left: 360px;">
+	<div id="paypal-button-container"></div>
+</div>
+
+<div style="position:absolute; top:255px; left:15%; right:15%; line-height: 12px;">
+<br><br>
+<center><font color="#ada1a1">
+my dreams, one step closer to accomplishment..<br>
+your kindness, forever cherished <sub>🌷</sub>
+</font>
+<br><br><br>
+
+<style>
+.messages { white-space: pre-wrap; word-wrap: break-word; text-align:center; margin-bottom:20px; overflow:hidden; background-color:rgb(255, 255, 255, 0.3); border-style: solid; border-width: 20px; border-color: rgba(255, 255, 255, 0.01); border-image: url(https://i.imgur.com/E4b0oEh.png) 30 round; line-break:auto; max-width: 250px; width: fit-content; height: fit-content; line-height:10px; padding-bottom:5px; }
+</style>
+
+<div id="messages-container">
+	<div class="messages"><sub>🎗 </sub> <b>a little angel</b> sent a tip !<br></div>
+	<div class="messages"><sub>🎗 </sub> <b>a little angel</b> sent a tip !<br></div>
+	<div class="messages"><sub>🎗 </sub> <b>a little angel</b> sent a tip !<br>" ur my idol, thank u for existing ♡ "</div>
+	<div class="messages"><sub>🎗 </sub> <b>a little angel</b> sent a tip !<br></div>
+	<div class="messages"><sub>🎗 </sub> <b>𝒂𝒏𝒈𝒆𝒍</b> sent a tip !<br>" you are the most precious. thank you for inspiring me to become better, and thank you for existing. "</div>
+	<div class="messages"><sub>🎗 </sub> <b>faith</b> sent a tip !<br></div>
+	<div class="messages"><sub>🎗 </sub> <b>Madison McKenzie</b> sent a tip !<br>" Thank you for being so helpful and sweet!! I absolutely love you and your account and your lil’ plushies and charms!! "</div>
+	<div class="messages"><sub>🎗 </sub> <b>Kittnly</b> sent a tip !<br>" hi ! i adore u. keep bein ur lovely self. ur page is one of my favorites in this whole entire world. u make such a difference, i hope u r as proud of urself as i am of u. 🌼 "</div>
+	<div class="messages"><sub>🎗 </sub> <b>a little angel</b> sent a tip !<br>" a tiny christmas gift for my favourite artist .. "</div>
+	<div class="messages"><sub>🎗 </sub> <b>hope</b> sent a tip !<br>" ૮₍Ꮚ ⸝⸝´ ˘ `⸝⸝ ₎ა i ♡ ur games "</div>
+	<div class="messages"><sub>🎗 </sub> <b>a little angel</b> sent a tip !<br></div>
+	<div class="messages"><sub>🎗 </sub> <b>marshmallow</b> sent a tip !<br>" a little extra for the trouble and for your kindness !! 💕 "</div>
+	<div class="messages"><sub>🎗 </sub> <b>deer</b> sent a tip !<br>" keep doing your best!!! "</div>
+	<div class="messages"><sub>🎗 </sub> <b>deer</b> sent a tip !<br>" thank you for everything you do <333 "</div>
+	<div class="messages"><sub>🎗 </sub> <b>deer</b> sent a tip !<br></div>
+	<div class="messages"><sub>🎗 </sub> <b>faith</b> sent a tip !<br>" to the sweetest angel ୨୧ "</div>
+</div>
+
+
+</center>
+<br>
+
 </div>
 
 </div>
 </div>
 
 </div>
-
+<script>
+	var paypalButtons = [];
+	function loadPaypalButtons(){
+		if(loadedPaypalSdk){
+			var FUNDING_SOURCES = [
+				paypal.FUNDING.PAYPAL
+			];
+			// Loop over each funding source/payment method
+			FUNDING_SOURCES.forEach(function(fundingSource) {
+				// Initialize the buttons
+				var divContainer = '#paypal-button-container';
+				var button = paypal.Buttons({
+					fundingSource: fundingSource,
+					style:{
+						tagline: false,
+						height: 55
+					},
+					createOrder: async function (data, actions) {
+						var amount = document.getElementById('quantity').value;
+						if(!amount || isNaN(amount) || !isFinite(amount))
+							amount = 1;
+						if(amount < 1)
+							amount = 1;
+						if(amount > 9999)
+							amount = 9999;
+						var req = await fetch(api_path+'/currency/conversion?amt='+amount, {method: 'GET'});
+						var res = await req.json();
+						var currency = res.currency;
+						var finalValue = res.amount;
+						return actions.order.create({
+							purchase_units: [{
+								amount: {
+									value: 0.5,//finalValue,
+									currency_code: currency
+								}
+							}]
+						});
+					},
+					onApprove: function (data, actions) {
+						return actions.order.capture().then(async function (details) {
+							var message = document.getElementById('message').value;
+							var name = document.getElementById('name').value;
+							return fetch(api_path+'/tips/create', {
+								method: 'POST',
+								cache: 'no-cache',
+								headers:{
+									'Content-Type': 'application/json'
+								},
+								body: JSON.stringify({name: name, message: message, orderId: details.id})
+							}).then(()=>{
+								location.reload();
+							});
+						});
+					}
+				});
+				// Check if the button is eligible
+				if(button.isEligible()){
+					// Render the standalone button for that funding source
+					paypalButtons.push(button);
+					button.render(divContainer);
+				}
+			});
+		}
+		else{
+			//await paypal sdk to load
+			setTimeout(loadPaypalButtons, 50);
+		}
+	}
+	loadPaypalButtons();
+</script>
+<script>
+	async function loadTips(){
+		//get tips
+		var req = await fetch(api_path+'/tips', {method: 'GET'});
+		var res = await req.json();
+		var tips = res.tips;
+		//sort tips by date
+		tips.forEach(tip =>{
+			tip.createdAt = new Date(tip.createdAt);
+		});
+		tips.sort((a,b) => (a.createdAt > b.createdAt) ? 1 : ((b.createdAt > a.createdAt) ? -1 : 0));
+		tips.forEach(tip =>{
+			//display tips
+			var container = document.getElementById('messages-container');
+			var newDiv = document.createElement('div');
+			newDiv.classList.add('messages');
+			newDiv.innerHTML = `<sub>🎗 </sub> <b>${tip.tip_name?tip.tip_name:'a little angel'}</b> sent a tip !<br>${tip.tip_message?('" '+tip.tip_message+' "'):''}`;
+			$(container).prepend(newDiv);
+		});
+	}
+	var whiteoverlay = document.createElement('div');
+	whiteoverlay.id = 'emojis_whiteoverlay_2';
+	whiteoverlay.style.position = 'fixed';
+	whiteoverlay.style.display = 'flex';
+	whiteoverlay.style.justifyContent = 'center';
+	whiteoverlay.style.alignItems = 'center';
+	whiteoverlay.style.width = '100%';
+	whiteoverlay.style.height = '100%';
+	whiteoverlay.style.top = '0';
+	whiteoverlay.style.left = '0';
+	whiteoverlay.style.background = '#fff';
+	whiteoverlay.style.zIndex = '999999';
+	if(!$('#emojis_whiteoverlay_2').length){
+		$(whiteoverlay).insertAfter('head');
+	}
+	loadTips()
+	.finally(() =>{
+		//   ・゜ ♡   emoji set code   ♡ ゜ ・  
+		loadEmojis();
+		//   © middlepot.com  ꒰ ू´ ˘ ` ू ꒱  
+		$('#emojis_whiteoverlay_2').hide();
+	});
+</script>
 </body>
 
 <!--
