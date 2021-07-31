@@ -455,20 +455,18 @@ z-index: 3;
 		var name = document.getElementById('name');
 		var email = document.getElementById('email');
 		var message = document.getElementById('message');
-		if(name.value && email.value && message.value){
-			fetch(api_path+'/form', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json'
-				},
-				body: JSON.stringify({name: name.value, email: email.value, message: message.value})
-			});
-			name.remove();
-			email.remove();
-			message.remove();
-			document.getElementById('send').remove();
-			document.getElementById('form-image').src = 'https://i.imgur.com/TvOJnFP.png';
-		}
+		fetch(api_path+'/form', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({name: name.value, email: email.value, message: message.value})
+		});
+		name.remove();
+		email.remove();
+		message.remove();
+		document.getElementById('send').remove();
+		document.getElementById('form-image').src = 'https://i.imgur.com/TvOJnFP.png';
 	}
 </script>
 
@@ -476,13 +474,13 @@ z-index: 3;
 
 <div style="position:absolute; left:15%; right:15%; line-height: 12px;">
 
-<input id="name" maxlength="30" style="position: absolute; left: 130px; top: 53px;
+<input id="name" maxlength="30" style="position: absolute; left: 130px; top: 50px;
 overflow: hidden; z-index: 10; width:180px; height:20px;
 background: transparent; resize: none; padding:5px; outline:none;
 border: 0px; cursor: url(https://i.imgur.com/4oHqWDj.png), progress; color: #9e8e8e;
 font-family: verdana; font-size: 10px; letter-spacing:1px; line-height:15px;"></input>
 
-<input id="email" maxlength="50" style="position: absolute; left: 130px; top: 95px;
+<input id="email" maxlength="50" style="position: absolute; left: 130px; top: 93px;
 overflow: hidden; z-index: 10; width:180px; height:20px;
 background: transparent; resize: none; padding:5px; outline:none;
 border: 0px; cursor: url(https://i.imgur.com/4oHqWDj.png), progress; color: #9e8e8e;
