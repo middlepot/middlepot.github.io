@@ -19,9 +19,11 @@ function loadEmojis(){
 	//looks for emotes
 	var emojis = ['☂️', '☎️', '✂️', '✉️', '✏️', '❤️', '☕️', '⚰️', '⭐', '🌕', '🌡', '🌧', '🌱', '🌷', '🌹', '🌼', '🍄', '🍓', '🍞', '🍦', '🍩', '🍪', '🍮', '🍯', '🍰', '🍼', '🎀', '🎁', '🎃', '🎄', '🎗', '🎠', '🎻', '🏠', '🐁', '🐇', '🐈', '🐌', '🐑', '🐕', '🐝', '👒', '👗', '👚', '👜', '👶', '💉', '💊', '💌', '💐', '💓', '💕', '💖', '💗', '💘', '💝', '💟', '💻', '💿', '📍', '📚', '📱', '📷', '🔒', '🔪', '🖇', '🖋', '🗝', '🚲', '🛏', '🛼', '🤍', '🥄', '🥛', '🥞', '🥧', '🥿', '🦋', '🦷', '🧁', '🧇', '🧦', '🧴', '🧷', '🧸', '🧺', '🧼', '🩰', '🩳', '🩹', '🪑', '🪦', '🫖'];
 	$('script').each(function(){
-		var inner = $(this).html();
-		inner = inner.replace('loadEmojis();', ''); //remove itself from the code
-		$(this).html(inner);
+		if(!$(this).parent('textarea').length){
+			var inner = $(this).html();
+			inner = inner.replace('loadEmojis();', ''); //remove itself from the code
+			$(this).html(inner);
+		}
 	});
 	$('body :not(script, iframe)').contents().filter(function() {
 		return this.nodeType === 3;
@@ -33,6 +35,15 @@ function loadEmojis(){
 			inner = inner.replace(regex, img);
 		}
 		return inner;
+	});
+	$('script').each(function(){
+		if($(this).parent('textarea').length){
+			var p = $(this).parent('textarea');
+			var outer = $(this)[0].outerHTML;
+			outer = outer.replace(new RegExp('<script>', 'g'), '&lt;script&gt;');
+			outer = outer.replace(new RegExp('</script>', 'g'), '&lt;/script&gt;');
+			$(this)[0].outerHTML = outer;
+		}
 	});
 }
 
