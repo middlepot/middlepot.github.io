@@ -1,6 +1,0 @@
-# robots.txt for https://middlepot.com
-
-User-agent: ia_archiver
-Disallow: /
-User-agent: *
-Disallow:
