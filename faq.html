@@ -335,7 +335,10 @@ $(document).ready(function() {
 		hash = hash.substring(1, hash.length);
 		var container = document.getElementById('stuff'); 
 		var scrollTo = document.getElementById(hash);
-		container.scrollTop = scrollTo.offsetTop;
+		var offset = -20;
+		$(container).animate({
+			scrollTop: $(scrollTo).position().top + offset
+		}, 1000);
 	}
 	//prevent auto scroll to anchor
 	if(originalLocationHash){
