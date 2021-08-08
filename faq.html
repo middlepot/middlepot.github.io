@@ -327,30 +327,6 @@ menuuuuuuuuuuuuuuu
 <script src="https://middlepot.com/emoji.js"></script>
 <!--   © middlepot.com  ꒰ ू´ ˘ ` ू ꒱  -->
 
-<script>
-var originalLocationHash = window.location.hash;
-window.location.hash = '';
-$(document).ready(function() {
-	function anchorGoto(hash){
-		hash = hash.substring(1, hash.length);
-		var container = document.getElementById('stuff'); 
-		var scrollTo = document.getElementById(hash);
-		var offset = -20;
-		$(container).scrollTop($(scrollTo).offset().top - $(container).offset().top + $(container).scrollTop()+offset);
-	}
-	//prevent auto scroll to anchor
-	if(originalLocationHash){
-		//goes to place
-		anchorGoto(originalLocationHash);
-	}
-	$('a').click(function(e) {
-		e.preventDefault();
-		var hash = $(this).attr("href");
-		//goes to place
-		anchorGoto(hash);
-	});
-});
-</script>
 
 </head>
 
