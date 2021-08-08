@@ -330,7 +330,7 @@ window.location.hash = '';
 $(document).ready(function() {
 	function anchorGoto(hash){
 		hash = hash.substring(1, hash.length);
-		var container = document.getElementById('stuff'); 
+		var container = document.getElementById('stuff2'); 
 		var scrollTo = document.getElementById(hash);
 		container.scrollTop = scrollTo.offsetTop;
 	}
@@ -595,7 +595,7 @@ function getPosition(el) {
 
 <div style="padding-left: 22%; padding-right: 25%;">
 
-<div style="top:85px; padding: 20px; position: absolute; width: 300px; height: 300px; overflow-x: hidden; overflow: auto; overflow: scroll; z-index: 30; text-align:justify; line-height: 130%">
+<div id="stuff2" style="top:85px; padding: 20px; position: absolute; width: 300px; height: 300px; overflow-x: hidden; overflow: auto; overflow: scroll; z-index: 30; text-align:justify; line-height: 130%">
 
 <style>
 #linklinklink { color: #d39aab; }
