@@ -324,6 +324,31 @@ menuuuuuuuuuuuuuuu
 menuuuuuuuuuuuuuuu
 -->
 
+<script>
+var originalLocationHash = window.location.hash;
+window.location.hash = '';
+$(document).ready(function() {
+	function anchorGoto(hash){
+		hash = hash.substring(1, hash.length);
+		var container = document.getElementById('stuff2'); 
+		var scrollTo = document.getElementById(hash);
+		var offset = -20;
+		var pos = scrollTo.offsetTop;
+		container.scrollTo({top: pos+offset});
+	}
+	//prevent auto scroll to anchor
+	if(originalLocationHash){
+		//goes to place
+		anchorGoto(originalLocationHash);
+	}
+	$('a').click(function(e) {
+		e.preventDefault();
+		var hash = $(this).attr("href");
+		//goes to place
+		anchorGoto(hash);
+	});
+});
+</script>
 
 </head>
 
