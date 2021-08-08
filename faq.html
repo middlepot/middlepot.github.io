@@ -336,9 +336,7 @@ $(document).ready(function() {
 		var container = document.getElementById('stuff'); 
 		var scrollTo = document.getElementById(hash);
 		var offset = -20;
-		$(container).animate({
-			scrollTop: $(scrollTo).position().top + offset
-		}, 1000);
+		$(container).scrollTop($(scrollTo).offset().top - $(container).offset().top + $(container).scrollTop()+offset);
 	}
 	//prevent auto scroll to anchor
 	if(originalLocationHash){
