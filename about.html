@@ -484,11 +484,11 @@ p { margin: 0; }
     loop($btns, function($btn){
         $btn.addEventListener("click", function(){
             var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "i'm 23" ){
-                this.innerHTML = "i'm 23 ˣ";
+            if( this.innerHTML === "i'm 24" ){
+                this.innerHTML = "i'm 24 ˣ";
                 $spoiler.classList.remove("is-closed2");
             } else {
-                this.innerHTML = "i'm 23";
+                this.innerHTML = "i'm 24";
                 $spoiler.classList.add("is-closed2");
             }
         });
