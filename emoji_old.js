@@ -46,13 +46,7 @@ function loadEmojis(){
 		}
 	});
 }
-var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
 
-if(!isSafari){
-	$(window).on("load", function() {
-		$('#emojis_whiteoverlay').hide();
-	});
-}
-else{
-	setTimeout(function(){$('#emojis_whiteoverlay').hide();}, 2000);
-}
+$(window).on("load", function() {
+	$('#emojis_whiteoverlay').hide();
+});
