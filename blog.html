@@ -554,44 +554,63 @@ the ones you see by default was colored by me, click the image for switching to 
 </pre>
 <br><br>
 
-<center><img id="mine" width="430px" height="auto" src="./img/luupon-comm-gift-me-1.png"
+<script type = "text/javascript">
+	var luuponState = false;
+	function volgendefoto1(){
+		var i1 = document.getElementById('mine0');
+		var i2 = document.getElementById('mine1');
+		var l1 = document.getElementById('luupon0');
+		var l2 = document.getElementById('luupon1');
+		if(!luuponState){
+			l1.style.display = 'none';
+			l2.style.display = 'none';
+			if(i1.style.display === 'block'){
+				i1.style.display = 'none';
+				i2.style.display = 'block';
+			}
+			else{
+				i1.style.display = 'block';
+				i2.style.display = 'none';
+			}
+		}
+		else{
+			i1.style.display = 'none';
+			i2.style.display = 'none';
+			if(l1.style.display === 'block'){
+				l1.style.display = 'none';
+				l2.style.display = 'block';
+			}
+			else{
+				l1.style.display = 'block';
+				l2.style.display = 'none';
+			}
+		}
+	}
+	setInterval(volgendefoto1, 1000);
+</script>
+
+<center>
+	
+<img id="mine0" width="430px" height="auto" src="./img/luupon-comm-gift-me-1.png"
 style="display: block;"
-onclick="{document.getElementById('mine').style.display = 'none';
-document.getElementById('luupon').style.display = 'block';}"/></center>
-        <script type = "text/javascript">
-            var image1 = document.getElementById("mine");
-            var currentPos1 = 0;
-            var images1 = ["./img/luupon-comm-gift-me-1.png", "./img/luupon-comm-gift-me-2.png"]
+onclick="luuponState = true; volgendefoto1();"/>
 
-            function volgendefoto1() {
-                if (++currentPos1 >= images1.length)
-                    currentPos1 = 0;
-
-                image1.src = images1[currentPos1];
-            }
-
-            setInterval(volgendefoto1, 1000);
-        </script>
-
-<center><img id="luupon" width="430px" height="auto" src="./img/luupon-comm-gift-1.png"
+<img id="mine1" width="430px" height="auto" src="./img/luupon-comm-gift-me-2.png"
 style="display: none;"
-onclick="{document.getElementById('luupon').style.display = 'none';
-document.getElementById('mine').style.display = 'block';}"/></center>
-        <script type = "text/javascript">
-            var image2 = document.getElementById("luupon");
-            var currentPos2 = 0;
-            var images2 = ["./img/luupon-comm-gift-1.png", "./img/luupon-comm-gift-2.png"]
+onclick="luuponState = true; volgendefoto1();"/>
+</center>
 
-            function volgendefoto2() {
-                if (++currentPos2 >= images2.length)
-                    currentPos2 = 0;
+<center>
+	
+<img id="luupon0" width="430px" height="auto" src="./img/luupon-comm-gift-1.png"
+style="display: none;"
+onclick="luuponState = false; volgendefoto1();"/>
 
-                image2.src = images2[currentPos2];
-            }
+<img id="luupon1" width="430px" height="auto" src="./img/luupon-comm-gift-2.png"
+style="display: none;"
+onclick="luuponState = false; volgendefoto1();"/>
 
-            setInterval(volgendefoto2, 1000);
-        </script>
-
+</center>
 <br>
 
 </font></font></font>
