@@ -1420,7 +1420,7 @@ you fluffies have been supported me a lot recently, and i have needle felted mor
 </pre>
 <br><br>
 
-<center><img width="350px" height="auto" src="https://i.imgur.com/KVm22WI.jpg"/></center>
+<center><img width="auto" height="350px" src="https://i.imgur.com/KVm22WI.jpg"/></center>
 <br><br>
 
 </font></font></font>
@@ -1458,7 +1458,22 @@ well, as i promised the last post, i am going to show you today my new ipad, cut
 </pre>
 <br><br>
 
-<center><img width="350px" height="auto" src="https://i.imgur.com/SJJKX3y.gif"/></center>
+<center><img id="ipad" width="auto" height="320px" src="https://i.imgur.com/HJqeUmy.jpg">
+</img>
+        <script type = "text/javascript">
+            var imageipad = document.getElementById("ipad");
+            var currentPosipad = 0;
+            var imagesipad = ["https://i.imgur.com/HJqeUmy.jpg", "https://i.imgur.com/VJycjaT.jpg", "https://i.imgur.com/CuDFkzD.jpg"]
+
+            function volgendefotoipad() {
+                if (++currentPosipad >= imagesipad.length)
+                    currentPosipad = 0;
+
+                imageipad.src = imagesipad[currentPosipad];
+            }
+
+            setInterval(volgendefotoipad, 1000);
+        </script></center>
 <br>
 
 </font></font></font>
@@ -1471,7 +1486,22 @@ some of you wanted to see it, since i showed how i customized my desktop a few t
 </pre>
 <br><br>
 
-<center><img width="350px" height="auto" src="https://i.imgur.com/6UuQT8F.gif"/></center>
+<center><img id="laptop" width="auto" height="260px" src="https://i.imgur.com/9SX9ngJ.jpg">
+</img>
+        <script type = "text/javascript">
+            var imagelaptop = document.getElementById("laptop");
+            var currentPoslaptop = 0;
+            var imageslaptop = ["https://i.imgur.com/9SX9ngJ.jpg", "https://i.imgur.com/spzdio5.jpg"]
+
+            function volgendefotolaptop() {
+                if (++currentPoslaptop >= imageslaptop.length)
+                    currentPoslaptop = 0;
+
+                imagelaptop.src = imageslaptop[currentPoslaptop];
+            }
+
+            setInterval(volgendefotolaptop, 1000);
+        </script></center>
 <br>
 
 </font></font></font>
@@ -1518,7 +1548,22 @@ i'm going to show you how i have decorated my pages so far :
 </pre>
 <br><br>
 
-<center><img width="350px" height="auto" src="https://i.imgur.com/QsJodQx.gif"/></center>
+<center><img id="notion" width="auto" height="380px" src="https://i.imgur.com/oLrbLe9.png">
+</img>
+        <script type = "text/javascript">
+            var imagenotion = document.getElementById("notion");
+            var currentPosnotion = 0;
+            var imagesnotion = ["https://i.imgur.com/oLrbLe9.png", "https://i.imgur.com/XFY9Veb.png", "https://i.imgur.com/psj92aD.png", "https://i.imgur.com/hjIDUKN.png", "https://i.imgur.com/J2TXqlZ.png", "https://i.imgur.com/irTUEOR.png", "https://i.imgur.com/sVWeDRx.png"]
+
+            function volgendefotonotion() {
+                if (++currentPosnotion >= imagesnotion.length)
+                    currentPosnotion = 0;
+
+                imagenotion.src = imagesnotion[currentPosnotion];
+            }
+
+            setInterval(volgendefotonotion, 1000);
+        </script></center>
 <br>
 
 </font></font></font>

@@ -1120,8 +1120,38 @@ function resetPlayer2() {
 
 <br><br><font color="#9e8976"><sub><img src="https://i.imgur.com/6HWtiLA.png"></sub> ‌ pc & mobile customization ..<br><br></font><br><br>
 <img width="400px" height="auto" src="https://i.imgur.com/ubcAKg9.gif"><br><br>
-<img width="400px" height="auto" src="https://i.imgur.com/6UuQT8F.gif"><br><br>
-<img width="400px" height="auto" src="https://i.imgur.com/SJJKX3y.gif"><br><br>
+<img id="laptop" width="auto" height="250px" src="https://i.imgur.com/9SX9ngJ.jpg">
+</img>
+        <script type = "text/javascript">
+            var imagelaptop = document.getElementById("laptop");
+            var currentPoslaptop = 0;
+            var imageslaptop = ["https://i.imgur.com/9SX9ngJ.jpg", "https://i.imgur.com/spzdio5.jpg"]
+
+            function volgendefotolaptop() {
+                if (++currentPoslaptop >= imageslaptop.length)
+                    currentPoslaptop = 0;
+
+                imagelaptop.src = imageslaptop[currentPoslaptop];
+            }
+
+            setInterval(volgendefotolaptop, 1000);
+        </script><br><br>
+<img id="ipad" width="auto" height="310px" src="https://i.imgur.com/HJqeUmy.jpg">
+</img>
+        <script type = "text/javascript">
+            var imageipad = document.getElementById("ipad");
+            var currentPosipad = 0;
+            var imagesipad = ["https://i.imgur.com/HJqeUmy.jpg", "https://i.imgur.com/VJycjaT.jpg", "https://i.imgur.com/CuDFkzD.jpg"]
+
+            function volgendefotoipad() {
+                if (++currentPosipad >= imagesipad.length)
+                    currentPosipad = 0;
+
+                imageipad.src = imagesipad[currentPosipad];
+            }
+
+            setInterval(volgendefotoipad, 1000);
+        </script><br><br>
 <img width="auto" height="350px" src="https://i.imgur.com/QmXja0G.png">　
 <img width="auto" height="350px" src="https://i.imgur.com/GT9w9dG.jpg"><br><br>
 <img width="auto" height="350px" src="https://i.imgur.com/eK2OD8Z.jpg">　
