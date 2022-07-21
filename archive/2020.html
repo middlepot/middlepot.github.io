@@ -1928,10 +1928,24 @@ i wanted to write down some relevant information about the world of poofti, and 
 <center>
 <font color="#d1aeb9" style="font-size:10px;">( click the notebook for going to the next pages )</font>
 <br><br>
-<img width="430px" height="auto" src="https://i.imgur.com/OxelpoU.png"
-onclick="if(this.src=='https://i.imgur.com/OxelpoU.png'){
-this.src='https://i.imgur.com/6F75y59.png'; }
-else{ this.src='https://i.imgur.com/OxelpoU.png'; }"/>
+<script>
+function criarCarrossel(srcObj, enderecos){
+var pos = 0;
+for(var i = 0; i < enderecos.length; ++i){
+if(srcObj.src == enderecos[i])
+{ if(i == enderecos.length-1)
+pos = 0;
+else
+pos = i+1;
+break; }
+}
+srcObj.src = enderecos[pos]; }
+</script>
+
+<img width="430px" height="auto" style="cursor: url(https://i.imgur.com/IJhQJq5.png), progress;" src="https://i.imgur.com/OxelpoU.png"
+onclick="criarCarrossel(this,
+['https://i.imgur.com/6F75y59.png','https://i.imgur.com/DDtqI2Q.png','https://i.imgur.com/OxelpoU.png']);">
+</img>
 </center>
 
 <br>
