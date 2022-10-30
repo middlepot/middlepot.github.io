@@ -346,6 +346,16 @@ position: absolute;
 overflow-y:hidden;
 overflow-x:hidden;
  }
+#base2 {
+position: absolute;
+	left: 13%;
+	top: 10%;
+width: 935px;
+height: 540px;
+overflow-y:hidden;
+overflow-x:hidden;
+z-index: 5;
+ }
 #menu1 {
 position: absolute;
 	left: %;
@@ -354,7 +364,7 @@ width: 130px;
 height: 250px;
 overflow-y:hidden;
 overflow-x:hidden;
-z-index: 2;
+z-index: 8;
  }
 #menu1-2 {
 position: absolute;
@@ -364,7 +374,7 @@ width: 130px;
 height: 250px;
 overflow-y:hidden;
 overflow-x:hidden;
-z-index: 2;
+z-index: 9;
  }
 #menu2 {
 position: absolute;
@@ -374,7 +384,7 @@ width: 560px;
 height: 35px;
 overflow-y:hidden;
 overflow-x:hidden;
-z-index: 4;
+z-index: 10;
  }
 #menu3 {
 position: absolute;
@@ -384,7 +394,7 @@ width: 130px;
 height: 250px;
 overflow-y:hidden;
 overflow-x:hidden;
-z-index: 2;
+z-index: 11;
  }
 #stuff {
 position: absolute;
@@ -393,7 +403,7 @@ position: absolute;
 width: 594px;
 height: 433px;
 overflow-x:hidden;
-z-index: 6;
+z-index: 10;
  }
 #aaa {
 position: absolute;
@@ -402,7 +412,7 @@ position: absolute;
 width: 100px;
 height: 100px;
 overflow-x:hidden;
-z-index: 3;
+z-index: 11;
  }
 
 @supports not (-webkit-touch-callout: none) {
@@ -483,8 +493,9 @@ html{-webkit-text-size-adjust: 150%; text-size-adjust: 150%;}
 <div id="menu3">
 <br><br>
 　　　　　 <a href="/blog" style="text-decoration: none; color:#b29487;">my blog</a>
-</div>
+</div></div>
 
+<div id="base2">
 <div id="stuff">
 
 <br><br>
@@ -1138,7 +1149,7 @@ i made a cute soft pink skin for her, and wanted to show you :</pre></font></fon
 <font size = 1><font color="#B1A69E">
 <br><pre style="font-family:verdana; white-space: pre-wrap; word-wrap: break-word;">
 feel free to download it, as well as the balloon, which i also have modified to match her new clothes !
-( i posted a download link of her regular skin by 2020, so you can get it on the blog's <a id="linkbjinho" href="https://middlepot.com/archive/2020" target="_blank">/archive</a> )
+( i posted a download link of her regular skin by 2020, so you can get it on the blog's <a id="linkbjinho" href="/archive/2020#dorothy" target="_blank">/archive</a> )
 
 
 
@@ -1338,7 +1349,7 @@ i never felt comfortable using my accounts in a personal way, for both my sanity
 since 2012, when the old web as i knew was starting to collapse rapidly, i have been searching for a way to escape those uncomfortable spaces and find a way to express myself the way i want. <sub>🦋</sub>
 many people feel the same as me, and are also trying to walk away from big social media, so i try to help myself and others by working on solutions !
 
-after some months of use, <a id="linkbjinho" href="https://middlepot.com/faq#snippets" target="_blank">my web code snippets</a> have been a good help for making social media sites less stressful ( and cuter ) for me, but, as expected .. only as an inactive user.
+after some months of use, <a id="linkbjinho" href="#snippets" target="_blank">my web code snippets</a> have been a good help for making social media sites less stressful ( and cuter ) for me, but, as expected .. only as an inactive user.
 i am still checking some youtube channels & tumblr blogs regularly, and it's actually nice !
 ( i received messages from people telling me that the codes helped them too, so i will keep them updated, there is no need to worry about that )
 
@@ -1561,7 +1572,7 @@ by the way, i got many questions since i posted about my web code snippets, and 
 the answer is : yes, i did make a script for discord as well <sub>🎀</sub>
 at first it was only for inserting css, so i could make it pink .. but recently i updated it for also making the blocked people's messages disappear from the chat, which is nice !
 it doesn't help with all the issues that come with their useless blocking feature, but it's better than nothing, right ?
-
+<a name="discordsnippet" id="discordsnippet"></a>
 so here is my discord web code snippet, in case you fluffies want to try it out ( click the screenshot to get the .js file ) :</pre>
 <br><br>
 
@@ -1591,6 +1602,8 @@ so here is my discord web code snippet, in case you fluffies want to try it out 
 it is a very comfy theme, zero harsh color contrast. i made it to work with the dark theme, but it's alright with the light theme too !
 i did my best to make it cute but also functional, so you can see both white and black stuff.
 what do you think ? hopefully using it will make your experience with discord a bit nicer <font color="#d3a5a5" style="font-size:11px;">♡</font>
+
+( you can get my other snippets <a style="text-decoration: none;" href="#snippets"><font color="#ccb1b1" style="border-bottom:1px dashed #ccb1b1; padding-bottom: 0px; font-size:10px;">clicking here</font></a> ! )
 
 
 
@@ -2180,7 +2193,7 @@ it will come with lots of advantages, since it will be published by ourselves on
 
 now, returning to the "working on changes to solve issues" topic : i have realized that some of my digital projects were being neglected by me because of how uncomfortable i feel when using social media, to share that content and reach people. <sub>🐌</sub>
 the simpler solution would be, of course, deleting my accounts and posting on a place where i feel happier - but that place still doesn't exist, and while i don't make one, i have to solve that issue as much as i can so i can keep going !
-
+<a name="snippets" id="snippets"></a>
 you might know that i have been using code snippets for the longest time to cutify some websites ( such as changing colors, background patterns, fonts.. ) but i have only recently thought of using them for more than only aesthetics.
 i realized that seeing the metric numbers ( such as following count, likes, and sometimes even comments ) were being very stressful and unmotivating for me, for many reasons that i have been talking endlessly about through all these years. <sub>🖋</sub>
 so, as experimentation, i removed all the metrics. all of them.
@@ -2262,7 +2275,9 @@ i made scripts for all the social media sites that i am currently using ( click 
 <font size = 1><font color="#B1A69E">
 <br><pre style="font-family:verdana; white-space: pre-wrap; word-wrap: break-word;">
 as you can see, each one of them has a slightly different appearance ( i customized them very spontaneously ) , but all of them have the metric numbers and public comments hidden, and some other things as well ( such as trending posts ) <sub>🎗</sub>
-i will keep my web code snippets updated whenever needed, and you can always check the latest version on my <a style="text-decoration: none;" href="https://middlepot.com/portfolio#webcodesnippets" target="_blank"><font color="#ccb1b1" style="border-bottom:1px dashed #ccb1b1; padding-bottom: 0px; font-size:10px;">portfolio</font></a> page !
+
+until i can completely leave social media ( which i hope to do very soon ) i will keep using my web code snippets, and updating them according to necessity !
+<b>edit // </b> i made a new snippet, for discord !! you can check it <a style="text-decoration: none;" href="#discordsnippet"><font color="#ccb1b1" style="border-bottom:1px dashed #ccb1b1; padding-bottom: 0px; font-size:10px;">clicking here</font></a>
 
 keep in mind that these codes were made by me, thinking on my own needs, and i am sharing it with you fluffies exactly as i use them <sub>🗝</sub>
 you are free to use them as you personally like, and modify according to your preferences. if you have some practice with css it should be enough for changing colors, images, or removing some stuff i did. feel free to experiment around !!
