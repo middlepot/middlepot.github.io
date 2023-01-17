@@ -1,4 +1,4 @@
-//      ・゜ ♡   emoji set code   ♡ ゜ ・
+//   ・゜ ♡   emoji set code   ♡ ゜ ・
 //    © middlepot.com  ꒰ ू´ ˘ ` ू ꒱
 
 var whiteoverlay = document.createElement('div');
@@ -59,5 +59,5 @@ else{*/
 	setTimeout(function(){$('#emojis_whiteoverlay').hide();}, 2000);
 //}
 
-//      ・゜ ♡   emoji set code   ♡ ゜ ・
+//   ・゜ ♡   emoji set code   ♡ ゜ ・
 //    © middlepot.com  ꒰ ू´ ˘ ` ू ꒱
