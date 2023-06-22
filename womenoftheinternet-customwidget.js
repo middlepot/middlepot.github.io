@@ -32,7 +32,7 @@ function randomSite() {
 
 //if we didn't find the site in the list, the widget displays a warning instead
 if (thisIndex == null) {
-  tag.insertAdjacentHTML('afterbegin', `fdhd
+  tag.insertAdjacentHTML('afterbegin', `
 `);
 }
 else {
@@ -51,19 +51,19 @@ else {
   randomText = ""
   //if you've chosen to include a random button, this builds the link that does that
   if (useRandom) {
-    randomText = `<a style="text-decoration: none; color:#b09690; font-family:verdana; font-size:10px; letter-spacing:1px; text-shadow: 1px 1px #fff;" href='javascript:void(0)' onclick='randomSite()'>random</a>  `;
+    randomText = `<a href='javascript:void(0)' onclick='randomSite()'><img src="https://middlepot.com/img/random.png"></a>  `;
   }
 
   //this is the code that displays the widget - EDIT THIS if you want to change the structure
   tag.insertAdjacentHTML('afterbegin', `
   <table>
     <tr>
-      <td class='webring-prev'><a style="text-decoration: none; color:#b09690; font-family:verdana; font-size:10px; letter-spacing:1px; text-shadow: 1px 1px #fff;" href='${sites[previousIndex]}'>â† </a></td>
+      <td class='webring-prev'><a href='${sites[previousIndex]}'><img src="https://middlepot.com/img/arrowleft.png"></a></td>
       <td class='webring-info'><a href="https://womenoftheinternet.neocities.org/"><img src="https://middlepot.com/img/womenoftheinternet.png"></a><br>
       <span class='webring-links'>
        <center>${randomText}</center>
        </span></td>
-      <td class='webring-next'><a style="text-decoration: none; color:#b09690; font-family:verdana; font-size:10px; letter-spacing:1px; text-shadow: 1px 1px #fff;" href='${sites[nextIndex]}'> â†’</a></td>
+      <td class='webring-next'><a href='${sites[nextIndex]}'><img src="https://middlepot.com/img/arrowright.png"></a></td>
     </tr>
   </table>
   `);
