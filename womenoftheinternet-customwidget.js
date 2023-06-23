@@ -59,7 +59,7 @@ else {
   <table>
     <tr>
       <td class='webring-prev'><a href='${sites[previousIndex]}'><img src="https://middlepot.com/img/arrowleft.png"></a></td>
-      <td class='webring-info'><a href="https://womenoftheinternet.neocities.org/" target="_blank"><img src="https://middlepot.com/img/womenoftheinternet.png"></a><br>
+      <td class='webring-info'><a target="_blank" href="https://womenoftheinternet.neocities.org/"><img src="https://middlepot.com/img/womenoftheinternet.png"></a><br>
       <span class='webring-links'>
        <center>${randomText}</center>
        </span></td>
