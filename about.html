@@ -588,11 +588,11 @@ p { margin: 0; }
     loop($btns, function($btn){
         $btn.addEventListener("click", function(){
             var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "i'm 25 years old" ){
-                this.innerHTML = "i'm 25 years old ˣ";
+            if( this.innerHTML === "i'm 26 years old" ){
+                this.innerHTML = "i'm 26 years old ˣ";
                 $spoiler.classList.remove("is-closed2");
             } else {
-                this.innerHTML = "i'm 25 years old";
+                this.innerHTML = "i'm 26 years old";
                 $spoiler.classList.add("is-closed2");
             }
         });
@@ -640,45 +640,6 @@ p { margin: 0; }
 
 }());
 </script>
-
-<div id="spoiler4" class="spoiler-area4 is-closed4" style="margin-top:-10px;">
-
-<font color="#d6b3b3" style="font-size:9px; letter-spacing:0.5px;">( in a countryside small town )</font>
-
-<style>
-p { margin: 0; }
-.spoiler-area4 {
-
-}
-.spoiler-area4.is-closed4 { height: 0; overflow: hidden; padding: 10px 0 0; }
-</style>
-<script>
-(function(){
-    "use strict";
-    var $btns = document.querySelectorAll('.btn-spoiler4');
-    function loop($els, cb) {
-        var i = $els.length;
-        while(i--) {
-            cb($els[i]);
-        }
-    }
-    loop($btns, function($btn){
-        $btn.addEventListener("click", function(){
-            var $spoiler = document.getElementById(this.getAttribute("data-target"));
-            if( this.innerHTML === "i live in são paulo" ){
-                this.innerHTML = "i live in são paulo ˣ";
-                $spoiler.classList.remove("is-closed4");
-            } else {
-                this.innerHTML = "i live in são paulo";
-                $spoiler.classList.add("is-closed4");
-            }
-        });
-
-    });
-
-}());
-</script>
-</div>
 
 
 </center>
