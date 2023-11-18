@@ -447,6 +447,17 @@ z-index: 3;
     transform: rotate(90deg); }
 #stuff { overflow: auto; overflow: scroll; }
 }}
+@media screen and (min-width: 1000px) and (orientation: portrait){
+#everything { position: absolute; zoom: 180%;
+	left:570px;
+	top:80px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+#stuff { overflow: auto; overflow: scroll; }
+}}}
 @supports (-webkit-touch-callout: none) {
 @media screen and (min-width: 1px) and (orientation: portrait){
 #everything { position: absolute; zoom: 155%;
@@ -463,6 +474,21 @@ html{-webkit-text-size-adjust: 145%; text-size-adjust: 145%; line-height: 10px !
 #indextext2{-webkit-text-size-adjust: 120%; text-size-adjust: 120%; line-height: 12px !important;}
 #updateitems{line-height: 10px !important;}
 }}
+@media screen and (min-width: 1000px) and (orientation: portrait){
+#everything { position: absolute; zoom: 180%;
+	left:570px;
+	top:80px;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg); }
+#stuff { overflow: auto; overflow: scroll; }
+html{-webkit-text-size-adjust: 145%; text-size-adjust: 145%; line-height: 10px !important;}
+#indextext1{-webkit-text-size-adjust: 120%; text-size-adjust: 120%; line-height: 12px !important;}
+#indextext2{-webkit-text-size-adjust: 120%; text-size-adjust: 120%; line-height: 12px !important;}
+#updateitems{line-height: 10px !important;}
+}}}
 
 @media screen and (min-width: 1700px) and (orientation: landscape){
 #everything { position: absolute; zoom: 130%;
@@ -471,7 +497,7 @@ html{-webkit-text-size-adjust: 145%; text-size-adjust: 145%; line-height: 10px !
 #stuff { overflow: auto; overflow: scroll; }
 }
 @media screen and (min-width: 2000px) and (orientation: landscape){
-#everything { position: absolute; zoom: 150%;}
+#everything { position: absolute; zoom: 170%;}
 #stuff { overflow: auto; overflow: scroll; }
 }
 @media screen and (min-width: 3000px) and (orientation: landscape){
