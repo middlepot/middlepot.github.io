@@ -60,9 +60,7 @@ else {
     <tr>
       <td class='webring-prev'><a href='${sites[previousIndex]}'><img src="https://middlepot.com/img/arrowleft.png"></a></td>
       <td class='webring-info'><a target="_blank" href="https://womenoftheinternet.neocities.org/"><img src="https://middlepot.com/img/womenoftheinternet.png"></a><br>
-      <span class='webring-links'>
-       <center>${randomText}</center>
-       </span></td>
+      <span class='webring-links'></span></td>
       <td class='webring-next'><a href='${sites[nextIndex]}'><img src="https://middlepot.com/img/arrowright.png"></a></td>
     </tr>
   </table>
