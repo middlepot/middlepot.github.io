@@ -310,7 +310,7 @@ for (const ring of rings) {
       var style = document.createElement('style');
       style.type = 'text/css';
       style.appendChild(document.createTextNode(css));
-      ring.appendChild(style);
+      ring.shadowRoot.appendChild(style);
 }
 </script>
 
