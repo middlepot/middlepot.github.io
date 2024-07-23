@@ -300,22 +300,26 @@ scroll down for webrings, cliques and buttons</font><br><br>
 <br><br>
 
 <center>
-<img src="https://i.imgur.com/WoYT1el.png"><br><br>
+<img src="https://i.imgur.com/WoYT1el.png"><br>
 
 <journal-ring icon="pink"></journal-ring><script async src="https://cdn.jsdelivr.net/gh/js044/nenrikido@main/static/js/misc/journalring.js"></script> 
 <script>
+var css = '.random-button {display:none;} .prev-button img {content:url("https://middlepot.com/img/arrowleft.png"); cursor:url(https://i.imgur.com/EZZ5Vol.png), progress; outline:none;} .next-button img {content:url("https://middlepot.com/img/arrowright.png"); cursor:url(https://i.imgur.com/EZZ5Vol.png), progress; outline:none;} icon icon-pink img {content:url("https://middlepot.com/img/arrowright.png"); cursor:url(https://i.imgur.com/EZZ5Vol.png), progress; outline:none;}'
+var ringInterval = setInterval(function(){
 var rings = document.getElementsByTagName('journal-ring');
-var css = '.random-button {display:none;} .prev-button img {content:url("https://middlepot.com/img/arrowleft.png"); cursor:url(https://i.imgur.com/EZZ5Vol.png), progress; outline:none;} .next-button img {content:url("https://middlepot.com/img/arrowright.png"); cursor:url(https://i.imgur.com/EZZ5Vol.png), progress; outline:none;} .icon-pink img {content:url("https://middlepot.com/img/arrowright.png"); cursor:url(https://i.imgur.com/EZZ5Vol.png), progress; outline:none;}'
 for (const ring of rings) {
+      if(!ring.shadowRoot){break;}
       var style = document.createElement('style');
       style.type = 'text/css';
       style.appendChild(document.createTextNode(css));
       ring.shadowRoot.appendChild(style);
+      clearInterval(ringInterval);
 }
+}, 30);
 </script>
 
 <div style="line-height:7px;">
-<br>
+<br><br>
 <font style="font-size:9px; letter-spacing:0.5px;"><a href="https://sanguineroyal.com/com/rabbithearted" target="_blank" style="text-decoration: none; color: #d9c3c3; padding-bottom: 1px; border-bottom:1px dotted #c7b9b9;">𝒓𝒂𝒃𝒃𝒊𝒕 𝒉𝒆𝒂𝒓𝒕𝒆𝒅</a></font> <sub><sub><img src="https://i.imgur.com/PPSsDyK.gif"></sub></sub> <font style="color: #bfa586">broken</font> <font style="color: #d1c4a9">cream</font> holland lop <font color="#d9c3c3" style="font-size:10px; letter-spacing:1px;">♡</font>
 <br><br><br>
 
