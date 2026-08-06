@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    cursor: url(img/cursor.png), progress;
+
+    a:hover {
+        cursor: url(img/cursorh.png), progress;
+    }
+
+    ::selection {
+        text-shadow: 0 0 2px #cec1bb;
+        color: #cec1bb
+    }
+
+    ::-moz-selection {
+        text-shadow: 0 0 2px #cec1bb;
+        color: #cec1bb
+    }
+
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('img/bgindex.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.top-decorations {
+    position: absolute;
+    width: 95%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.top-left,
+.top-right {
+    width: 35%;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo-container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.bear {
+    position: absolute;
+    width: 20%;
+    height: auto;
+    z-index: 2;
+    top: 45%;
+    left: 56.5%;
+    transform: translate(-50%, -50%);
+}
+
+.nav-links {
+    position: absolute;
+    width: 95%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 65%);
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+}
+
+.nav-item {
+    width: 30%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.nav-item:hover {
+    transform: scale(1.03);
+    filter: brightness(1.05);
+}
+
+body:has(.about-layout) {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.about-logo {
+    top: 18%;
+    transform: translate(-50%, -50%) scale(0.6);
+}
+
+.about-center-wrapper {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10vh;
+    width: 60vh;
+    max-width: 80vw;
+    z-index: 10;
+}
+
+.about-content-box {
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+    scrollbar-color: #e2d5d0 transparent;
+
+    border: 30px solid transparent;
+    border-image-source: url('img/lace.png');
+    border-image-slice: 22% fill;
+    border-image-repeat: round;
+
+    background-image: url('img/repeat.png');
+    background-repeat: repeat;
+    background-clip: padding-box;
+    padding: 30px;
+    text-align: left;
+    color: #a38c8c;
+    font-size: 13px;
+    font-family: Verdana;
+    line-height: 1.6;
+}
+
+.teddy-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: auto;
+    transform: translate(-25%, -25%) rotate(-10deg);
+    z-index: 12;
+}
+
+.heart-badge {
+    position: absolute;
+    top: 90%;
+    left: 85%;
+    width: 25%;
+    height: auto;
+    transform: translate(-25%, -25%) rotate(10deg);
+    z-index: 12;
+}
+
+/* Scrollbar decorativa (Chrome/Safari/Edge) */
+.about-content-box::-webkit-scrollbar {
+    width: 10px;
+}
+
+.about-content-box::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Tom rosa-creme claro, como o fundo da página */
+    border-radius: 10px;
+}
+
+.about-content-box::-webkit-scrollbar-thumb {
+    background-color: #e2d5d0;
+    border-radius: 10px;
+}
+
+.about-content-box::-webkit-scrollbar-thumb:hover {
+    background-color: #e2d5d0;
+}
+
+@media (max-width: 768px) {
+    .about-center-wrapper {
+        top: 10%;
+    }
+}
