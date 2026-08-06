@@ -181,6 +181,11 @@ body:has(.about-layout) {
     z-index: 12;
 }
 
+.divider {
+    width: 100%;
+    height: auto;
+}
+
 /* Scrollbar decorativa (Chrome/Safari/Edge) */
 .about-content-box::-webkit-scrollbar {
     width: 10px;
